@@ -1,0 +1,4473 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"au" = (
+/obj/machinery/light/small/floor,
+/turf/simulated/floor/yellow,
+/area/station/storage/tech)
+"aR" = (
+/obj/machinery/portable_atmospherics/canister/toxins,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/plating,
+/area/evilreaver/toxins)
+"aY" = (
+/obj/cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/power/solar/west,
+/turf/simulated/floor/airless/solar,
+/area/station/solar)
+"bs" = (
+/obj/grille/catwalk{
+	dir = 1
+	},
+/obj/cable{
+	icon_state = "2-4"
+	},
+/obj/cable{
+	icon_state = "2-8"
+	},
+/obj/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/airless/plating/catwalk{
+	dir = 1
+	},
+/area/station/solar)
+"bu" = (
+/obj/machinery/light,
+/obj/machinery/door/airlock/pyro/external,
+/obj/mapping_helper/firedoor_spawn,
+/turf/simulated/floor/plating,
+/area/evilreaver/toxins)
+"bQ" = (
+/obj/storage/closet/wardrobe/yellow,
+/obj/item/storage/toolbox/mechanical,
+/obj/item/device/multitool,
+/obj/item/device/multitool,
+/obj/item/device/multitool,
+/obj/item/device/multitool,
+/obj/item/device/multitool,
+/obj/item/electronics/scanner,
+/obj/item/deconstructor,
+/turf/simulated/floor/yellowblack,
+/area/station/storage/eva{
+	name = "Common Storage"
+	})
+"bY" = (
+/obj/cable{
+	icon_state = "0-8"
+	},
+/obj/cable{
+	dir = null
+	},
+/turf/simulated/floor/plating,
+/area/station/storage/tech)
+"cb" = (
+/obj/machinery/power/apc/autoname_south,
+/obj/cable,
+/obj/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-c"
+	},
+/turf/simulated/floor/plating,
+/area/station/storage/tech)
+"cp" = (
+/obj/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/solar/west,
+/turf/simulated/floor/airless/solar,
+/area/station/solar)
+"cA" = (
+/obj/machinery/light,
+/obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/turf/simulated/floor/plating,
+/area/station/storage/eva{
+	name = "Common Storage"
+	})
+"cI" = (
+/obj/machinery/conveyor/SN{
+	name = "qm belt";
+	id = "qm_in"
+	},
+/obj/lattice/auto,
+/turf/space,
+/area/space)
+"df" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/turf/simulated/floor/plating,
+/area/station/storage/eva{
+	name = "Common Storage"
+	})
+"ds" = (
+/obj/cable{
+	icon_state = "1-4"
+	},
+/obj/mapping_helper/firedoor_spawn,
+/obj/machinery/door/airlock/pyro/safe{
+	dir = 8
+	},
+/turf/simulated/floor/plating,
+/area/station/quartermaster/cargobay)
+"dy" = (
+/obj/machinery/computer/supplycomp{
+	dir = 8
+	},
+/obj/machinery/light,
+/turf/simulated/floor/yellow,
+/area/station/quartermaster/cargobay)
+"ed" = (
+/obj/grille/catwalk{
+	dir = 4
+	},
+/turf/simulated/floor/airless/plating/catwalk{
+	dir = 4
+	},
+/area/station/solar)
+"ej" = (
+/obj/machinery/atmospherics/unary/vent_pump{
+	dir = 4;
+	external_pressure_bound = 0;
+	icon_state = "in";
+	initialize_directions = 1;
+	internal_pressure_bound = 4000;
+	pressure_checks = 2;
+	pump_direction = 0
+	},
+/turf/simulated/floor/engine/vacuum,
+/area/evilreaver/toxins)
+"fg" = (
+/obj/machinery/conveyor_switch{
+	id = "garbage";
+	position = 1
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/disposal)
+"fC" = (
+/obj/machinery/conveyor/SN{
+	name = "qm belt";
+	id = "qm_in"
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/station/quartermaster/cargobay)
+"fI" = (
+/obj/machinery/conveyor/SN{
+	name = "qm belt";
+	id = "qm_in"
+	},
+/obj/forcefield/energyshield/perma/doorlink,
+/turf/simulated/floor/plating,
+/area/station/quartermaster/cargobay)
+"fV" = (
+/turf/simulated/shuttle/wall/cockpit,
+/area/space)
+"fX" = (
+/obj/machinery/conveyor_switch{
+	id = "qm_out"
+	},
+/turf/simulated/floor/yellow,
+/area/station/quartermaster/cargobay)
+"gT" = (
+/obj/machinery/light/small/floor,
+/turf/unsimulated/floor/shuttle,
+/area/shuttle/arrival)
+"he" = (
+/turf/simulated/floor/yellow,
+/area/station/storage/eva{
+	name = "Common Storage"
+	})
+"hn" = (
+/obj/machinery/conveyor/SN{
+	name = "qm belt";
+	id = "qm_in"
+	},
+/turf/simulated/floor/plating,
+/area/station/quartermaster/cargobay)
+"hz" = (
+/obj/cable{
+	dir = null
+	},
+/obj/machinery/power/data_terminal,
+/obj/machinery/networked/printer,
+/turf/simulated/floor/yellow,
+/area/station/storage/eva{
+	name = "Common Storage"
+	})
+"hJ" = (
+/obj/machinery/disposal,
+/obj/disposalpipe/trunk{
+	dir = 1
+	},
+/turf/unsimulated/floor/yellow/checker,
+/area/station/storage/tech)
+"hL" = (
+/obj/rack,
+/obj/item/clothing/head/helmet/space/industrial,
+/obj/item/clothing/suit/space/industrial,
+/obj/item/tank/mini_oxygen,
+/obj/item/tank/jetpack,
+/obj/machinery/light/small/floor,
+/obj/item/clothing/mask/breath,
+/turf/simulated/floor/yellowblack,
+/area/station/storage/eva{
+	name = "Common Storage"
+	})
+"hR" = (
+/obj/machinery/conveyor_switch{
+	id = "qm_in";
+	name = "conveyor switch - in"
+	},
+/turf/simulated/floor/yellow,
+/area/station/quartermaster/cargobay)
+"ia" = (
+/turf/unsimulated/floor/shuttle,
+/area/shuttle/arrival)
+"io" = (
+/obj/grille/catwalk{
+	dir = 1
+	},
+/obj/cable{
+	icon_state = "1-4"
+	},
+/obj/cable{
+	icon_state = "1-8"
+	},
+/obj/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/airless/plating/catwalk{
+	dir = 1
+	},
+/area/space)
+"iu" = (
+/obj/grille/catwalk{
+	dir = 1
+	},
+/obj/cable{
+	icon_state = "1-4"
+	},
+/obj/cable{
+	icon_state = "1-8"
+	},
+/obj/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/airless/plating/catwalk{
+	dir = 1
+	},
+/area/station/solar)
+"iw" = (
+/obj/machinery/conveyor/SN{
+	name = "qm belt";
+	id = "qm_in"
+	},
+/turf/simulated/floor/yellow,
+/area/station/quartermaster/cargobay)
+"iK" = (
+/obj/cable{
+	icon_state = "0-4"
+	},
+/obj/cable{
+	icon_state = "0-8"
+	},
+/obj/cable,
+/obj/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/overfloor,
+/turf/unsimulated/floor/yellow/checker,
+/area/station/storage/tech)
+"iL" = (
+/obj/machinery/door/airlock/pyro/external,
+/turf/simulated/floor/shuttle/yellow,
+/area/shuttle/arrival)
+"ja" = (
+/obj/machinery/atmospherics/unary/portables_connector{
+	dir = 8
+	},
+/turf/simulated/floor/plating,
+/area/evilreaver/toxins)
+"jx" = (
+/obj/machinery/power/apc/autoname_west,
+/obj/cable{
+	icon_state = "0-2"
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/disposal)
+"kb" = (
+/obj/machinery/disposal,
+/obj/disposalpipe/trunk{
+	dir = 4
+	},
+/turf/unsimulated/floor/yellow/checker,
+/area/station/storage/tech)
+"kn" = (
+/obj/grille/catwalk{
+	dir = 4
+	},
+/obj/cable,
+/obj/cable{
+	icon_state = "0-2"
+	},
+/obj/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/tracker,
+/turf/simulated/floor/airless/plating/catwalk{
+	dir = 4
+	},
+/area/space)
+"kq" = (
+/obj/indestructible/shuttle_corner,
+/turf/space,
+/area/shuttle/arrival)
+"kv" = (
+/obj/machinery/power/data_terminal,
+/obj/cable{
+	icon_state = "0-2"
+	},
+/obj/item/mechanics/networkcomp{
+	under_floor = 1
+	},
+/turf/simulated/floor/plating,
+/area/station/storage/tech)
+"kx" = (
+/obj/machinery/power/data_terminal,
+/obj/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/guardbot_dock,
+/obj/machinery/atmospherics/pipe/simple/overfloor,
+/turf/simulated/floor/plating,
+/area/station/storage/tech)
+"kD" = (
+/obj/storage/crate{
+	name = "Spare Parts"
+	},
+/obj/item/sheet/steel{
+	amount = 50
+	},
+/obj/item/guardbot_frame{
+	pixel_x = -9;
+	pixel_y = 7
+	},
+/obj/item/device/guardbot_tool/taser{
+	pixel_x = 7;
+	pixel_y = 6
+	},
+/obj/item/device/guardbot_tool/smoker{
+	pixel_x = 7
+	},
+/obj/item/device/guardbot_tool/medicator{
+	pixel_x = 7;
+	pixel_y = -6
+	},
+/obj/item/guardbot_core{
+	pixel_x = -5;
+	pixel_y = -6
+	},
+/obj/machinery/light,
+/obj/item/parts/robot_parts/arm/right/standard{
+	pixel_x = -7;
+	pixel_y = 6
+	},
+/obj/item/parts/robot_parts/arm/right/standard{
+	pixel_x = -12;
+	pixel_y = 6
+	},
+/obj/cable{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor,
+/area/station/storage/eva{
+	name = "Common Storage"
+	})
+"kY" = (
+/turf/simulated/wall/auto/reinforced/supernorn,
+/area/station/maintenance/disposal)
+"kZ" = (
+/obj/machinery/door_control{
+	id = "qm_door_in";
+	pixel_x = 24;
+	name = "Remote Door Control cargo"
+	},
+/turf/simulated/floor/yellow,
+/area/station/quartermaster/cargobay)
+"lp" = (
+/obj/cable,
+/obj/machinery/power/data_terminal,
+/turf/simulated/floor/plating,
+/area/station/storage/tech)
+"lu" = (
+/obj/disposalpipe/segment{
+	dir = 4
+	},
+/turf/unsimulated/floor/yellow/checker,
+/area/station/storage/tech)
+"lz" = (
+/turf/simulated/floor/plating,
+/area/station/maintenance/disposal)
+"lH" = (
+/obj/machinery/bot/firebot,
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/evilreaver/toxins)
+"lJ" = (
+/obj/machinery/light,
+/turf/unsimulated/floor/yellow/checker,
+/area/station/storage/tech)
+"lV" = (
+/obj/machinery/atmospherics/pipe/simple/insulated/cold{
+	dir = 4
+	},
+/turf/simulated/floor/engine/vacuum,
+/area/evilreaver/toxins)
+"lY" = (
+/obj/disposalpipe/segment{
+	dir = 4
+	},
+/turf/simulated/floor/yellow,
+/area/station/storage/tech)
+"lZ" = (
+/obj/cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/power/solar/west,
+/turf/simulated/floor/airless/solar,
+/area/space)
+"mf" = (
+/turf/space,
+/area/supply/sell_point)
+"mB" = (
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/turf/simulated/floor/plating,
+/area/station/maintenance/disposal)
+"mV" = (
+/obj/machinery/portable_atmospherics/canister/empty,
+/turf/simulated/floor/plating,
+/area/evilreaver/toxins)
+"nu" = (
+/obj/machinery/manufacturer/general,
+/turf/simulated/floor/yellowblack,
+/area/station/storage/eva{
+	name = "Common Storage"
+	})
+"nN" = (
+/obj/item/wrench,
+/obj/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/yellow,
+/area/station/storage/tech)
+"nS" = (
+/turf/space,
+/area/space)
+"ob" = (
+/obj/disposalpipe/junction/middle/west,
+/turf/unsimulated/floor/yellow/checker,
+/area/station/storage/tech)
+"od" = (
+/obj/machinery/light,
+/turf/simulated/floor/yellow,
+/area/station/storage/tech)
+"oy" = (
+/obj/cable{
+	icon_state = "4-8"
+	},
+/obj/grille/catwalk{
+	dir = 4
+	},
+/turf/simulated/floor/airless/plating/catwalk{
+	dir = 4
+	},
+/area/station/solar)
+"oF" = (
+/obj/rack,
+/obj/item/clothing/head/helmet/space/syndicate,
+/obj/item/clothing/suit/space/syndicate,
+/obj/item/tank/mini_oxygen,
+/obj/item/tank/jetpack,
+/obj/item/clothing/mask/breath,
+/turf/simulated/floor/yellowblack,
+/area/station/storage/eva{
+	name = "Common Storage"
+	})
+"oG" = (
+/obj/cable{
+	icon_state = "4-8"
+	},
+/turf/simulated/wall/auto/supernorn,
+/area/station/storage/tech)
+"oT" = (
+/obj/machinery/portable_atmospherics/canister/toxins,
+/turf/simulated/floor/plating,
+/area/evilreaver/toxins)
+"pz" = (
+/obj/machinery/light,
+/obj/decal/poster/wallsign/hazard_danger,
+/turf/simulated/wall/auto/supernorn,
+/area/station/maintenance/disposal)
+"pF" = (
+/obj/decal/tile_edge/stripe,
+/obj/decal/tile_edge/stripe{
+	dir = 4
+	},
+/turf/simulated/floor/circuit,
+/area/h7/computer_core)
+"pY" = (
+/turf/simulated/wall/auto/supernorn,
+/area/station/quartermaster/cargobay)
+"qj" = (
+/obj/cable{
+	icon_state = "0-2"
+	},
+/obj/cable{
+	icon_state = "0-4"
+	},
+/obj/cable,
+/turf/simulated/floor/shuttlebay,
+/area/h7/computer_core)
+"qk" = (
+/obj/machinery/door_control{
+	id = "mixingvent";
+	name = "Mixing Vent Control";
+	pixel_x = -24
+	},
+/turf/simulated/floor/plating,
+/area/evilreaver/toxins)
+"qm" = (
+/obj/grille/catwalk{
+	dir = 4
+	},
+/obj/cable{
+	icon_state = "0-4"
+	},
+/obj/cable{
+	icon_state = "0-2"
+	},
+/turf/simulated/floor/airless/plating/catwalk{
+	dir = 4
+	},
+/area/station/solar)
+"qE" = (
+/obj/machinery/power/data_terminal,
+/obj/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/guardbot_dock,
+/obj/cable,
+/turf/simulated/floor/plating,
+/area/station/storage/tech)
+"qJ" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/unary/outlet_injector/active{
+	dir = 1
+	},
+/turf/simulated/floor/yellow,
+/area/station/storage/tech)
+"qM" = (
+/obj/storage/crate{
+	name = "Spare Parts"
+	},
+/obj/item/sheet/steel{
+	amount = 50
+	},
+/obj/item/guardbot_frame{
+	pixel_x = -9;
+	pixel_y = 7
+	},
+/obj/item/device/guardbot_tool/taser{
+	pixel_x = 7;
+	pixel_y = 6
+	},
+/obj/item/device/guardbot_tool/smoker{
+	pixel_x = 7
+	},
+/obj/item/device/guardbot_tool/medicator{
+	pixel_x = 7;
+	pixel_y = -6
+	},
+/obj/item/guardbot_core{
+	pixel_x = -5;
+	pixel_y = -6
+	},
+/obj/machinery/light,
+/obj/item/parts/robot_parts/arm/right/standard{
+	pixel_x = -7;
+	pixel_y = 6
+	},
+/obj/item/parts/robot_parts/arm/right/standard{
+	pixel_x = -12;
+	pixel_y = 6
+	},
+/turf/simulated/floor,
+/area/station/storage/eva{
+	name = "Common Storage"
+	})
+"qU" = (
+/obj/machinery/door/airlock/pyro/external{
+	dir = 4;
+	name = "External Access";
+	req_access_txt = null
+	},
+/obj/mapping_helper/firedoor_spawn,
+/turf/simulated/floor/plating,
+/area/station/maintenance/disposal)
+"qX" = (
+/obj/machinery/portable_atmospherics/canister/nitrogen,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/plating,
+/area/evilreaver/toxins)
+"rj" = (
+/turf/simulated/floor/airless/purple/checker,
+/area/evilreaver/toxins)
+"sy" = (
+/obj/machinery/power/data_terminal,
+/obj/cable{
+	icon_state = "0-2"
+	},
+/obj/landmark/start/job/AI,
+/turf/simulated/floor/plating,
+/area/station/storage/tech)
+"sB" = (
+/obj/machinery/light,
+/turf/simulated/floor/yellow,
+/area/station/quartermaster/cargobay)
+"sD" = (
+/obj/machinery/conveyor/SN{
+	name = "qm belt - out";
+	id = "qm_out"
+	},
+/turf/simulated/floor/plating,
+/area/station/quartermaster/cargobay)
+"sS" = (
+/obj/machinery/atmospherics/unary/outlet_injector/active{
+	dir = 4
+	},
+/turf/simulated/floor/engine/vacuum,
+/area/evilreaver/toxins)
+"tb" = (
+/obj/machinery/light/small/floor,
+/turf/unsimulated/floor/yellow/checker,
+/area/station/storage/tech)
+"tc" = (
+/obj/forcefield/energyshield/perma/doorlink{
+	desc = "A door-linked force field that prevents gasses from passing through it.";
+	dir = 4;
+	name = "Door-linked Atmospheric Forcefield";
+	powerlevel = 1
+	},
+/obj/machinery/door/poddoor/blast/pyro/podbay_autoclose{
+	id = "qm_door_in"
+	},
+/obj/machinery/conveyor/SN{
+	name = "qm belt";
+	id = "qm_in"
+	},
+/turf/space,
+/area/station/quartermaster/cargobay)
+"tr" = (
+/obj/disposalpipe/segment{
+	dir = 1
+	},
+/turf/simulated/wall/auto/supernorn,
+/area/station/storage/eva{
+	name = "Common Storage"
+	})
+"tu" = (
+/obj/cable{
+	icon_state = "4-8"
+	},
+/obj/grille/catwalk{
+	dir = 4
+	},
+/obj/cable{
+	icon_state = "0-8"
+	},
+/turf/simulated/floor/airless/plating/catwalk{
+	dir = 4
+	},
+/area/station/solar)
+"ty" = (
+/obj/machinery/door/airlock/pyro/glass{
+	dir = 4
+	},
+/obj/mapping_helper/firedoor_spawn,
+/turf/simulated/floor/yellow,
+/area/station/storage/eva{
+	name = "Common Storage"
+	})
+"tF" = (
+/turf/simulated/floor,
+/area/station/storage/tech)
+"tT" = (
+/turf/simulated/wall/auto/reinforced/supernorn,
+/area/evilreaver/toxins)
+"tV" = (
+/obj/cable{
+	icon_state = "4-8"
+	},
+/obj/reagent_dispensers/fueltank,
+/turf/simulated/floor/yellow,
+/area/station/storage/eva{
+	name = "Common Storage"
+	})
+"ub" = (
+/obj/storage/cart/mechcart{
+	open = 1
+	},
+/turf/simulated/floor/yellow,
+/area/station/storage/tech)
+"ud" = (
+/obj/machinery/launcher_loader/north,
+/turf/simulated/floor/plating,
+/area/station/quartermaster/cargobay)
+"uq" = (
+/obj/cable,
+/obj/machinery/power/data_terminal,
+/obj/machinery/networked/printer,
+/turf/simulated/floor/plating,
+/area/station/storage/tech)
+"uH" = (
+/obj/reagent_dispensers/foamtank,
+/turf/simulated/floor/yellow,
+/area/station/storage/eva{
+	name = "Common Storage"
+	})
+"uN" = (
+/turf/unsimulated/floor/yellow/checker,
+/area/station/storage/tech)
+"uS" = (
+/obj/decal/tile_edge/stripe{
+	dir = 1
+	},
+/obj/decal/tile_edge/stripe{
+	dir = 8
+	},
+/turf/simulated/floor/circuit,
+/area/h7/computer_core)
+"uX" = (
+/obj/landmark/map{
+	name = "TESTMAP"
+	},
+/turf/space,
+/area/space)
+"vM" = (
+/turf/simulated/floor/airless/plating/catwalk/auto,
+/area/space)
+"wf" = (
+/obj/grille/catwalk{
+	dir = 4
+	},
+/obj/cable{
+	icon_state = "0-8"
+	},
+/obj/cable,
+/turf/simulated/floor/airless/plating/catwalk{
+	dir = 4
+	},
+/area/station/solar)
+"wh" = (
+/obj/cable,
+/obj/machinery/power/data_terminal,
+/obj/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/overfloor,
+/turf/simulated/floor/plating,
+/area/station/storage/tech)
+"ws" = (
+/obj/cable{
+	icon_state = "0-4"
+	},
+/obj/cable{
+	icon_state = "0-8"
+	},
+/obj/cable{
+	icon_state = "0-2"
+	},
+/turf/simulated/floor/yellow,
+/area/station/storage/eva{
+	name = "Common Storage"
+	})
+"wy" = (
+/obj/machinery/door/poddoor/pyro{
+	dir = 4;
+	id = "chamber2exhaust";
+	name = "chamber2exhaust"
+	},
+/turf/simulated/floor/engine/vacuum,
+/area/evilreaver/toxins)
+"wM" = (
+/obj/cable{
+	icon_state = "0-2"
+	},
+/obj/cable{
+	icon_state = "0-4"
+	},
+/obj/cable,
+/obj/cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/power/data_terminal,
+/obj/machinery/computer3/terminal/zeta{
+	setup_os_string = "ZETA_MAINFRAME"
+	},
+/turf/simulated/floor/circuit,
+/area/h7/computer_core)
+"wO" = (
+/obj/machinery/power/apc/autoname_north,
+/obj/cable{
+	icon_state = "0-8"
+	},
+/turf/simulated/floor/yellow,
+/area/station/quartermaster/cargobay)
+"wU" = (
+/obj/cable{
+	icon_state = "0-4"
+	},
+/obj/cable{
+	icon_state = "0-8"
+	},
+/obj/cable{
+	icon_state = "0-2"
+	},
+/obj/cable{
+	icon_state = "0-2"
+	},
+/turf/simulated/floor/yellow,
+/area/station/storage/eva{
+	name = "Common Storage"
+	})
+"xd" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/wall/auto/supernorn,
+/area/station/storage/eva{
+	name = "Common Storage"
+	})
+"xh" = (
+/obj/cable{
+	icon_state = "0-4"
+	},
+/obj/cable{
+	icon_state = "0-8"
+	},
+/turf/simulated/floor/yellow,
+/area/station/storage/eva{
+	name = "Common Storage"
+	})
+"xi" = (
+/turf/simulated/floor/yellow,
+/area/station/storage/tech)
+"xq" = (
+/turf/simulated/shuttle/wall,
+/area/shuttle/arrival)
+"xM" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/turf/unsimulated/floor/yellow/checker,
+/area/station/storage/tech)
+"yc" = (
+/obj/grille/catwalk{
+	dir = 10
+	},
+/obj/cable{
+	icon_state = "2-4"
+	},
+/obj/cable{
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/airless/plating/catwalk{
+	dir = 1;
+	icon_state = "catwalk_cross"
+	},
+/area/station/solar)
+"yi" = (
+/obj/machinery/atmospherics/unary/portables_connector,
+/turf/simulated/floor/airless/purple/checker,
+/area/evilreaver/toxins)
+"yF" = (
+/obj/machinery/mass_driver{
+	dir = 1;
+	id = "qm_door_out"
+	},
+/obj/machinery/light{
+	dir = 8;
+	tag = ""
+	},
+/turf/simulated/floor/plating,
+/area/station/quartermaster/cargobay)
+"yU" = (
+/obj/cable{
+	icon_state = "0-4"
+	},
+/obj/cable{
+	icon_state = "0-8"
+	},
+/obj/cable,
+/obj/cable{
+	icon_state = "0-2"
+	},
+/obj/disposalpipe/segment{
+	dir = 1
+	},
+/turf/unsimulated/floor/yellow/checker,
+/area/station/storage/tech)
+"yW" = (
+/obj/machinery/light/small/floor,
+/obj/disposalpipe/segment{
+	dir = 4
+	},
+/turf/unsimulated/floor/yellow/checker,
+/area/station/storage/tech)
+"zg" = (
+/obj/forcefield/energyshield/perma/doorlink,
+/turf/simulated/floor/plating,
+/area/station/quartermaster/cargobay)
+"zs" = (
+/obj/machinery/power/data_terminal,
+/obj/cable{
+	icon_state = "0-2"
+	},
+/turf/simulated/floor/plating,
+/area/station/storage/tech)
+"zJ" = (
+/obj/machinery/power/data_terminal,
+/obj/cable,
+/obj/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/computer3/terminal/zeta{
+	setup_os_string = "ZETA_MAINFRAME";
+	dir = 4
+	},
+/obj/disposalpipe/segment{
+	dir = 4;
+	icon_state = "pipe-c"
+	},
+/obj/cable{
+	icon_state = "0-4"
+	},
+/turf/simulated/floor/plating,
+/area/station/storage/tech)
+"Ac" = (
+/obj/machinery/firealarm/south,
+/turf/simulated/floor/yellow,
+/area/station/storage/eva{
+	name = "Common Storage"
+	})
+"Af" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/yellow,
+/area/station/storage/eva{
+	name = "Common Storage"
+	})
+"Ag" = (
+/obj/cable,
+/obj/cable{
+	icon_state = "0-8"
+	},
+/obj/cable{
+	icon_state = "0-4"
+	},
+/turf/unsimulated/floor/yellow/checker,
+/area/station/storage/tech)
+"Ai" = (
+/obj/decal/poster/wallsign/hazard_danger,
+/turf/simulated/wall/auto/reinforced/supernorn,
+/area/evilreaver/toxins)
+"Aq" = (
+/turf/simulated/floor/plating,
+/area/station/quartermaster/cargobay)
+"AD" = (
+/obj/decal/tile_edge/stripe{
+	dir = 1
+	},
+/obj/decal/tile_edge/stripe{
+	dir = 4
+	},
+/turf/simulated/floor/circuit,
+/area/h7/computer_core)
+"AF" = (
+/obj/machinery/light,
+/turf/simulated/wall/auto/supernorn,
+/area/station/storage/eva{
+	name = "Common Storage"
+	})
+"AI" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/airless/purple/checker,
+/area/evilreaver/toxins)
+"AM" = (
+/obj/machinery/mass_driver{
+	dir = 1;
+	id = "disopsal_chute"
+	},
+/turf/simulated/floor/plating,
+/area/space)
+"AT" = (
+/obj/machinery/firealarm/south,
+/turf/simulated/floor/yellow,
+/area/station/quartermaster/cargobay)
+"AV" = (
+/obj/disposalpipe/junction/middle/north,
+/turf/simulated/floor/yellow,
+/area/station/storage/tech)
+"Bn" = (
+/obj/machinery/portable_atmospherics/canister/nitrogen,
+/turf/simulated/floor/plating,
+/area/evilreaver/toxins)
+"Bw" = (
+/obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/turf/simulated/floor/plating,
+/area/station/maintenance/disposal)
+"BH" = (
+/obj/machinery/conveyor/SN{
+	name = "qm belt - out";
+	id = "qm_out"
+	},
+/obj/machinery/light{
+	dir = 8;
+	tag = ""
+	},
+/turf/simulated/floor/yellow,
+/area/station/quartermaster/cargobay)
+"BT" = (
+/obj/cable{
+	icon_state = "0-4"
+	},
+/obj/cable{
+	icon_state = "0-8"
+	},
+/obj/cable,
+/obj/cable{
+	icon_state = "0-2"
+	},
+/turf/unsimulated/floor/yellow/checker,
+/area/station/storage/tech)
+"Cm" = (
+/obj/cable{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/yellow,
+/area/station/quartermaster/cargobay)
+"Co" = (
+/obj/indestructible/shuttle_corner{
+	dir = 4
+	},
+/turf/space,
+/area/shuttle/arrival)
+"Cv" = (
+/obj/machinery/door/poddoor/pyro{
+	id = "mixingvent";
+	name = "mixingvent"
+	},
+/turf/simulated/floor/engine/vacuum,
+/area/evilreaver/toxins)
+"CB" = (
+/obj/table/auto/desk,
+/obj/item/storage/toolbox/electrical,
+/turf/simulated/floor/yellowblack,
+/area/station/storage/eva{
+	name = "Common Storage"
+	})
+"CC" = (
+/obj/machinery/light{
+	dir = 8;
+	tag = ""
+	},
+/turf/unsimulated/floor/yellow/checker,
+/area/station/storage/tech)
+"Da" = (
+/obj/machinery/power/apc/autoname_south,
+/obj/cable{
+	icon_state = "0-8"
+	},
+/turf/simulated/floor/shuttlebay,
+/area/h7/computer_core)
+"Di" = (
+/obj/machinery/power/data_terminal,
+/obj/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/guardbot_dock,
+/turf/simulated/floor/plating,
+/area/station/storage/tech)
+"Do" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/obj/grille/catwalk,
+/turf/simulated/floor/airless/plating/catwalk,
+/area/station/solar)
+"Ds" = (
+/obj/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/power/data_terminal,
+/obj/machinery/networked/mainframe/zeta{
+	tag = "ZETA_MAINFRAME"
+	},
+/obj/decal/tile_edge/stripe{
+	dir = 1
+	},
+/turf/simulated/floor/circuit,
+/area/h7/computer_core)
+"Dy" = (
+/obj/cable{
+	icon_state = "0-2"
+	},
+/obj/cable{
+	icon_state = "0-8"
+	},
+/obj/cable{
+	icon_state = "0-4"
+	},
+/obj/cable,
+/turf/unsimulated/floor/yellow/checker,
+/area/station/storage/tech)
+"DA" = (
+/obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/obj/disposalpipe/segment{
+	dir = 1
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/disposal)
+"DB" = (
+/obj/machinery/conveyor/SN{
+	name = "qm belt - out";
+	id = "qm_out"
+	},
+/obj/forcefield/energyshield/perma/doorlink,
+/turf/simulated/floor/plating,
+/area/station/quartermaster/cargobay)
+"Ec" = (
+/obj/machinery/door/poddoor/blast/pyro/podbay_autoclose{
+	id = "qm_door_out"
+	},
+/obj/forcefield/energyshield/perma/doorlink{
+	desc = "A door-linked force field that prevents gasses from passing through it.";
+	dir = 4;
+	name = "Door-linked Atmospheric Forcefield";
+	powerlevel = 1
+	},
+/turf/space,
+/area/station/quartermaster/cargobay)
+"Ed" = (
+/obj/cable{
+	dir = null
+	},
+/obj/machinery/power/data_terminal,
+/obj/machinery/computer3/terminal/zeta{
+	setup_os_string = "ZETA_MAINFRAME";
+	dir = 1
+	},
+/turf/simulated/floor/yellow,
+/area/station/storage/eva{
+	name = "Common Storage"
+	})
+"Ej" = (
+/obj/cable{
+	icon_state = "0-2"
+	},
+/obj/smes_spawner,
+/obj/cable{
+	dir = null
+	},
+/turf/simulated/floor/plating,
+/area/station/storage/tech)
+"EA" = (
+/obj/cable{
+	icon_state = "1-4"
+	},
+/turf/unsimulated/floor/yellow/checker,
+/area/station/storage/tech)
+"ED" = (
+/obj/machinery/status_display,
+/turf/simulated/wall/auto/supernorn,
+/area/station/storage/eva{
+	name = "Common Storage"
+	})
+"EJ" = (
+/obj/machinery/door/poddoor/blast/pyro/podbay_autoclose{
+	id = "qm_door_out"
+	},
+/turf/simulated/floor/plating,
+/area/space)
+"Fb" = (
+/obj/machinery/vending/mechanics,
+/turf/simulated/floor/yellow,
+/area/station/storage/tech)
+"Fd" = (
+/obj/machinery/launcher_loader/north,
+/turf/simulated/floor/plating,
+/area/station/maintenance/disposal)
+"Fg" = (
+/obj/machinery/vending/standard,
+/turf/simulated/floor/yellow,
+/area/station/storage/tech)
+"FB" = (
+/obj/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/data_terminal,
+/obj/machinery/networked/storage/tape_drive{
+	bank_id = "Control";
+	locked = 0;
+	name = "Databank - Control";
+	setup_drive_type = /obj/item/disk/data/tape/master
+	},
+/obj/decal/tile_edge/stripe{
+	dir = 8
+	},
+/turf/simulated/floor/circuit,
+/area/h7/computer_core)
+"FH" = (
+/turf/simulated/floor/plating,
+/area/evilreaver/toxins)
+"GR" = (
+/obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/obj/decal/poster/wallsign/hazard_danger,
+/obj/machinery/atmospherics/pipe/simple/overfloor,
+/turf/simulated/floor/plating,
+/area/evilreaver/toxins)
+"GT" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/pyro/external,
+/obj/mapping_helper/firedoor_spawn,
+/turf/simulated/floor/shuttlebay,
+/area/h7/computer_core)
+"GX" = (
+/obj/machinery/power/data_terminal,
+/obj/cable{
+	icon_state = "0-2"
+	},
+/obj/ai_frame,
+/obj/disposalpipe/segment{
+	dir = 1
+	},
+/turf/simulated/floor/plating,
+/area/station/storage/tech)
+"HD" = (
+/obj/cable,
+/obj/machinery/power/data_terminal,
+/obj/machinery/computer3/terminal/zeta{
+	setup_os_string = "ZETA_MAINFRAME";
+	dir = 1
+	},
+/obj/disposalpipe/segment{
+	dir = 1
+	},
+/obj/disposalpipe/segment{
+	dir = 1
+	},
+/turf/simulated/floor/plating,
+/area/station/storage/tech)
+"HI" = (
+/obj/grille/catwalk{
+	dir = 6
+	},
+/obj/cable{
+	icon_state = "1-4"
+	},
+/obj/cable{
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/airless/plating/catwalk{
+	icon_state = "catwalk_cross"
+	},
+/area/station/solar)
+"HP" = (
+/obj/cable{
+	icon_state = "4-8"
+	},
+/obj/grille/catwalk{
+	dir = 4
+	},
+/obj/cable{
+	icon_state = "0-8"
+	},
+/turf/simulated/floor/airless/plating/catwalk{
+	dir = 4
+	},
+/area/space)
+"In" = (
+/obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/turf/simulated/floor/plating,
+/area/station/quartermaster/cargobay)
+"Is" = (
+/obj/machinery/atmospherics/pipe/simple/insulated{
+	dir = 4
+	},
+/turf/simulated/floor/engine/vacuum,
+/area/evilreaver/toxins)
+"IS" = (
+/obj/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/solar/west,
+/turf/simulated/floor/airless/solar,
+/area/space)
+"Jv" = (
+/obj/indestructible/shuttle_corner{
+	dir = 1
+	},
+/turf/space,
+/area/shuttle/arrival)
+"JD" = (
+/obj/machinery/light{
+	dir = 8;
+	tag = ""
+	},
+/turf/simulated/floor/plating,
+/area/evilreaver/toxins)
+"Kj" = (
+/obj/machinery/door/airlock/pyro/external{
+	dir = 4;
+	name = "External Access";
+	req_access_txt = null
+	},
+/turf/simulated/floor/plating,
+/area/station/storage/tech)
+"Kn" = (
+/obj/machinery/firealarm/south,
+/turf/simulated/floor/shuttlebay,
+/area/h7/computer_core)
+"Kp" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/obj/grille/catwalk,
+/turf/simulated/floor/airless/plating/catwalk,
+/area/space)
+"Lf" = (
+/obj/machinery/conveyor/SN{
+	name = "qm belt";
+	id = "qm_in"
+	},
+/obj/lattice/auto,
+/turf/space,
+/area/supply/delivery_point)
+"Lg" = (
+/turf/simulated/wall/auto/supernorn,
+/area/station/storage/eva{
+	name = "Common Storage"
+	})
+"Ly" = (
+/obj/machinery/door/airlock/pyro/external,
+/obj/mapping_helper/firedoor_spawn,
+/turf/simulated/floor/plating,
+/area/station/storage/tech)
+"LE" = (
+/obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/turf/simulated/floor/plating,
+/area/station/storage/eva{
+	name = "Common Storage"
+	})
+"LF" = (
+/obj/machinery/power/apc/autoname_south,
+/obj/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/light,
+/turf/simulated/floor/airless/purple/checker,
+/area/evilreaver/toxins)
+"LY" = (
+/obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/obj/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/disposal)
+"My" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/obj/decal/poster/wallsign/hazard_danger,
+/turf/simulated/wall/auto/reinforced/supernorn,
+/area/evilreaver/toxins)
+"Mz" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/turf/simulated/floor/plating,
+/area/station/quartermaster/cargobay)
+"MJ" = (
+/obj/grille/catwalk{
+	dir = 4
+	},
+/obj/cable,
+/obj/cable{
+	icon_state = "0-2"
+	},
+/obj/cable{
+	icon_state = "0-4"
+	},
+/obj/cable{
+	icon_state = "0-8"
+	},
+/obj/cable{
+	icon_state = "0-8"
+	},
+/turf/simulated/floor/airless/plating/catwalk{
+	dir = 4
+	},
+/area/station/solar)
+"Nf" = (
+/obj/machinery/crusher,
+/obj/machinery/conveyor/SN{
+	id = "garbage"
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/disposal)
+"Nj" = (
+/turf/simulated/floor/engine/vacuum,
+/area/evilreaver/toxins)
+"Nq" = (
+/obj/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/power/apc/autoname_north,
+/obj/storage/closet/wardrobe/yellow,
+/obj/item/storage/toolbox/mechanical,
+/obj/item/device/multitool,
+/obj/item/device/multitool,
+/obj/item/device/multitool,
+/obj/item/device/multitool,
+/obj/item/electronics/soldering{
+	pixel_x = -4;
+	pixel_y = -2
+	},
+/turf/simulated/floor/yellowblack,
+/area/station/storage/eva{
+	name = "Common Storage"
+	})
+"Nr" = (
+/obj/cable{
+	dir = null
+	},
+/obj/cable{
+	icon_state = "0-8"
+	},
+/obj/cable{
+	icon_state = "0-2"
+	},
+/obj/cable{
+	icon_state = "0-4"
+	},
+/turf/simulated/floor/yellow,
+/area/station/storage/eva{
+	name = "Common Storage"
+	})
+"NG" = (
+/obj/machinery/conveyor/SN{
+	name = "qm belt";
+	id = "qm_in"
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/yellow,
+/area/station/quartermaster/cargobay)
+"NS" = (
+/obj/table/reinforced/auto,
+/obj/item/card/id/captains_spare,
+/turf/simulated/floor/yellow,
+/area/station/storage/tech)
+"OI" = (
+/obj/disposalpipe/segment{
+	dir = 1
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/disposal)
+"OZ" = (
+/turf/simulated/floor/plating,
+/area/station/storage/tech)
+"PB" = (
+/obj/mapping_helper/wingrille_spawn/auto/reinforced/crystal,
+/turf/simulated/floor/plating,
+/area/evilreaver/toxins)
+"PE" = (
+/obj/grille/catwalk{
+	dir = 1
+	},
+/obj/cable{
+	icon_state = "2-4"
+	},
+/obj/cable{
+	icon_state = "2-8"
+	},
+/obj/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/airless/plating/catwalk{
+	dir = 1
+	},
+/area/space)
+"PP" = (
+/obj/cable{
+	icon_state = "2-8"
+	},
+/obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/turf/simulated/floor/plating,
+/area/station/storage/eva{
+	name = "Common Storage"
+	})
+"QH" = (
+/turf/simulated/wall/auto/reinforced/supernorn,
+/area/space)
+"QN" = (
+/obj/grille/catwalk{
+	dir = 6
+	},
+/obj/cable{
+	icon_state = "1-4"
+	},
+/obj/cable{
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/airless/plating/catwalk{
+	icon_state = "catwalk_cross"
+	},
+/area/space)
+"QT" = (
+/obj/machinery/computer/solar_control,
+/obj/cable{
+	icon_state = "0-8"
+	},
+/obj/cable{
+	icon_state = "0-8"
+	},
+/obj/cable{
+	icon_state = "0-4"
+	},
+/turf/simulated/floor/plating,
+/area/station/storage/tech)
+"QV" = (
+/turf/space,
+/area/supply/spawn_point)
+"Rg" = (
+/obj/indestructible/shuttle_corner{
+	dir = 8
+	},
+/turf/space,
+/area/shuttle/arrival)
+"Rk" = (
+/obj/machinery/light/small/floor,
+/obj/landmark/start,
+/obj/landmark/start/latejoin,
+/obj/disposalpipe/segment{
+	dir = 4
+	},
+/obj/cable{
+	icon_state = "0-8"
+	},
+/obj/cable{
+	dir = null
+	},
+/turf/simulated/floor/yellow,
+/area/station/storage/tech)
+"Rt" = (
+/obj/machinery/disposal,
+/obj/disposalpipe/trunk,
+/turf/simulated/floor/yellow,
+/area/station/storage/eva{
+	name = "Common Storage"
+	})
+"RG" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/overfloor,
+/turf/simulated/floor/yellow,
+/area/station/storage/tech)
+"RV" = (
+/turf/simulated/floor/shuttlebay,
+/area/h7/computer_core)
+"Ss" = (
+/obj/cable{
+	icon_state = "0-8"
+	},
+/obj/machinery/power/data_terminal,
+/obj/decal/tile_edge/stripe{
+	dir = 4
+	},
+/obj/machinery/networked/radio,
+/turf/simulated/floor/circuit,
+/area/h7/computer_core)
+"SD" = (
+/obj/machinery/atmospherics/binary/pump/active{
+	dir = 4;
+	frequency = 1229;
+	id = "Chamber Two Outlet";
+	target_pressure = 1000
+	},
+/turf/simulated/wall/auto/reinforced/supernorn,
+/area/evilreaver/toxins)
+"SN" = (
+/obj/machinery/conveyor/SN{
+	id = "garbage"
+	},
+/obj/railing/reinforced{
+	dir = 8
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/disposal)
+"Tp" = (
+/obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/turf/simulated/floor/plating,
+/area/station/storage/tech)
+"Tt" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/obj/decal/tile_edge/stripe,
+/turf/simulated/floor/circuit,
+/area/h7/computer_core)
+"TV" = (
+/obj/machinery/atmospherics/unary/portables_connector{
+	dir = 8
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/plating,
+/area/evilreaver/toxins)
+"Uc" = (
+/obj/machinery/conveyor/SN{
+	id = "garbage"
+	},
+/obj/machinery/door/poddoor/pyro{
+	id = "garbage_door";
+	name = "Garbage Door"
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/disposal)
+"Uk" = (
+/obj/machinery/firealarm/north,
+/turf/unsimulated/floor/yellow/checker,
+/area/station/storage/tech)
+"Uv" = (
+/obj/machinery/light{
+	dir = 8;
+	tag = ""
+	},
+/turf/simulated/floor/yellow,
+/area/station/quartermaster/cargobay)
+"UB" = (
+/obj/machinery/light/small/floor,
+/turf/simulated/floor/shuttlebay,
+/area/h7/computer_core)
+"Vb" = (
+/obj/disposalpipe/segment{
+	dir = 1
+	},
+/turf/unsimulated/floor/yellow/checker,
+/area/station/storage/tech)
+"Vf" = (
+/obj/disposaloutlet{
+	dir = 1
+	},
+/obj/disposalpipe/trunk{
+	dir = 2;
+	name = "factory pipe"
+	},
+/turf/simulated/floor/plating,
+/area/station/maintenance/disposal)
+"Vv" = (
+/obj/machinery/firealarm/south,
+/turf/simulated/floor/airless/purple/checker,
+/area/evilreaver/toxins)
+"VM" = (
+/obj/machinery/light/small/floor,
+/obj/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor,
+/area/station/storage/tech)
+"VR" = (
+/obj/rack,
+/obj/item/clothing/head/helmet/space/engineer,
+/obj/item/clothing/suit/space/engineer,
+/obj/item/tank/mini_oxygen,
+/obj/item/tank/jetpack,
+/obj/item/clothing/mask/breath,
+/turf/simulated/floor/yellowblack,
+/area/station/storage/eva{
+	name = "Common Storage"
+	})
+"Wa" = (
+/obj/machinery/atmospherics/binary/pump/active{
+	dir = 8;
+	frequency = 1229;
+	id = "Chamber One Inlet";
+	target_pressure = 1000
+	},
+/turf/simulated/wall/auto/reinforced/supernorn,
+/area/evilreaver/toxins)
+"WH" = (
+/obj/machinery/atmospherics/unary/portables_connector{
+	dir = 8
+	},
+/obj/machinery/light,
+/turf/simulated/floor/plating,
+/area/evilreaver/toxins)
+"WJ" = (
+/turf/simulated/floor/yellow,
+/area/station/quartermaster/cargobay)
+"WO" = (
+/turf/simulated/wall/auto/supernorn,
+/area/station/storage/tech)
+"WQ" = (
+/obj/machinery/vending/monkey,
+/obj/machinery/door_control{
+	id = "garbage_door";
+	name = "Garbage Door";
+	pixel_x = null;
+	pixel_y = 22
+	},
+/turf/simulated/floor/plating,
+/area/h7/computer_core)
+"WW" = (
+/obj/machinery/light/small/floor,
+/obj/cable{
+	icon_state = "1-2"
+	},
+/turf/unsimulated/floor/yellow/checker,
+/area/station/storage/tech)
+"Xc" = (
+/obj/grille/catwalk{
+	dir = 10
+	},
+/obj/cable{
+	icon_state = "2-4"
+	},
+/obj/cable{
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/airless/plating/catwalk{
+	dir = 1;
+	icon_state = "catwalk_cross"
+	},
+/area/space)
+"Xe" = (
+/obj/cable,
+/obj/machinery/power/data_terminal,
+/obj/machinery/computer3/terminal/zeta{
+	setup_os_string = "ZETA_MAINFRAME";
+	dir = 1
+	},
+/turf/simulated/floor/plating,
+/area/station/storage/tech)
+"Xn" = (
+/obj/decal/tile_edge/stripe,
+/obj/decal/tile_edge/stripe{
+	dir = 8
+	},
+/turf/simulated/floor/circuit,
+/area/h7/computer_core)
+"Xs" = (
+/turf/simulated/wall/auto/reinforced/supernorn,
+/area/h7/computer_core)
+"XF" = (
+/obj/machinery/atmospherics/binary/valve,
+/obj/machinery/light,
+/turf/simulated/floor/airless/purple/checker,
+/area/evilreaver/toxins)
+"XU" = (
+/obj/machinery/atmospherics/binary/pump/active{
+	dir = 4;
+	frequency = 1229;
+	id = "Chamber One Outlet";
+	target_pressure = 1000
+	},
+/turf/simulated/wall/auto/reinforced/supernorn,
+/area/evilreaver/toxins)
+"Yw" = (
+/obj/machinery/atmospherics/binary/valve{
+	dir = 4
+	},
+/turf/simulated/floor/plating,
+/area/evilreaver/toxins)
+"YD" = (
+/obj/disposalpipe/segment{
+	dir = 1
+	},
+/turf/simulated/floor/yellow,
+/area/station/storage/tech)
+"YE" = (
+/obj/machinery/portable_atmospherics/canister/oxygen,
+/turf/simulated/floor/plating,
+/area/evilreaver/toxins)
+"YP" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor,
+/area/station/storage/tech)
+"YQ" = (
+/obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/obj/cable{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/plating,
+/area/station/storage/eva{
+	name = "Common Storage"
+	})
+"Zg" = (
+/obj/cable{
+	dir = null
+	},
+/obj/machinery/power/data_terminal,
+/turf/simulated/floor/yellow,
+/area/station/storage/eva{
+	name = "Common Storage"
+	})
+"Zk" = (
+/obj/machinery/atmospherics/binary/pump/active{
+	dir = 8;
+	frequency = 1229;
+	id = "Chamber Two Inlet";
+	target_pressure = 1000
+	},
+/turf/simulated/wall/auto/reinforced/supernorn,
+/area/evilreaver/toxins)
+"ZL" = (
+/obj/cable{
+	icon_state = "4-8"
+	},
+/turf/unsimulated/floor/yellow/checker,
+/area/station/storage/tech)
+
+(1,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+uX
+"}
+(2,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(3,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(4,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(5,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(6,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(7,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(8,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(9,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+IS
+IS
+IS
+IS
+nS
+nS
+nS
+IS
+IS
+IS
+IS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(10,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+Xc
+PE
+PE
+PE
+Kp
+kn
+Kp
+io
+io
+io
+QN
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(11,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+lZ
+lZ
+lZ
+lZ
+nS
+HP
+nS
+lZ
+lZ
+lZ
+lZ
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(12,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+tT
+wy
+wy
+wy
+tT
+wy
+wy
+wy
+tT
+nS
+nS
+nS
+nS
+nS
+HP
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(13,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+tT
+Nj
+Nj
+Nj
+tT
+Nj
+Nj
+Nj
+tT
+cp
+cp
+cp
+cp
+nS
+HP
+nS
+cp
+cp
+cp
+cp
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(14,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+tT
+sS
+Nj
+ej
+Cv
+sS
+Nj
+ej
+tT
+yc
+bs
+bs
+bs
+Do
+MJ
+Do
+iu
+iu
+iu
+HI
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(15,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+tT
+lV
+Nj
+Is
+tT
+lV
+Nj
+Is
+tT
+aY
+aY
+aY
+aY
+nS
+tu
+nS
+aY
+aY
+aY
+aY
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(16,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+tT
+Wa
+PB
+XU
+tT
+Zk
+PB
+SD
+tT
+nS
+nS
+nS
+nS
+nS
+tu
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(17,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+tT
+Yw
+JD
+Yw
+qk
+Yw
+JD
+Yw
+tT
+nS
+nS
+nS
+nS
+nS
+oy
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(18,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+tT
+TV
+FH
+ja
+FH
+ja
+FH
+WH
+tT
+vM
+vM
+vM
+vM
+qm
+wf
+ed
+vM
+vM
+vM
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(19,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+tT
+mV
+mV
+FH
+FH
+rj
+rj
+Vv
+tT
+Tp
+Tp
+Tp
+WO
+oG
+Kj
+Tp
+Tp
+WO
+vM
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(20,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+tT
+qX
+Bn
+FH
+FH
+rj
+rj
+LF
+My
+qE
+EA
+uN
+OZ
+QT
+uN
+CC
+kb
+WO
+vM
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(21,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+tT
+YE
+YE
+FH
+FH
+rj
+rj
+rj
+bu
+Di
+Dy
+xM
+Ej
+bY
+kv
+zJ
+cb
+WO
+vM
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(22,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+tT
+aR
+oT
+lH
+FH
+AI
+yi
+XF
+GR
+kx
+iK
+wh
+RG
+qJ
+nN
+Rk
+NS
+Tp
+vM
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(23,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+tT
+tT
+tT
+tT
+tT
+tT
+tT
+tT
+Ai
+Di
+BT
+Xe
+xi
+xi
+xi
+lY
+Fb
+Tp
+vM
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(24,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+QH
+QH
+kY
+kY
+kY
+lz
+lz
+jx
+LY
+qE
+BT
+lp
+xi
+xi
+xi
+lY
+Fg
+Tp
+vM
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(25,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+EJ
+AM
+Fd
+Nf
+Uc
+SN
+Vf
+OI
+DA
+GX
+yU
+HD
+YD
+YD
+YD
+AV
+ub
+WO
+vM
+nS
+nS
+kq
+xq
+xq
+xq
+Co
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(26,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+Xs
+Xs
+Xs
+Xs
+Xs
+Xs
+WQ
+mB
+fg
+Bw
+zs
+BT
+uq
+xi
+xi
+xi
+lY
+xi
+WO
+vM
+vM
+vM
+xq
+ia
+ia
+ia
+xq
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(27,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+Xs
+UB
+RV
+RV
+RV
+UB
+Xs
+Bw
+qU
+pz
+sy
+BT
+Xe
+xi
+au
+xi
+lY
+od
+WO
+Tp
+Tp
+WO
+xq
+ia
+ia
+ia
+xq
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(28,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+Xs
+RV
+uS
+FB
+Xn
+Kn
+Xs
+tF
+tF
+tF
+uN
+ZL
+uN
+uN
+uN
+uN
+lu
+uN
+uN
+uN
+uN
+WO
+xq
+ia
+ia
+ia
+xq
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(29,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+Xs
+RV
+Ds
+wM
+Tt
+qj
+GT
+VM
+YP
+YP
+WW
+Ag
+uN
+uN
+uN
+uN
+lu
+tb
+uN
+uN
+tb
+Ly
+iL
+ia
+gT
+ia
+iL
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(30,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+Xs
+RV
+AD
+Ss
+pF
+Da
+Xs
+tF
+tF
+tF
+uN
+ZL
+uN
+tb
+uN
+uN
+lu
+uN
+uN
+uN
+uN
+WO
+xq
+ia
+ia
+ia
+xq
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(31,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+Xs
+UB
+RV
+RV
+RV
+UB
+Xs
+Tp
+Tp
+Lg
+LE
+YQ
+ty
+ty
+ED
+uN
+lu
+lJ
+WO
+Tp
+Tp
+WO
+xq
+ia
+ia
+ia
+xq
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(32,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+Xs
+Xs
+Xs
+Xs
+Xs
+Xs
+Xs
+vM
+vM
+LE
+VR
+xh
+he
+Ac
+Lg
+uN
+lu
+uN
+WO
+vM
+vM
+vM
+Jv
+ia
+ia
+ia
+Rg
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(33,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+vM
+LE
+hL
+xh
+he
+he
+Lg
+Uk
+lu
+uN
+WO
+vM
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(34,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+vM
+cA
+oF
+ws
+Af
+Zg
+LE
+uN
+lu
+lJ
+Tp
+vM
+nS
+nS
+nS
+nS
+fV
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(35,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+vM
+Lg
+nu
+wU
+Af
+Ed
+LE
+uN
+lu
+uN
+Tp
+vM
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(36,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+vM
+Lg
+Nq
+Nr
+Af
+hz
+LE
+uN
+yW
+uN
+Tp
+vM
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(37,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+vM
+AF
+bQ
+kD
+qM
+qM
+Lg
+uN
+lu
+lJ
+WO
+vM
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(38,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+vM
+Lg
+CB
+tV
+uH
+Rt
+tr
+Vb
+ob
+hJ
+WO
+vM
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(39,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+vM
+Lg
+Lg
+PP
+df
+df
+xd
+Mz
+ds
+In
+pY
+vM
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(40,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+vM
+vM
+vM
+vM
+vM
+vM
+vM
+pY
+Cm
+Uv
+pY
+vM
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(41,1,1) = {"
+mf
+mf
+mf
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+vM
+pY
+wO
+AT
+pY
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(42,1,1) = {"
+mf
+mf
+mf
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+pY
+In
+In
+In
+In
+pY
+pY
+WJ
+WJ
+pY
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(43,1,1) = {"
+mf
+mf
+mf
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+Ec
+yF
+ud
+sD
+DB
+BH
+WJ
+WJ
+sB
+pY
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(44,1,1) = {"
+mf
+mf
+mf
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+pY
+Aq
+Aq
+Aq
+zg
+fX
+WJ
+WJ
+WJ
+pY
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(45,1,1) = {"
+mf
+mf
+mf
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+pY
+Aq
+Aq
+Aq
+zg
+hR
+WJ
+WJ
+WJ
+pY
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(46,1,1) = {"
+mf
+mf
+mf
+QV
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+cI
+Lf
+tc
+fC
+hn
+hn
+fI
+NG
+iw
+kZ
+dy
+pY
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(47,1,1) = {"
+mf
+mf
+mf
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+pY
+In
+In
+In
+In
+pY
+pY
+pY
+pY
+pY
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(48,1,1) = {"
+mf
+mf
+mf
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(49,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}
+(50,1,1) = {"
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+nS
+"}

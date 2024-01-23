@@ -78,6 +78,9 @@
 
 #elif defined(MAP_OVERRIDE_GEHENNA)*/
 
+#elif defined(MAP_OVERRIDE_POWERNET_TEST)
+#define UNDERWATER_MAP 1
+
 #else // the "default" map
 //#define UNDERWATER_MAP 1
 

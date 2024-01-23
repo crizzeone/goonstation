@@ -48673,6 +48673,7 @@
 /obj/cable{
 	icon_state = "1-2"
 	},
+/obj/cable,
 /turf/simulated/floor,
 /area/station/routing/engine)
 "kfp" = (
