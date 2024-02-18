@@ -1,0 +1,4413 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"af" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/yellow,
+/area/pod_wars/spacejunk/fstation/medbay)
+"aS" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/green/side,
+/area/station/hydroponics)
+"bk" = (
+/obj/table/reinforced/auto,
+/obj/machinery/door/poddoor/pyro/shutters{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "kitchen";
+	layer = 4;
+	name = "Kitchen Shutter";
+	opacity = 0;
+	panel_open = 1
+	},
+/obj/item/storage/box/donkpocket_kit,
+/obj/machinery/door/firedoor/pyro,
+/turf/simulated/floor/carpet/grime,
+/area/diner/kitchen)
+"bm" = (
+/obj/mapping_helper/wingrille_spawn/auto,
+/turf/simulated/floor,
+/area/pod_wars/spacejunk/fstation/medbay)
+"bo" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/grass{
+	name = "astroturf"
+	},
+/area/space)
+"br" = (
+/obj/item/device/radio/intercom/catering{
+	dir = 1
+	},
+/turf/simulated/floor/specialroom/cafeteria,
+/area/diner/kitchen)
+"cJ" = (
+/turf/simulated/floor/bluewhite,
+/area/station/medical/medbay/surgery)
+"cP" = (
+/turf/simulated/floor/yellow,
+/area/station/engine/engineering)
+"cV" = (
+/obj/machinery/disposal/mail{
+	mail_tag = "kitchen";
+	name = "mail chute-'Kitchen'"
+	},
+/obj/disposalpipe/trunk/mail{
+	dir = 4
+	},
+/obj/cable{
+	icon_state = "1-4"
+	},
+/turf/simulated/floor/specialroom/cafeteria,
+/area/diner/kitchen)
+"cZ" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/bluewhite{
+	dir = 1
+	},
+/area/station/medical/medbay/surgery)
+"dd" = (
+/obj/machinery/camera{
+	c_tag = "autotag";
+	dir = 1;
+	name = "autoname - SS13";
+	tag = ""
+	},
+/obj/machinery/light,
+/obj/machinery/light_switch{
+	name = "S light switch";
+	pixel_y = -24
+	},
+/turf/simulated/floor/specialroom/cafeteria,
+/area/diner/kitchen)
+"dj" = (
+/obj/landmark/start/latejoin,
+/turf/simulated/floor,
+/area/pod_wars/spacejunk/fstation/medbay)
+"dk" = (
+/turf/simulated/floor/black,
+/area/station/crew_quarters/bar)
+"dJ" = (
+/turf/simulated/floor/green/side{
+	dir = 1
+	},
+/area/station/hydroponics)
+"ee" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/white,
+/area/diner/kitchen)
+"ek" = (
+/obj/machinery/vending/monkey,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor,
+/area/pod_wars/spacejunk/fstation/medbay)
+"eG" = (
+/obj/railing/red/reinforced,
+/obj/machinery/conveyor_switch{
+	id = "crusher";
+	last_pos = 1;
+	layer = 4
+	},
+/turf/simulated/floor/yellow,
+/area/pod_wars/spacejunk/fstation/medbay)
+"eN" = (
+/obj/machinery/conveyor/EW{
+	id = "crusher"
+	},
+/turf/simulated/floor/plating,
+/area/pod_wars/spacejunk/fstation/medbay)
+"eX" = (
+/obj/reagent_dispensers/watertank/big,
+/turf/simulated/floor/green/side,
+/area/station/hydroponics)
+"eZ" = (
+/turf/simulated/floor/white,
+/area/station/medical/medbay/surgery)
+"fg" = (
+/obj/cable{
+	icon_state = "4-8"
+	},
+/obj/disposalpipe/segment/mail{
+	dir = 4
+	},
+/obj/mapping_helper/wingrille_spawn/auto,
+/turf/simulated/floor/plating,
+/area/diner/kitchen)
+"fz" = (
+/obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/turf/simulated/floor/plating,
+/area/station/crew_quarters/bar)
+"gc" = (
+/obj/table/auto,
+/obj/item/storage/box/cutlery{
+	pixel_x = 10;
+	pixel_y = 12
+	},
+/obj/item/clothing/head/helmet/space/santahat{
+	pixel_x = -4;
+	pixel_y = 10
+	},
+/turf/simulated/floor/specialroom/cafeteria,
+/area/diner/kitchen)
+"gk" = (
+/obj/machinery/door/airlock/pyro{
+	name = "Kitchen";
+	req_access_txt = null
+	},
+/obj/mapping_helper/access/kitchen,
+/obj/mapping_helper/firedoor_spawn,
+/turf/simulated/floor/specialroom/cafeteria,
+/area/diner/kitchen)
+"gn" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor,
+/area/pod_wars/spacejunk/fstation/medbay)
+"gt" = (
+/obj/storage/closet,
+/obj/item/baton/power_pack,
+/obj/item/baton/power_pack,
+/obj/item/baton,
+/obj/item/baton,
+/obj/item/baton,
+/obj/item/baton,
+/obj/item/baton,
+/obj/item/baton,
+/obj/item/baton,
+/obj/item/baton,
+/obj/item/ammo/power_cell/self_charging/ntso_baton,
+/obj/item/ammo/power_cell/self_charging/ntso_baton,
+/obj/item/ammo/power_cell/self_charging/ntso_baton,
+/obj/item/ammo/power_cell/self_charging/ntso_baton,
+/obj/item/ammo/power_cell/self_charging/ntso_baton,
+/obj/item/ammo/power_cell/self_charging/ntso_baton,
+/obj/item/ammo/power_cell/self_charging/ntso_baton,
+/obj/item/ammo/power_cell/self_charging/ntso_baton,
+/obj/item/storage/belt/security/baton,
+/obj/item/storage/belt/security/baton,
+/obj/item/toy/ornate_baton,
+/obj/item/toy/ornate_baton,
+/obj/item/toy/ornate_baton,
+/obj/item/toy/ornate_baton,
+/obj/item/baton/classic,
+/obj/item/baton/classic,
+/obj/item/swords_sheaths/katana,
+/obj/item/swords_sheaths/katana,
+/turf/simulated/floor,
+/area/pod_wars/spacejunk/fstation/medbay)
+"gP" = (
+/obj/machinery/chem_dispenser_admin,
+/turf/simulated/floor,
+/area/pod_wars/spacejunk/fstation/medbay)
+"hb" = (
+/obj/stool/chair/dining/wood{
+	dir = 8
+	},
+/turf/simulated/floor/carpet{
+	dir = 5;
+	icon_state = "fred2"
+	},
+/area/station/crew_quarters/bar)
+"hh" = (
+/turf/simulated/floor/green/side{
+	dir = 4
+	},
+/area/station/hydroponics)
+"hz" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/black,
+/area/station/crew_quarters/bar)
+"hH" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/specialroom/bar,
+/area/station/crew_quarters/bar)
+"hI" = (
+/turf/simulated/floor/bluewhite{
+	dir = 8
+	},
+/area/station/medical/medbay/surgery)
+"hV" = (
+/turf/simulated/wall/auto/supernorn,
+/area/station/hydroponics)
+"ib" = (
+/obj/table/wood/auto,
+/obj/item/plate{
+	pixel_x = 1;
+	pixel_y = 7
+	},
+/obj/item/shaker/salt{
+	pixel_x = -1;
+	pixel_y = 9
+	},
+/obj/item/shaker/pepper{
+	pixel_x = 3;
+	pixel_y = 7
+	},
+/turf/simulated/floor/carpet,
+/area/station/crew_quarters/bar)
+"ii" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/yellow,
+/area/station/engine/engineering)
+"ir" = (
+/obj/decal/poster/wallsign/chsl,
+/turf/simulated/wall/auto/supernorn,
+/area/diner/kitchen)
+"ix" = (
+/obj/disposalpipe/segment/produce{
+	dir = 4
+	},
+/obj/machinery/door/airlock/pyro/glass{
+	dir = 4;
+	name = "Biodome";
+	req_access_txt = null
+	},
+/obj/mapping_helper/firedoor_spawn,
+/obj/cable{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/green,
+/area/station/medical/medbay/surgery)
+"iJ" = (
+/obj/rack,
+/obj/item/storage/box/stma_kit{
+	pixel_x = 8;
+	pixel_y = 4
+	},
+/obj/item/clothing/suit/hazard/paramedic{
+	pixel_x = -5;
+	pixel_y = 4
+	},
+/obj/item/clothing/suit/hazard/paramedic{
+	pixel_x = -3;
+	pixel_y = -1
+	},
+/obj/item/storage/belt/medical{
+	pixel_x = 7;
+	pixel_y = -5
+	},
+/obj/item/storage/belt/medical{
+	pixel_x = 4;
+	pixel_y = -1
+	},
+/obj/machinery/atmospherics/pipe/simple,
+/turf/simulated/floor/bluewhite{
+	dir = 5
+	},
+/area/station/medical/medbay/surgery)
+"iM" = (
+/obj/stool/bed/moveable/hospital,
+/obj/item/clothing/suit/bedsheet/blue,
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/bluewhite{
+	dir = 4
+	},
+/area/station/medical/medbooth)
+"jD" = (
+/turf/simulated/floor/bluewhite{
+	dir = 1
+	},
+/area/station/medical/medbooth)
+"jS" = (
+/obj/machinery/power/apc/autoname_south,
+/obj/cable{
+	icon_state = "0-2"
+	},
+/obj/cable,
+/turf/simulated/floor,
+/area/pod_wars/spacejunk/fstation/medbay)
+"jV" = (
+/turf/simulated/floor/green/side{
+	dir = 5
+	},
+/area/station/hydroponics)
+"kd" = (
+/turf/simulated/floor,
+/area/pod_wars/spacejunk/fstation/medbay)
+"kf" = (
+/obj/machinery/vending/kitchen,
+/turf/simulated/floor/specialroom/cafeteria,
+/area/diner/kitchen)
+"ki" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/wall/auto/supernorn,
+/area/pod_wars/spacejunk/fstation/medbay)
+"kq" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/light{
+	tag = ""
+	},
+/turf/simulated/floor/auto,
+/area/diner/hallway)
+"kt" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/auto,
+/area/diner/hallway)
+"kI" = (
+/turf/simulated/floor/green/side{
+	dir = 6
+	},
+/area/station/hydroponics)
+"kQ" = (
+/obj/machinery/crusher,
+/obj/machinery/conveyor/SN{
+	id = "crusher"
+	},
+/turf/simulated/floor/plating,
+/area/pod_wars/spacejunk/fstation/medbay)
+"lq" = (
+/turf/simulated/floor/auto,
+/area/shuttle/escape/centcom)
+"lK" = (
+/obj/table/auto,
+/obj/landmark/pest,
+/obj/machinery/phone{
+	pixel_x = 7;
+	pixel_y = 6
+	},
+/obj/item/satchel/hydro{
+	pixel_x = -4;
+	pixel_y = 2
+	},
+/turf/simulated/floor/specialroom/cafeteria,
+/area/diner/kitchen)
+"lQ" = (
+/turf/simulated/floor/bluewhite,
+/area/station/medical/medbooth)
+"ma" = (
+/obj/stool/bar,
+/obj/stool/bar,
+/turf/simulated/floor/specialroom/bar,
+/area/station/crew_quarters/bar)
+"mc" = (
+/obj/machinery/conveyor/EN{
+	id = "crusher"
+	},
+/turf/simulated/floor/plating,
+/area/pod_wars/spacejunk/fstation/medbay)
+"my" = (
+/obj/cable{
+	icon_state = "4-8"
+	},
+/turf/simulated/wall/auto/supernorn,
+/area/station/medical/medbooth)
+"mz" = (
+/obj/submachine/seed_vendor,
+/turf/simulated/floor/grass{
+	name = "astroturf"
+	},
+/area/station/hydroponics)
+"mH" = (
+/obj/table/wood/auto,
+/obj/item/plate{
+	pixel_y = 7
+	},
+/obj/item/reagent_containers/food/drinks/tea{
+	pixel_y = 15
+	},
+/turf/simulated/floor/carpet,
+/area/station/crew_quarters/bar)
+"mJ" = (
+/obj/cable,
+/obj/machinery/power/apc/autoname_south,
+/turf/simulated/floor/bluewhite,
+/area/station/medical/medbay/surgery)
+"mM" = (
+/obj/table/wood/auto,
+/obj/item/plate{
+	pixel_x = 1;
+	pixel_y = 7
+	},
+/obj/item/reagent_containers/food/drinks/drinkingglass/wine{
+	pixel_x = 1;
+	pixel_y = 11
+	},
+/obj/item/matchbook{
+	pixel_x = 3;
+	pixel_y = -3
+	},
+/turf/simulated/floor/carpet{
+	dir = 1;
+	icon_state = "fred2"
+	},
+/area/station/crew_quarters/bar)
+"mT" = (
+/obj/table/wood/auto,
+/obj/item/plate{
+	pixel_y = 7
+	},
+/obj/item/reagent_containers/food/drinks/drinkingglass/wine{
+	pixel_x = -1;
+	pixel_y = 11
+	},
+/obj/item/matchbook{
+	pixel_x = -3;
+	pixel_y = -3
+	},
+/turf/simulated/floor/carpet{
+	dir = 1;
+	icon_state = "fred2"
+	},
+/area/station/crew_quarters/bar)
+"mZ" = (
+/obj/cable{
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/auto,
+/area/diner/hallway)
+"na" = (
+/obj/stove,
+/obj/item/soup_pot,
+/obj/item/ladle,
+/turf/simulated/floor/specialroom/cafeteria,
+/area/diner/kitchen)
+"nE" = (
+/obj/storage/closet,
+/turf/simulated/floor,
+/area/pod_wars/spacejunk/fstation/medbay)
+"nI" = (
+/obj/machinery/power/data_terminal,
+/obj/cable{
+	icon_state = "0-2"
+	},
+/obj/table/auto,
+/obj/machinery/computer3/generic/personal,
+/turf/simulated/floor/specialroom/cafeteria,
+/area/diner/kitchen)
+"nK" = (
+/obj/table/reinforced/bar/auto,
+/turf/simulated/floor/specialroom/bar,
+/area/station/crew_quarters/bar)
+"nM" = (
+/obj/machinery/drainage/big,
+/turf/simulated/floor/specialroom/bar,
+/area/pod_wars/spacejunk/fstation/medbay)
+"nY" = (
+/obj/cable{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/bluewhite{
+	dir = 4
+	},
+/area/station/medical/medbay/surgery)
+"oc" = (
+/obj/machinery/plantpot,
+/turf/simulated/floor/grass{
+	name = "astroturf"
+	},
+/area/station/hydroponics)
+"ok" = (
+/turf/simulated/floor/white,
+/area/station/crew_quarters/bar)
+"om" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/black,
+/area/station/crew_quarters/bar)
+"ow" = (
+/turf/simulated/floor/yellow,
+/area/space)
+"ox" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/white,
+/area/station/medical/medbay/surgery)
+"oz" = (
+/turf/simulated/floor/auto,
+/area/diner/hallway)
+"oB" = (
+/obj/cable,
+/obj/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/power/apc/autoname_south,
+/obj/cable{
+	icon_state = "0-4"
+	},
+/turf/simulated/floor/bluewhite,
+/area/station/medical/medbooth)
+"oD" = (
+/obj/machinery/power/terminal,
+/turf/simulated/floor,
+/area/pod_wars/spacejunk/fstation/medbay)
+"pi" = (
+/obj/table/auto,
+/turf/simulated/floor/specialroom/cafeteria,
+/area/station/crew_quarters/bar)
+"ps" = (
+/turf/simulated/floor/grass{
+	name = "astroturf"
+	},
+/area/shuttle/escape/centcom)
+"pu" = (
+/obj/table/auto,
+/obj/item/plantanalyzer{
+	pixel_x = -7;
+	pixel_y = 7
+	},
+/obj/item/bee_egg_carton{
+	pixel_x = 2;
+	pixel_y = 4
+	},
+/turf/simulated/floor/grass{
+	name = "astroturf"
+	},
+/area/station/hydroponics)
+"pF" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/pod_wars/spacejunk/fstation/medbay)
+"pQ" = (
+/obj/table/reinforced/bar/auto,
+/turf/simulated/floor/black,
+/area/station/crew_quarters/bar)
+"qb" = (
+/obj/mapping_helper/wingrille_spawn/auto,
+/obj/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/plating,
+/area/station/medical/medbooth)
+"qv" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/specialroom/bar,
+/area/station/crew_quarters/bar)
+"qD" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/specialroom/bar,
+/area/station/crew_quarters/bar)
+"qG" = (
+/obj/machinery/disposal{
+	name = "Lay-Z Chef Cafeteria Chute"
+	},
+/obj/decal/tile_edge/stripe/extra_big{
+	dir = 6
+	},
+/turf/simulated/floor,
+/area/diner/kitchen)
+"qL" = (
+/turf/simulated/wall/auto/reinforced/supernorn,
+/area/diner/kitchen)
+"rd" = (
+/turf/simulated/floor/bluewhite{
+	dir = 6
+	},
+/area/station/medical/medbay/surgery)
+"rm" = (
+/obj/machinery/light,
+/turf/simulated/floor/bluewhite,
+/area/station/medical/medbay/surgery)
+"rG" = (
+/turf/simulated/floor/auto,
+/area/space)
+"sF" = (
+/turf/simulated/floor/grass{
+	name = "astroturf"
+	},
+/area/station/engine/engineering)
+"tp" = (
+/obj/table/auto,
+/obj/machinery/light{
+	dir = 8;
+	tag = ""
+	},
+/obj/item/plate{
+	pixel_y = 4
+	},
+/obj/item/reagent_containers/food/snacks/breadloaf{
+	pixel_y = 8
+	},
+/turf/simulated/floor/specialroom/cafeteria,
+/area/diner/kitchen)
+"tM" = (
+/obj/stool/chair/dining/wood{
+	dir = 4
+	},
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/carpet{
+	dir = 9;
+	icon_state = "fred2"
+	},
+/area/station/crew_quarters/bar)
+"un" = (
+/obj/table/reinforced/chemistry/auto/firstaid,
+/turf/simulated/floor,
+/area/pod_wars/spacejunk/fstation/medbay)
+"ux" = (
+/obj/table/wood/auto,
+/obj/item/plate{
+	pixel_y = 7
+	},
+/obj/item/reagent_containers/food/drinks/drinkingglass/wine{
+	pixel_x = -1;
+	pixel_y = 11
+	},
+/turf/simulated/floor/carpet{
+	icon_state = "fred2"
+	},
+/area/station/crew_quarters/bar)
+"uE" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/wall/auto/supernorn,
+/area/station/crew_quarters/bar)
+"uO" = (
+/turf/simulated/wall/auto/supernorn,
+/area/station/medical/medbooth)
+"uP" = (
+/turf/simulated/wall/auto/supernorn,
+/area/pod_wars/spacejunk/fstation/medbay)
+"va" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/item/gun/reagent/syringe/NT/emagged,
+/turf/simulated/floor,
+/area/pod_wars/spacejunk/fstation/medbay)
+"vA" = (
+/obj/machinery/door/airlock/pyro{
+	name = "Bar";
+	req_access_txt = null
+	},
+/obj/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/wall/auto/supernorn,
+/area/station/crew_quarters/bar)
+"vZ" = (
+/obj/railing/red/reinforced,
+/obj/railing/red/reinforced{
+	dir = 8
+	},
+/turf/simulated/floor/plating,
+/area/pod_wars/spacejunk/fstation/medbay)
+"wG" = (
+/obj/machinery/firealarm/north,
+/obj/machinery/light{
+	dir = 1;
+	pixel_y = 21
+	},
+/turf/simulated/floor/specialroom/cafeteria,
+/area/diner/kitchen)
+"wT" = (
+/obj/stool/chair/dining/wood{
+	dir = 4
+	},
+/turf/simulated/floor/carpet{
+	dir = 9;
+	icon_state = "fred2"
+	},
+/area/station/crew_quarters/bar)
+"wW" = (
+/obj/cable{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/auto,
+/area/diner/hallway)
+"xi" = (
+/obj/machinery/door/airlock/pyro/glass{
+	dir = 4
+	},
+/turf/simulated/floor/specialroom/bar,
+/area/station/crew_quarters/bar)
+"xw" = (
+/obj/railing/red/reinforced{
+	dir = 8
+	},
+/turf/simulated/floor/plating,
+/area/pod_wars/spacejunk/fstation/medbay)
+"ya" = (
+/obj/mapping_helper/wingrille_spawn/auto,
+/turf/simulated/floor/plating,
+/area/station/medical/medbooth)
+"yh" = (
+/obj/reagent_dispensers/chemicalbarrel/red,
+/obj/reagent_dispensers/chemicalbarrel/red,
+/obj/reagent_dispensers/chemicalbarrel/red,
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/pod_wars/spacejunk/fstation/medbay)
+"yH" = (
+/obj/landmark/map{
+	name = "SANDBOX"
+	},
+/turf/simulated/floor/grass{
+	name = "astroturf"
+	},
+/area/space)
+"yM" = (
+/obj/mapping_helper/wingrille_spawn/auto,
+/turf/simulated/floor/plating,
+/area/diner/kitchen)
+"zg" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/specialroom/bar,
+/area/station/crew_quarters/bar)
+"zj" = (
+/obj/stool/bed/moveable/hospital,
+/turf/simulated/floor,
+/area/pod_wars/spacejunk/fstation/medbay)
+"zk" = (
+/obj/storage/closet,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/obj/item/clothing/glasses/blindfold,
+/turf/simulated/floor,
+/area/pod_wars/spacejunk/fstation/medbay)
+"zn" = (
+/obj/table/reinforced/chemistry/auto/allinone,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/reagent_containers/glass/beaker/large,
+/turf/simulated/floor,
+/area/pod_wars/spacejunk/fstation/medbay)
+"zG" = (
+/obj/submachine/chef_oven,
+/obj/machinery/alarm{
+	pixel_y = 23
+	},
+/turf/simulated/floor/specialroom/cafeteria,
+/area/diner/kitchen)
+"zX" = (
+/obj/machinery/light,
+/turf/simulated/floor,
+/area/pod_wars/spacejunk/fstation/medbay)
+"zY" = (
+/turf/simulated/floor/white,
+/area/diner/kitchen)
+"Al" = (
+/obj/railing/red/reinforced,
+/turf/simulated/floor/yellow,
+/area/pod_wars/spacejunk/fstation/medbay)
+"Av" = (
+/obj/machinery/light,
+/obj/machinery/conveyor/EW{
+	id = "crusher"
+	},
+/turf/simulated/floor/yellow,
+/area/pod_wars/spacejunk/fstation/medbay)
+"AQ" = (
+/obj/disposalpipe/segment/produce{
+	dir = 4
+	},
+/obj/machinery/door/airlock/pyro/glass{
+	dir = 4;
+	name = "Biodome";
+	req_access_txt = null
+	},
+/obj/mapping_helper/firedoor_spawn,
+/obj/cable{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/auto,
+/area/pod_wars/spacejunk/fstation/medbay)
+"AS" = (
+/turf/simulated/floor/bluewhite{
+	dir = 9
+	},
+/area/station/medical/medbay/surgery)
+"AZ" = (
+/obj/machinery/drainage/big,
+/turf/simulated/floor/grass{
+	name = "astroturf"
+	},
+/area/pod_wars/spacejunk/fstation/medbay)
+"Bf" = (
+/obj/mapping_helper/wingrille_spawn/auto,
+/turf/simulated/floor/plating,
+/area/diner/hallway)
+"Bl" = (
+/turf/simulated/floor/red,
+/area/space)
+"Bw" = (
+/obj/storage/secure/closet/medical/anesthetic,
+/turf/simulated/floor,
+/area/pod_wars/spacejunk/fstation/medbay)
+"BU" = (
+/obj/table/reinforced/chemistry/auto/clericalsup,
+/obj/table/reinforced/chemistry/auto/clericalsup,
+/obj/item/bunsen_burner,
+/obj/item/bunsen_burner,
+/obj/item/bunsen_burner,
+/obj/item/bunsen_burner,
+/obj/item/bunsen_burner,
+/obj/item/bunsen_burner,
+/obj/item/bunsen_burner,
+/obj/item/bunsen_burner,
+/turf/simulated/floor,
+/area/pod_wars/spacejunk/fstation/medbay)
+"BV" = (
+/obj/item/gun/reagent/syringe/NT,
+/turf/simulated/floor,
+/area/pod_wars/spacejunk/fstation/medbay)
+"Cv" = (
+/obj/table/reinforced/chemistry/auto/drugs,
+/obj/item/reagent_containers/glass/condenser/fractional,
+/obj/item/reagent_containers/glass/condenser/fractional,
+/obj/item/reagent_containers/glass/condenser/fractional,
+/obj/item/reagent_containers/glass/condenser/fractional,
+/obj/item/reagent_containers/glass/condenser/fractional,
+/obj/item/reagent_containers/glass/condenser/fractional,
+/obj/item/reagent_containers/glass/condenser/fractional,
+/obj/item/reagent_containers/glass/condenser/fractional,
+/turf/simulated/floor,
+/area/pod_wars/spacejunk/fstation/medbay)
+"CR" = (
+/obj/stool/bed/moveable/hospital,
+/obj/item/clothing/suit/bedsheet/blue,
+/obj/cable{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/bluewhite{
+	dir = 6
+	},
+/area/station/medical/medbooth)
+"Dl" = (
+/obj/machinery/plantpot,
+/obj/cable,
+/obj/machinery/power/apc/autoname_west,
+/obj/cable{
+	icon_state = "0-2"
+	},
+/turf/simulated/floor/grass{
+	name = "astroturf"
+	},
+/area/station/hydroponics)
+"Dt" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/auto,
+/area/diner/hallway)
+"Dv" = (
+/obj/stool,
+/turf/simulated/floor/specialroom/cafeteria,
+/area/diner/kitchen)
+"DA" = (
+/obj/reagent_dispensers/compostbin,
+/turf/simulated/floor/green/side,
+/area/station/hydroponics)
+"Ed" = (
+/obj/submachine/chef_sink,
+/turf/simulated/floor/specialroom/cafeteria,
+/area/diner/kitchen)
+"Eh" = (
+/obj/machinery/vending/port_a_nanomed,
+/obj/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/bluewhite{
+	dir = 1
+	},
+/area/station/medical/medbooth)
+"Er" = (
+/obj/machinery/vending/monkey/kitchen,
+/turf/simulated/floor/specialroom/cafeteria,
+/area/diner/kitchen)
+"EC" = (
+/obj/item/plate{
+	pixel_x = -5;
+	pixel_y = 3
+	},
+/obj/item/plate{
+	pixel_x = -5;
+	pixel_y = 7
+	},
+/obj/item/plate{
+	pixel_x = -5;
+	pixel_y = 11
+	},
+/obj/item/plate{
+	pixel_x = 6;
+	pixel_y = 2
+	},
+/obj/item/plate{
+	pixel_x = 6;
+	pixel_y = 6
+	},
+/obj/item/plate{
+	pixel_x = 6;
+	pixel_y = 10
+	},
+/obj/item/reagent_containers/food/drinks/bowl{
+	pixel_x = 9;
+	pixel_y = 16
+	},
+/obj/item/reagent_containers/food/drinks/bowl{
+	pixel_y = 14
+	},
+/obj/item/reagent_containers/food/snacks/yoghurt{
+	pixel_x = 10;
+	pixel_y = 11
+	},
+/obj/table/auto,
+/turf/simulated/floor/specialroom/cafeteria,
+/area/diner/kitchen)
+"EZ" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/bluewhite{
+	dir = 8
+	},
+/area/station/medical/medbooth)
+"Fk" = (
+/obj/machinery/vending/medical,
+/turf/simulated/floor/bluewhite{
+	dir = 5
+	},
+/area/station/medical/medbooth)
+"Fw" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/auto,
+/area/diner/hallway)
+"FD" = (
+/obj/stool/chair/dining/wood{
+	dir = 8
+	},
+/turf/simulated/floor/carpet{
+	dir = 6;
+	icon_state = "fred2"
+	},
+/area/station/crew_quarters/bar)
+"FI" = (
+/obj/storage/secure/closet/fridge/kitchen,
+/turf/simulated/floor/specialroom/cafeteria,
+/area/diner/kitchen)
+"FJ" = (
+/obj/railing/red/reinforced{
+	dir = 8
+	},
+/turf/simulated/floor/yellow,
+/area/pod_wars/spacejunk/fstation/medbay)
+"FO" = (
+/obj/machinery/power/smes/magical,
+/obj/cable{
+	icon_state = "0-2"
+	},
+/turf/simulated/floor,
+/area/pod_wars/spacejunk/fstation/medbay)
+"FQ" = (
+/obj/machinery/drainage/big,
+/turf/simulated/floor/yellow,
+/area/pod_wars/spacejunk/fstation/medbay)
+"FV" = (
+/obj/machinery/disposal{
+	name = "Lay-Z Chef Prison Food Chute"
+	},
+/obj/decal/tile_edge/stripe/extra_big{
+	dir = 5
+	},
+/turf/simulated/floor,
+/area/diner/kitchen)
+"GB" = (
+/obj/machinery/light{
+	tag = ""
+	},
+/turf/simulated/floor/auto,
+/area/diner/hallway)
+"GF" = (
+/obj/disposalpipe/segment/produce{
+	dir = 4
+	},
+/obj/machinery/door/airlock/pyro/glass{
+	dir = 4;
+	name = "Biodome";
+	req_access_txt = null
+	},
+/obj/mapping_helper/access/hydro,
+/obj/mapping_helper/firedoor_spawn,
+/obj/cable{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/green,
+/area/station/hydroponics)
+"GK" = (
+/obj/stool/chair/dining/wood{
+	dir = 8
+	},
+/turf/simulated/floor/carpet{
+	dir = 4;
+	icon_state = "fred2"
+	},
+/area/station/crew_quarters/bar)
+"GT" = (
+/obj/machinery/plantpot,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/grass{
+	name = "astroturf"
+	},
+/area/station/hydroponics)
+"Hb" = (
+/turf/simulated/floor/yellow,
+/area/pod_wars/spacejunk/fstation/medbay)
+"HQ" = (
+/turf/simulated/floor/specialroom/cafeteria,
+/area/diner/kitchen)
+"Ii" = (
+/obj/machinery/chem_dispenser/chef,
+/obj/decal/tile_edge/stripe/extra_big{
+	dir = 1;
+	icon_state = "xtra_bigstripe-edge2"
+	},
+/turf/simulated/floor/specialroom/cafeteria,
+/area/diner/kitchen)
+"In" = (
+/obj/machinery/conveyor/SN{
+	id = "crusher"
+	},
+/turf/simulated/floor/plating,
+/area/pod_wars/spacejunk/fstation/medbay)
+"It" = (
+/turf/simulated/floor/specialroom/bar,
+/area/pod_wars/spacejunk/fstation/medbay)
+"IC" = (
+/obj/table/wood/auto,
+/obj/item/plate{
+	pixel_x = 1;
+	pixel_y = 7
+	},
+/obj/item/reagent_containers/food/drinks/drinkingglass/wine{
+	pixel_x = 1;
+	pixel_y = 11
+	},
+/turf/simulated/floor/carpet{
+	icon_state = "fred2"
+	},
+/area/station/crew_quarters/bar)
+"IH" = (
+/obj/table/glass/auto,
+/turf/simulated/floor,
+/area/pod_wars/spacejunk/fstation/medbay)
+"Jf" = (
+/mob/living/critter/small_animal/mouse/remy,
+/turf/simulated/floor/specialroom/cafeteria,
+/area/diner/kitchen)
+"Kk" = (
+/obj/surgery_tray,
+/obj/item/circular_saw{
+	pixel_y = 11
+	},
+/obj/item/scalpel{
+	pixel_x = 3;
+	pixel_y = 2
+	},
+/obj/item/hemostat{
+	pixel_x = 3;
+	pixel_y = -5
+	},
+/obj/item/scissors/surgical_scissors{
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/item/staple_gun{
+	pixel_x = 4;
+	pixel_y = 9
+	},
+/obj/item/suture{
+	pixel_y = 5
+	},
+/obj/cable{
+	icon_state = "1-2"
+	},
+/obj/item/storage/belt/medical/prepared,
+/obj/item/storage/belt/medical/prepared,
+/turf/simulated/floor,
+/area/pod_wars/spacejunk/fstation/medbay)
+"Kq" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/specialroom/bar,
+/area/pod_wars/spacejunk/fstation/medbay)
+"Kt" = (
+/obj/cable{
+	icon_state = "0-8"
+	},
+/obj/cable{
+	icon_state = "0-2"
+	},
+/turf/simulated/floor,
+/area/station/hydroponics)
+"Kw" = (
+/turf/simulated/wall/auto/supernorn,
+/area/station/medical/medbay/surgery)
+"KI" = (
+/obj/machinery/optable{
+	id = "OR2"
+	},
+/turf/simulated/floor,
+/area/pod_wars/spacejunk/fstation/medbay)
+"KN" = (
+/obj/item/reagent_containers/syringe/krokodil,
+/obj/item/reagent_containers/syringe/krokodil,
+/obj/item/reagent_containers/syringe/krokodil,
+/obj/item/reagent_containers/syringe/krokodil,
+/obj/item/reagent_containers/syringe/krokodil,
+/obj/item/reagent_containers/syringe/krokodil,
+/obj/item/reagent_containers/syringe/haloperidol,
+/obj/item/reagent_containers/syringe/haloperidol,
+/obj/item/reagent_containers/syringe/haloperidol,
+/obj/item/reagent_containers/syringe/haloperidol,
+/obj/item/reagent_containers/syringe/haloperidol,
+/obj/item/reagent_containers/syringe/haloperidol,
+/obj/item/reagent_containers/syringe/haloperidol,
+/obj/item/reagent_containers/syringe/formaldehyde,
+/obj/item/reagent_containers/syringe/formaldehyde,
+/obj/item/reagent_containers/syringe/formaldehyde,
+/obj/item/reagent_containers/syringe/formaldehyde,
+/obj/item/reagent_containers/syringe/formaldehyde,
+/obj/item/reagent_containers/syringe/formaldehyde,
+/turf/simulated/floor,
+/area/pod_wars/spacejunk/fstation/medbay)
+"KV" = (
+/turf/simulated/wall/auto/supernorn,
+/area/diner/kitchen)
+"LA" = (
+/obj/machinery/vending/monkey/research,
+/turf/simulated/floor,
+/area/pod_wars/spacejunk/fstation/medbay)
+"LB" = (
+/obj/machinery/vending/monkey/kitchen,
+/turf/simulated/floor,
+/area/pod_wars/spacejunk/fstation/medbay)
+"LI" = (
+/obj/machinery/conveyor/EW{
+	id = "crusher"
+	},
+/turf/simulated/floor/yellow,
+/area/pod_wars/spacejunk/fstation/medbay)
+"LK" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/bluewhite{
+	dir = 8
+	},
+/area/station/medical/medbay/surgery)
+"LY" = (
+/turf/simulated/wall/auto/supernorn,
+/area/space)
+"Ma" = (
+/obj/machinery/conveyor/EW,
+/turf/simulated/floor/plating,
+/area/pod_wars/spacejunk/fstation/medbay)
+"Mb" = (
+/obj/machinery/door/airlock/pyro{
+	dir = 4;
+	name = "Kitchen";
+	req_access_txt = null
+	},
+/obj/mapping_helper/access/kitchen,
+/obj/mapping_helper/firedoor_spawn,
+/turf/simulated/floor/black,
+/area/diner/kitchen)
+"Mx" = (
+/obj/table/reinforced/auto,
+/obj/machinery/door/poddoor/pyro/shutters{
+	density = 0;
+	dir = 4;
+	icon_state = "pdoor0";
+	id = "kitchen";
+	layer = 4;
+	name = "Kitchen Shutter";
+	opacity = 0;
+	panel_open = 1
+	},
+/obj/item/plate,
+/obj/item/reagent_containers/food/snacks/cake/chocolate/gateau{
+	pixel_y = 8
+	},
+/obj/machinery/door/firedoor/pyro{
+	dir = 4
+	},
+/turf/simulated/floor/black,
+/area/diner/kitchen)
+"Mz" = (
+/obj/stool/chair/dining/wood{
+	dir = 4
+	},
+/obj/machinery/light,
+/turf/simulated/floor/carpet{
+	dir = 10;
+	icon_state = "fred2"
+	},
+/area/station/crew_quarters/bar)
+"ML" = (
+/obj/machinery/drainage/big,
+/turf/simulated/floor,
+/area/pod_wars/spacejunk/fstation/medbay)
+"MP" = (
+/turf/simulated/wall/auto/supernorn,
+/area/diner/hallway)
+"MR" = (
+/obj/landmark/start/job/chef,
+/turf/simulated/floor/specialroom/cafeteria,
+/area/diner/kitchen)
+"MW" = (
+/obj/table/glass/reinforced/auto,
+/turf/simulated/floor,
+/area/pod_wars/spacejunk/fstation/medbay)
+"Nv" = (
+/obj/landmark/pest,
+/turf/simulated/floor/specialroom/cafeteria,
+/area/diner/kitchen)
+"Nz" = (
+/obj/cable,
+/obj/machinery/power/apc/autoname_south,
+/obj/cable{
+	icon_state = "0-8"
+	},
+/turf/simulated/floor/white,
+/area/diner/kitchen)
+"Os" = (
+/obj/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/apc/autoname_south,
+/turf/simulated/floor/white,
+/area/station/crew_quarters/bar)
+"Ov" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/white,
+/area/station/medical/medbooth)
+"OW" = (
+/turf/simulated/floor/green/side,
+/area/station/hydroponics)
+"Pg" = (
+/turf/simulated/floor/bluewhite{
+	dir = 9
+	},
+/area/station/medical/medbooth)
+"Pu" = (
+/obj/disposalpipe/segment{
+	dir = 4
+	},
+/turf/simulated/wall/auto/supernorn,
+/area/diner/kitchen)
+"Pz" = (
+/obj/item/reagent_containers/syringe,
+/obj/item/reagent_containers/syringe,
+/obj/item/reagent_containers/syringe,
+/obj/item/reagent_containers/syringe,
+/obj/item/reagent_containers/syringe,
+/obj/item/reagent_containers/syringe,
+/obj/item/reagent_containers/syringe,
+/obj/item/reagent_containers/syringe,
+/obj/item/reagent_containers/syringe,
+/obj/item/reagent_containers/syringe,
+/obj/item/reagent_containers/syringe,
+/obj/item/reagent_containers/syringe,
+/obj/item/reagent_containers/syringe,
+/obj/item/reagent_containers/syringe,
+/obj/item/reagent_containers/syringe,
+/obj/item/reagent_containers/syringe,
+/obj/item/reagent_containers/syringe,
+/obj/item/reagent_containers/syringe,
+/turf/simulated/floor,
+/area/pod_wars/spacejunk/fstation/medbay)
+"PB" = (
+/obj/machinery/door/airlock/pyro{
+	name = "Bar";
+	req_access_txt = null
+	},
+/obj/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/specialroom/bar,
+/area/station/crew_quarters/bar)
+"PM" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/bluewhite{
+	dir = 4
+	},
+/area/station/medical/medbay/surgery)
+"Qf" = (
+/turf/simulated/floor/grass{
+	name = "astroturf"
+	},
+/area/space)
+"Qm" = (
+/obj/machinery/vending/hydroponics,
+/turf/simulated/floor/grass{
+	name = "astroturf"
+	},
+/area/station/hydroponics)
+"Qr" = (
+/obj/stool/chair/dining/wood{
+	dir = 4
+	},
+/turf/simulated/floor/carpet{
+	dir = 8;
+	icon_state = "fred2"
+	},
+/area/station/crew_quarters/bar)
+"QA" = (
+/obj/table/auto,
+/turf/simulated/floor/black,
+/area/station/crew_quarters/bar)
+"QI" = (
+/obj/mapping_helper/wingrille_spawn/auto,
+/turf/simulated/floor/plating,
+/area/station/crew_quarters/bar)
+"QR" = (
+/obj/map/light/white{
+	brightness = 10;
+	invisibility = 0
+	},
+/turf/simulated/floor/grass{
+	name = "astroturf"
+	},
+/area/space)
+"Ra" = (
+/turf/simulated/wall/auto/supernorn,
+/area/shuttle/escape/centcom)
+"RH" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/yellow,
+/area/pod_wars/spacejunk/fstation/medbay)
+"RN" = (
+/obj/machinery/chem_dispenser/alcohol,
+/obj/decal/tile_edge/stripe/extra_big,
+/turf/simulated/floor,
+/area/station/crew_quarters/bar)
+"Sj" = (
+/turf/simulated/floor/bluewhite{
+	dir = 1
+	},
+/area/station/medical/medbay/surgery)
+"Sr" = (
+/obj/table/reinforced/chemistry/auto/auxsup,
+/obj/item/storage/box/beaker_lids,
+/obj/item/storage/box/beaker_lids,
+/obj/item/storage/box/beaker_lids,
+/obj/item/storage/box/beaker_lids,
+/turf/simulated/floor,
+/area/pod_wars/spacejunk/fstation/medbay)
+"Sz" = (
+/turf/simulated/floor/white,
+/area/station/medical/medbooth)
+"SA" = (
+/obj/storage/secure/closet/civilian/kitchen,
+/obj/machinery/light,
+/turf/simulated/floor/specialroom/cafeteria,
+/area/diner/kitchen)
+"SB" = (
+/obj/machinery/light,
+/turf/simulated/floor/yellow,
+/area/pod_wars/spacejunk/fstation/medbay)
+"SC" = (
+/obj/machinery/vending/monkey/genetics,
+/turf/simulated/floor,
+/area/pod_wars/spacejunk/fstation/medbay)
+"SP" = (
+/obj/table/auto,
+/turf/simulated/floor/specialroom/cafeteria,
+/area/diner/kitchen)
+"SY" = (
+/turf/simulated/wall/auto/supernorn,
+/area/station/crew_quarters/bar)
+"Ta" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor,
+/area/pod_wars/spacejunk/fstation/medbay)
+"Tc" = (
+/obj/machinery/chem_dispenser/soda,
+/obj/decal/tile_edge/stripe/extra_big{
+	dir = 6
+	},
+/turf/simulated/floor,
+/area/station/crew_quarters/bar)
+"Tp" = (
+/obj/table/auto,
+/obj/item/reagent_containers/food/drinks/milk{
+	pixel_x = 8;
+	pixel_y = 10
+	},
+/obj/item/instrument/bikehorn/dramatic{
+	pixel_x = -6;
+	pixel_y = 10
+	},
+/turf/simulated/floor/specialroom/cafeteria,
+/area/diner/kitchen)
+"Tw" = (
+/obj/stool/chair/dining/wood{
+	dir = 4
+	},
+/turf/simulated/floor/carpet{
+	dir = 10;
+	icon_state = "fred2"
+	},
+/area/station/crew_quarters/bar)
+"Tz" = (
+/obj/machinery/light,
+/turf/simulated/floor/black,
+/area/station/crew_quarters/bar)
+"TF" = (
+/obj/table/auto,
+/obj/item/reagent_containers/glass/bottle/mutriant{
+	pixel_x = 7;
+	pixel_y = 2
+	},
+/obj/item/wrench{
+	pixel_x = -4;
+	pixel_y = 6
+	},
+/turf/simulated/floor/grass{
+	name = "astroturf"
+	},
+/area/station/hydroponics)
+"TT" = (
+/turf/simulated/floor/specialroom/bar,
+/area/station/crew_quarters/bar)
+"Uo" = (
+/turf/simulated/floor/grass{
+	name = "astroturf"
+	},
+/area/station/hydroponics)
+"Us" = (
+/obj/mapping_helper/wingrille_spawn/auto,
+/turf/simulated/floor/plating,
+/area/pod_wars/spacejunk/fstation/medbay)
+"UV" = (
+/turf/simulated/floor/bluewhite{
+	dir = 10
+	},
+/area/station/medical/medbay/surgery)
+"Vx" = (
+/obj/cable,
+/obj/cable{
+	icon_state = "0-4"
+	},
+/obj/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/white,
+/area/station/medical/medbay/surgery)
+"VG" = (
+/obj/machinery/vending/medical,
+/turf/simulated/floor,
+/area/pod_wars/spacejunk/fstation/medbay)
+"VK" = (
+/obj/table/reinforced/chemistry/auto/chemstorage,
+/obj/item/reagent_containers/glass/condenser,
+/obj/item/reagent_containers/glass/condenser,
+/obj/item/reagent_containers/glass/condenser,
+/obj/item/reagent_containers/glass/condenser,
+/obj/item/reagent_containers/glass/condenser,
+/obj/item/reagent_containers/glass/condenser,
+/obj/item/reagent_containers/glass/condenser,
+/obj/item/reagent_containers/glass/condenser,
+/turf/simulated/floor,
+/area/pod_wars/spacejunk/fstation/medbay)
+"VL" = (
+/obj/item/gun/reagent/syringe,
+/turf/simulated/floor,
+/area/pod_wars/spacejunk/fstation/medbay)
+"VQ" = (
+/obj/cable,
+/obj/cable{
+	icon_state = "0-4"
+	},
+/obj/cable{
+	icon_state = "0-2"
+	},
+/turf/simulated/floor/black,
+/area/station/crew_quarters/bar)
+"Wn" = (
+/obj/stool/bar,
+/turf/simulated/floor/specialroom/bar,
+/area/station/crew_quarters/bar)
+"WK" = (
+/obj/landmark/start,
+/turf/simulated/floor,
+/area/pod_wars/spacejunk/fstation/medbay)
+"WW" = (
+/obj/table/auto,
+/obj/item/reagent_containers/glass/beaker/large/burn{
+	pixel_x = -9;
+	pixel_y = 15
+	},
+/obj/item/storage/belt/medical{
+	pixel_x = -5;
+	pixel_y = 1
+	},
+/obj/item/reagent_containers/glass/beaker/large/brute{
+	pixel_x = -7;
+	pixel_y = 13
+	},
+/obj/item/reagent_containers/glass/beaker/large/epinephrine{
+	pixel_x = -5;
+	pixel_y = 10
+	},
+/obj/item/reagent_containers/glass/beaker/large/antitox{
+	pixel_x = -3;
+	pixel_y = 8
+	},
+/obj/item/reagent_containers/hypospray{
+	pixel_x = 7;
+	pixel_y = 14
+	},
+/obj/item/reagent_containers/hypospray{
+	pixel_x = 10;
+	pixel_y = 11
+	},
+/turf/simulated/floor/bluewhite{
+	dir = 10
+	},
+/area/station/medical/medbooth)
+"Xa" = (
+/obj/machinery/power/apc/autoname_east,
+/obj/cable,
+/turf/simulated/floor/auto,
+/area/diner/hallway)
+"Xc" = (
+/obj/machinery/disposal,
+/obj/disposalpipe/trunk{
+	dir = 4
+	},
+/turf/simulated/floor/specialroom/cafeteria,
+/area/diner/kitchen)
+"Xe" = (
+/obj/reagent_dispensers/chemicalbarrel,
+/obj/reagent_dispensers/chemicalbarrel,
+/obj/reagent_dispensers/chemicalbarrel,
+/turf/simulated/floor,
+/area/pod_wars/spacejunk/fstation/medbay)
+"Xh" = (
+/obj/table/wood/auto,
+/obj/item/plate{
+	pixel_y = 7
+	},
+/obj/item/device/light/candle/small{
+	pixel_x = -9;
+	pixel_y = -2
+	},
+/obj/item/shaker/mustard{
+	pixel_x = 3;
+	pixel_y = 5
+	},
+/obj/item/shaker/ketchup{
+	pixel_x = 8;
+	pixel_y = 3
+	},
+/turf/simulated/floor/carpet,
+/area/station/crew_quarters/bar)
+"Xi" = (
+/obj/machinery/door_control{
+	id = "kitchen";
+	name = "Kitchen Shutter Control";
+	pixel_x = -24
+	},
+/turf/simulated/floor/specialroom/cafeteria,
+/area/diner/kitchen)
+"Xj" = (
+/turf/simulated/floor,
+/area/station/hydroponics)
+"XH" = (
+/obj/machinery/deep_fryer{
+	dir = 4
+	},
+/turf/simulated/floor/specialroom/cafeteria,
+/area/diner/kitchen)
+"Yx" = (
+/obj/table/wood/auto,
+/obj/item/plate{
+	pixel_x = 1;
+	pixel_y = 7
+	},
+/obj/item/reagent_containers/food/snacks/salad{
+	pixel_y = 8
+	},
+/obj/item/device/light/candle/small{
+	pixel_x = 9;
+	pixel_y = -2
+	},
+/obj/item/kitchen/utensil/fork{
+	dir = 4;
+	pixel_x = 3;
+	pixel_y = 11
+	},
+/turf/simulated/floor/carpet,
+/area/station/crew_quarters/bar)
+"YW" = (
+/obj/mapping_helper/wingrille_spawn/auto,
+/turf/simulated/floor/plating,
+/area/station/hydroponics)
+"Zf" = (
+/obj/disposalpipe/segment,
+/obj/machinery/door/airlock/pyro/glass{
+	id = "medbay_front";
+	name = "Medical Bay";
+	req_access_txt = null
+	},
+/obj/mapping_helper/access/medical,
+/obj/mapping_helper/firedoor_spawn,
+/turf/simulated/floor/blue,
+/area/station/medical/medbooth)
+"Zk" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/wall/auto/supernorn,
+/area/station/medical/medbooth)
+"Zo" = (
+/obj/table/auto,
+/obj/item/kitchen/utensil/knife{
+	pixel_x = -9;
+	pixel_y = 6
+	},
+/obj/item/reagent_containers/food/drinks/drinkingglass/icing{
+	pixel_x = -3;
+	pixel_y = 7
+	},
+/obj/item/reagent_containers/food/drinks/drinkingglass/icing{
+	pixel_x = 1;
+	pixel_y = 8
+	},
+/obj/item/kitchen/rollingpin{
+	pixel_x = 4;
+	pixel_y = 2
+	},
+/turf/simulated/floor/specialroom/cafeteria,
+/area/diner/kitchen)
+"ZL" = (
+/obj/machinery/light,
+/turf/simulated/floor/specialroom/bar,
+/area/station/crew_quarters/bar)
+
+(1,1,1) = {"
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+yH
+"}
+(2,1,1) = {"
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+oz
+oz
+oz
+Qf
+Qf
+ow
+ow
+ow
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+"}
+(3,1,1) = {"
+Qf
+Qf
+Qf
+Qf
+Qf
+uP
+uP
+uP
+uP
+uP
+uP
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Bl
+Bl
+Bl
+Qf
+Qf
+Qf
+oz
+oz
+oz
+Qf
+Qf
+ow
+ow
+ow
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+"}
+(4,1,1) = {"
+Qf
+Qf
+Qf
+Qf
+AZ
+In
+In
+kQ
+In
+mc
+uP
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Bl
+Bl
+Qf
+Bl
+Bl
+Bl
+Qf
+Qf
+Qf
+oz
+oz
+oz
+Qf
+ow
+ow
+ow
+ow
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+"}
+(5,1,1) = {"
+Qf
+Qf
+Qf
+Qf
+Qf
+xw
+xw
+xw
+vZ
+eN
+uP
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Bl
+Bl
+Bl
+Bl
+Bl
+Bl
+Qf
+Qf
+Qf
+oz
+oz
+oz
+ow
+ow
+ow
+ow
+ow
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+"}
+(6,1,1) = {"
+uP
+Us
+Us
+Us
+uP
+uP
+Us
+Us
+Us
+Ma
+uP
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Bl
+Bl
+Bl
+Qf
+Qf
+Bl
+Bl
+Bl
+Bl
+Bl
+Bl
+Qf
+Qf
+Qf
+oz
+oz
+oz
+ow
+ow
+ow
+ow
+ow
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+"}
+(7,1,1) = {"
+uP
+Kq
+It
+It
+uP
+af
+Hb
+RH
+eG
+Av
+uP
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Bl
+Bl
+Bl
+Qf
+Qf
+Bl
+Bl
+Bl
+Bl
+Qf
+Qf
+Qf
+Qf
+Qf
+oz
+oz
+oz
+Qf
+ow
+ow
+ow
+ow
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+"}
+(8,1,1) = {"
+Us
+It
+It
+It
+Us
+Hb
+Hb
+Hb
+Al
+LI
+Us
+Qf
+Qf
+Qf
+Qf
+Qf
+Bl
+Bl
+Bl
+Bl
+Bl
+Bl
+Bl
+Bl
+Bl
+Bl
+Bl
+Qf
+Qf
+Qf
+Qf
+Qf
+oz
+oz
+oz
+Qf
+Qf
+ow
+ow
+ow
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+"}
+(9,1,1) = {"
+Us
+It
+nM
+It
+AQ
+Hb
+Hb
+FQ
+Hb
+LI
+Us
+Qf
+Qf
+Qf
+Qf
+Qf
+Bl
+Bl
+Bl
+Bl
+Bl
+Bl
+Bl
+Bl
+Bl
+Bl
+Bl
+Qf
+Qf
+Qf
+Qf
+Qf
+oz
+oz
+oz
+Qf
+Qf
+ow
+ow
+ow
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+"}
+(10,1,1) = {"
+Us
+It
+It
+It
+Us
+Hb
+Hb
+Hb
+Hb
+FJ
+Us
+Qf
+Qf
+Qf
+Qf
+Bl
+Bl
+Bl
+Bl
+Bl
+Bl
+Bl
+Bl
+Bl
+Bl
+Bl
+Bl
+Qf
+Qf
+Qf
+Qf
+Qf
+oz
+oz
+oz
+Qf
+Qf
+ow
+ow
+ow
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+"}
+(11,1,1) = {"
+uP
+Kq
+It
+It
+uP
+Hb
+Hb
+Hb
+Hb
+Hb
+uP
+Qf
+Qf
+Qf
+Qf
+Bl
+Bl
+Bl
+Bl
+Bl
+Bl
+Bl
+Bl
+Bl
+Bl
+Bl
+Bl
+Qf
+Qf
+Qf
+Qf
+Qf
+oz
+oz
+oz
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+"}
+(12,1,1) = {"
+uP
+Us
+AQ
+Us
+uP
+af
+Hb
+Hb
+Hb
+SB
+uP
+Qf
+Qf
+Qf
+Qf
+Qf
+Bl
+Bl
+Bl
+Bl
+Bl
+Bl
+Bl
+Bl
+Bl
+Bl
+Bl
+Qf
+Qf
+Qf
+Qf
+Qf
+oz
+oz
+oz
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+"}
+(13,1,1) = {"
+uP
+va
+kd
+kd
+kd
+kd
+kd
+kd
+kd
+kd
+uP
+Qf
+Qf
+Qf
+Qf
+Qf
+Bl
+Bl
+Bl
+Bl
+Bl
+Bl
+Bl
+Bl
+Bl
+Bl
+Bl
+Qf
+Qf
+Qf
+Qf
+Qf
+oz
+oz
+oz
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+"}
+(14,1,1) = {"
+uP
+VL
+BV
+ML
+kd
+kd
+ML
+kd
+kd
+ML
+uP
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Bl
+Bl
+Bl
+Bl
+Bl
+Qf
+Qf
+Qf
+Qf
+Qf
+oz
+oz
+oz
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+"}
+(15,1,1) = {"
+Us
+KN
+kd
+kd
+kd
+kd
+kd
+kd
+kd
+kd
+Us
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Bl
+Bl
+Bl
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+oz
+oz
+oz
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+rG
+rG
+rG
+rG
+rG
+rG
+Qf
+"}
+(16,1,1) = {"
+Us
+gt
+kd
+dj
+kd
+pF
+kd
+pF
+kd
+kd
+Us
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Bl
+Bl
+Bl
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+oz
+oz
+oz
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+rG
+rG
+rG
+rG
+rG
+rG
+Qf
+"}
+(17,1,1) = {"
+Us
+zk
+kd
+WK
+zX
+uP
+Us
+uP
+gn
+kd
+Us
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Bl
+Bl
+Bl
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+oz
+oz
+oz
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+rG
+rG
+rG
+rG
+rG
+rG
+Qf
+"}
+(18,1,1) = {"
+uP
+ek
+kd
+kd
+kd
+Kk
+Bw
+VG
+kd
+zX
+uP
+Qf
+Qf
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+rG
+rG
+rG
+rG
+rG
+rG
+Qf
+"}
+(19,1,1) = {"
+uP
+SC
+kd
+ML
+kd
+kd
+ML
+kd
+kd
+ML
+uP
+Qf
+Qf
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+rG
+rG
+rG
+rG
+rG
+rG
+Qf
+"}
+(20,1,1) = {"
+uP
+LB
+kd
+kd
+kd
+KI
+Pz
+zj
+kd
+kd
+uP
+sF
+cP
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+Fw
+oz
+oz
+oz
+oz
+Fw
+oz
+oz
+oz
+oz
+oz
+oz
+oz
+rG
+rG
+rG
+rG
+rG
+rG
+Qf
+"}
+(21,1,1) = {"
+uP
+LA
+kd
+kd
+zX
+uP
+Us
+uP
+gn
+kd
+uP
+sF
+cP
+oz
+oz
+oz
+Qf
+bo
+Qf
+Qf
+bo
+Qf
+Qf
+bo
+Qf
+Qf
+bo
+Qf
+Qf
+Qf
+SY
+SY
+xi
+xi
+SY
+SY
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+rG
+rG
+rG
+rG
+rG
+rG
+Qf
+"}
+(22,1,1) = {"
+Us
+nE
+kd
+kd
+kd
+Ta
+kd
+Ta
+kd
+kd
+Us
+sF
+cP
+oz
+oz
+oz
+uO
+uO
+uO
+uO
+uO
+Kw
+Kw
+Kw
+Kw
+Kw
+SY
+QI
+QI
+QI
+SY
+TT
+TT
+TT
+TT
+SY
+SY
+SY
+LY
+Qf
+Qf
+Qf
+Qf
+rG
+rG
+rG
+rG
+rG
+rG
+Qf
+"}
+(23,1,1) = {"
+Us
+nE
+kd
+kd
+kd
+kd
+kd
+kd
+kd
+kd
+Us
+cP
+cP
+oz
+oz
+oz
+uO
+Pg
+EZ
+WW
+uO
+AS
+LK
+hI
+UV
+Kw
+tM
+Qr
+Qr
+Tw
+hH
+TT
+TT
+TT
+wT
+Qr
+Qr
+Mz
+SY
+Qf
+Qf
+Qf
+Qf
+rG
+rG
+rG
+rG
+rG
+rG
+Qf
+"}
+(24,1,1) = {"
+Us
+nE
+kd
+ML
+kd
+kd
+ML
+kd
+kd
+ML
+Us
+cP
+cP
+oz
+oz
+GB
+ya
+jD
+Sz
+lQ
+uO
+Sj
+eZ
+eZ
+cJ
+Kw
+mM
+Yx
+ib
+IC
+TT
+TT
+TT
+TT
+mM
+Yx
+ib
+IC
+SY
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+"}
+(25,1,1) = {"
+uP
+gn
+kd
+kd
+kd
+kd
+kd
+kd
+kd
+zX
+uP
+cP
+cP
+oz
+oz
+oz
+Zf
+jD
+Sz
+lQ
+Zf
+Sj
+eZ
+eZ
+rm
+Kw
+mT
+Xh
+mH
+ux
+TT
+TT
+TT
+TT
+mT
+Xh
+mH
+ux
+SY
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+"}
+(26,1,1) = {"
+uP
+kd
+kd
+IH
+kd
+MW
+kd
+oD
+FO
+jS
+ki
+ii
+ii
+Dt
+Dt
+kq
+qb
+Eh
+Ov
+oB
+Zk
+cZ
+ox
+Vx
+mJ
+Kw
+hb
+GK
+GK
+FD
+TT
+TT
+TT
+TT
+hb
+GK
+GK
+FD
+SY
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+"}
+(27,1,1) = {"
+uP
+kd
+kd
+IH
+kd
+MW
+kd
+kd
+kd
+kd
+uP
+cP
+cP
+oz
+oz
+oz
+uO
+Fk
+iM
+CR
+uO
+iJ
+PM
+nY
+rd
+Kw
+TT
+TT
+TT
+Wn
+ma
+Wn
+Wn
+Wn
+TT
+TT
+TT
+ZL
+SY
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+"}
+(28,1,1) = {"
+uP
+kd
+kd
+IH
+kd
+MW
+kd
+kd
+kd
+kd
+uP
+cP
+cP
+oz
+oz
+oz
+uO
+uO
+uO
+my
+uO
+Kw
+Kw
+ix
+Kw
+Kw
+qD
+TT
+Wn
+nK
+nK
+nK
+nK
+nK
+Wn
+Wn
+TT
+TT
+SY
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+"}
+(29,1,1) = {"
+Us
+gn
+kd
+IH
+kd
+MW
+kd
+kd
+kd
+zX
+Us
+cP
+cP
+oz
+oz
+oz
+oz
+kt
+oz
+wW
+oz
+kt
+oz
+wW
+oz
+kt
+TT
+TT
+Wn
+nK
+RN
+dk
+dk
+pQ
+pQ
+pQ
+Wn
+TT
+SY
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+"}
+(30,1,1) = {"
+Us
+kd
+kd
+ML
+kd
+kd
+kd
+kd
+kd
+ML
+Us
+cP
+cP
+oz
+oz
+oz
+oz
+oz
+oz
+wW
+oz
+oz
+oz
+wW
+oz
+oz
+TT
+TT
+Wn
+nK
+Tc
+dk
+dk
+dk
+dk
+pQ
+Wn
+zg
+SY
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+"}
+(31,1,1) = {"
+Us
+bm
+bm
+uP
+gn
+ML
+zX
+uP
+Us
+Us
+Us
+Qf
+Qf
+oz
+oz
+oz
+oz
+Fw
+oz
+mZ
+Xa
+Fw
+oz
+wW
+oz
+Fw
+TT
+TT
+TT
+QI
+dk
+dk
+QA
+QA
+dk
+Tz
+SY
+SY
+SY
+SY
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+"}
+(32,1,1) = {"
+uP
+kd
+kd
+kd
+kd
+kd
+kd
+kd
+kd
+zX
+uP
+ps
+ps
+lq
+lq
+lq
+Ra
+MP
+Bf
+MP
+MP
+hV
+YW
+GF
+YW
+hV
+SY
+qD
+TT
+QI
+dk
+dk
+dk
+dk
+dk
+dk
+QI
+ok
+Os
+SY
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+"}
+(33,1,1) = {"
+uP
+kd
+kd
+kd
+kd
+kd
+kd
+kd
+kd
+kd
+uP
+ps
+ps
+lq
+lq
+lq
+Ra
+Qf
+Qf
+Qf
+YW
+oc
+dJ
+Kt
+aS
+Dl
+uE
+qv
+qv
+PB
+om
+om
+VQ
+om
+hz
+om
+vA
+ee
+Nz
+KV
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+"}
+(34,1,1) = {"
+uP
+Xe
+kd
+kd
+kd
+kd
+kd
+kd
+kd
+kd
+uP
+ps
+ps
+lq
+lq
+lq
+Ra
+Qf
+QR
+Qf
+YW
+GT
+dJ
+Xj
+OW
+oc
+SY
+SY
+SY
+SY
+SY
+fz
+pi
+SY
+SY
+SY
+SY
+zY
+zY
+KV
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+"}
+(35,1,1) = {"
+uP
+gP
+kd
+zn
+kd
+VK
+kd
+Cv
+kd
+kd
+uP
+ps
+ps
+lq
+lq
+lq
+Ra
+Qf
+Qf
+Qf
+YW
+oc
+dJ
+Xj
+OW
+Uo
+Uo
+Uo
+SP
+Zo
+tp
+XH
+HQ
+FV
+qG
+KV
+zY
+zY
+zY
+KV
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+"}
+(36,1,1) = {"
+Us
+kd
+ML
+kd
+kd
+ML
+kd
+kd
+kd
+ML
+Us
+ps
+ps
+lq
+lq
+lq
+Ra
+Qf
+Qf
+Qf
+YW
+TF
+dJ
+Xj
+OW
+Uo
+Uo
+Uo
+SP
+HQ
+HQ
+HQ
+HQ
+HQ
+Nv
+gk
+zY
+zY
+zY
+KV
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+"}
+(37,1,1) = {"
+Us
+kd
+kd
+Sr
+yh
+BU
+yh
+un
+kd
+kd
+Us
+lq
+lq
+lq
+lq
+lq
+Ra
+Qf
+Qf
+Qf
+YW
+pu
+dJ
+Xj
+OW
+Uo
+Uo
+Uo
+SP
+HQ
+HQ
+HQ
+Jf
+HQ
+dd
+KV
+Mx
+qL
+zY
+KV
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+"}
+(38,1,1) = {"
+Us
+kd
+kd
+uP
+uP
+uP
+uP
+uP
+kd
+kd
+Us
+ps
+ps
+lq
+lq
+lq
+Ra
+Qf
+Qf
+Qf
+YW
+mz
+dJ
+Xj
+OW
+Uo
+Uo
+Uo
+SP
+na
+HQ
+HQ
+HQ
+HQ
+HQ
+Xi
+br
+KV
+zY
+KV
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+"}
+(39,1,1) = {"
+uP
+gn
+kd
+kd
+kd
+kd
+kd
+kd
+kd
+zX
+uP
+ps
+ps
+lq
+lq
+lq
+Ra
+Qf
+QR
+Qf
+YW
+Qm
+dJ
+Xj
+DA
+Uo
+Uo
+oc
+KV
+zG
+HQ
+MR
+Tp
+gc
+HQ
+HQ
+Ii
+KV
+zY
+KV
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+"}
+(40,1,1) = {"
+uP
+kd
+ML
+kd
+kd
+kd
+kd
+kd
+ML
+kd
+uP
+ps
+ps
+lq
+lq
+lq
+Ra
+Qf
+Qf
+Qf
+YW
+oc
+dJ
+Xj
+eX
+Uo
+Uo
+oc
+ir
+Ed
+HQ
+HQ
+EC
+lK
+HQ
+MR
+HQ
+bk
+zY
+KV
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+"}
+(41,1,1) = {"
+uP
+kd
+kd
+kd
+kd
+pF
+kd
+kd
+kd
+kd
+uP
+ps
+ps
+lq
+lq
+lq
+Ra
+Qf
+Qf
+Qf
+YW
+oc
+jV
+hh
+kI
+Uo
+Uo
+oc
+hV
+hV
+wG
+HQ
+Dv
+HQ
+HQ
+HQ
+SA
+KV
+zY
+KV
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+"}
+(42,1,1) = {"
+uP
+Us
+Us
+Us
+uP
+uP
+Us
+Us
+Us
+uP
+uP
+ps
+ps
+lq
+lq
+lq
+Ra
+Qf
+Qf
+Qf
+YW
+oc
+Uo
+Uo
+Uo
+Uo
+Uo
+Uo
+oc
+hV
+Er
+kf
+nI
+cV
+FI
+Nv
+Xc
+KV
+zY
+KV
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+"}
+(43,1,1) = {"
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+ps
+ps
+ps
+ps
+ps
+ps
+ps
+lq
+lq
+lq
+Ra
+Qf
+Qf
+Qf
+YW
+oc
+oc
+oc
+oc
+oc
+oc
+oc
+oc
+hV
+KV
+KV
+yM
+fg
+KV
+Mb
+Pu
+qL
+KV
+KV
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+"}
+(44,1,1) = {"
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+ps
+ps
+ps
+ps
+ps
+ps
+ps
+lq
+lq
+lq
+Ra
+Qf
+QR
+Qf
+hV
+YW
+YW
+YW
+YW
+YW
+YW
+YW
+YW
+hV
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+"}
+(45,1,1) = {"
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+ps
+ps
+ps
+ps
+ps
+ps
+ps
+lq
+lq
+lq
+Ra
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+"}
+(46,1,1) = {"
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+ps
+ps
+ps
+ps
+ps
+ps
+lq
+lq
+lq
+lq
+Ra
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+"}
+(47,1,1) = {"
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+"}
+(48,1,1) = {"
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+QR
+Qf
+Qf
+QR
+Qf
+Qf
+Qf
+QR
+Qf
+Qf
+Qf
+QR
+Qf
+Qf
+QR
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+"}
+(49,1,1) = {"
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+"}
+(50,1,1) = {"
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+Qf
+"}
