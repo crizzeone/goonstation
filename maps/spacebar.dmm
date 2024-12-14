@@ -177,11 +177,13 @@
 /turf/simulated/floor,
 /area/station/hallway/primary/southeast)
 "ch" = (
-/obj/grille/catwalk,
 /obj/cable/yellow{
 	icon_state = "4-8"
 	},
-/turf/unsimulated/floor/airless/plating/catwalk/auto,
+/obj/mesh/catwalk{
+	dir = 4
+	},
+/turf/space,
 /area/diner/solar)
 "ck" = (
 /obj/storage/closet/emergency,
@@ -271,11 +273,13 @@
 /turf/simulated/floor/yellow/side,
 /area/station/mining/staff_room)
 "dk" = (
-/obj/grille/catwalk,
 /obj/cable{
 	icon_state = "4-8"
 	},
-/turf/unsimulated/floor/airless/plating/catwalk/auto,
+/obj/mesh/catwalk{
+	dir = 4
+	},
+/turf/space,
 /area/station/quartermaster/refinery)
 "dp" = (
 /obj/cable{
@@ -335,11 +339,13 @@
 /turf/simulated/floor,
 /area/station/security/secwing)
 "dM" = (
-/obj/grille/catwalk,
 /obj/cable{
 	icon_state = "1-8"
 	},
-/turf/unsimulated/floor/airless/plating/catwalk/auto,
+/obj/mesh/catwalk{
+	dir = 4
+	},
+/turf/space,
 /area/station/quartermaster/refinery)
 "dO" = (
 /obj/machinery/conveyor/EW{
@@ -615,7 +621,6 @@
 /turf/simulated/wall/auto/supernorn,
 /area/station/science/chemistry)
 "gN" = (
-/obj/grille/catwalk,
 /obj/landmark/magnet_shield,
 /obj/securearea{
 	desc = "A warning that demarcates where the magnetic area begins.";
@@ -841,7 +846,6 @@
 /turf/simulated/floor/grime,
 /area/station/quartermaster/refinery)
 "kb" = (
-/obj/storage/secure/closet/security/armory,
 /turf/simulated/floor,
 /area/station/ai_monitored/armory)
 "kd" = (
@@ -906,7 +910,6 @@
 	name = "Tool Storage"
 	})
 "kz" = (
-/obj/grille/catwalk,
 /obj/cable/yellow,
 /obj/cable/yellow{
 	icon_state = "0-4"
@@ -914,7 +917,10 @@
 /obj/cable/yellow{
 	icon_state = "0-8"
 	},
-/turf/unsimulated/floor/airless/plating/catwalk/auto,
+/obj/mesh/catwalk{
+	dir = 4
+	},
+/turf/space,
 /area/diner/solar)
 "kK" = (
 /obj/decal/tile_edge/stripe/big,
@@ -1001,8 +1007,10 @@
 /obj/machinery/mining_magnet{
 	dir = 4
 	},
-/obj/grille/catwalk,
-/turf/unsimulated/floor/airless/plating/catwalk/auto,
+/obj/mesh/catwalk{
+	dir = 4
+	},
+/turf/space,
 /area/station/quartermaster/refinery)
 "ll" = (
 /obj/decal/stage_edge/alt,
@@ -1092,7 +1100,6 @@
 /turf/simulated/floor,
 /area/station/security/secwing)
 "lX" = (
-/obj/grille/catwalk,
 /obj/landmark/magnet_shield,
 /obj/securearea{
 	desc = "A warning that demarcates where the magnetic area begins.";
@@ -1255,11 +1262,13 @@
 /turf/simulated/floor/yellow,
 /area/station/quartermaster/cargobay)
 "mV" = (
-/obj/grille/catwalk,
 /obj/cable{
 	icon_state = "2-4"
 	},
-/turf/unsimulated/floor/airless/plating/catwalk/auto,
+/obj/mesh/catwalk{
+	dir = 4
+	},
+/turf/space,
 /area/station/quartermaster/refinery)
 "nb" = (
 /turf/simulated/floor/purplewhite{
@@ -1360,7 +1369,6 @@
 	},
 /area/station/hydroponics)
 "oc" = (
-/obj/grille/catwalk,
 /obj/landmark/magnet_shield,
 /obj/securearea{
 	desc = "A warning that demarcates where the magnetic area begins.";
@@ -1395,7 +1403,6 @@
 /turf/simulated/floor,
 /area/station/hallway/primary)
 "os" = (
-/obj/grille/catwalk,
 /obj/landmark/magnet_shield,
 /obj/securearea{
 	desc = "A warning that demarcates where the magnetic area begins.";
@@ -1487,9 +1494,6 @@
 	pixel_x = -5;
 	pixel_y = 12
 	},
-/obj/submachine/mixer{
-	pixel_x = 6
-	},
 /turf/simulated/floor/specialroom/cafeteria,
 /area/station/crew_quarters/kitchen)
 "pj" = (
@@ -1500,7 +1504,6 @@
 /turf/space,
 /area/station/quartermaster/refinery)
 "pr" = (
-/obj/grille/catwalk,
 /obj/cable/yellow{
 	icon_state = "0-2"
 	},
@@ -1510,7 +1513,10 @@
 /obj/cable/yellow{
 	icon_state = "0-8"
 	},
-/turf/unsimulated/floor/airless/plating/catwalk/auto,
+/obj/mesh/catwalk{
+	dir = 4
+	},
+/turf/space,
 /area/diner/solar)
 "pt" = (
 /obj/shrub,
@@ -1527,8 +1533,13 @@
 /turf/simulated/floor/yellow,
 /area/station/quartermaster/cargobay)
 "pA" = (
-/obj/grille/catwalk,
-/turf/unsimulated/floor/airless/plating/catwalk/auto,
+/obj/mesh/catwalk{
+	dir = 4
+	},
+/obj/mesh/catwalk{
+	dir = 4
+	},
+/turf/space,
 /area/station/quartermaster/refinery)
 "pE" = (
 /obj/machinery/dispenser,
@@ -1868,14 +1879,6 @@
 	},
 /turf/simulated/floor,
 /area/station/ai_monitored/armory)
-"sp" = (
-/obj/grille/catwalk,
-/obj/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/light/small/floor,
-/turf/unsimulated/floor/airless/plating/catwalk/auto,
-/area/station/catwalk)
 "sq" = (
 /obj/machinery/power/data_terminal,
 /obj/cable{
@@ -2330,9 +2333,6 @@
 /turf/simulated/floor/plating,
 /area/station/engine/engineering)
 "we" = (
-/obj/grille/catwalk{
-	dir = 4
-	},
 /obj/landmark/magnet_shield,
 /obj/securearea{
 	desc = "A warning that demarcates where the magnetic area begins.";
@@ -2402,11 +2402,10 @@
 	},
 /area/station/science/chemistry)
 "wF" = (
-/obj/grille/catwalk,
-/obj/machinery/status_display{
-	pixel_y = 30
+/obj/mesh/catwalk{
+	dir = 4
 	},
-/turf/unsimulated/floor/airless/plating/catwalk/auto,
+/turf/space,
 /area/station/quartermaster/refinery)
 "wG" = (
 /obj/decal/tile_edge/stripe/extra_big{
@@ -2743,11 +2742,16 @@
 /turf/simulated/floor,
 /area/station/crew_quarters/baroffice)
 "zI" = (
-/obj/grille/catwalk,
 /obj/cable/yellow{
 	icon_state = "1-8"
 	},
-/turf/unsimulated/floor/airless/plating/catwalk/auto,
+/obj/mesh/catwalk{
+	dir = 4
+	},
+/obj/mesh/catwalk{
+	dir = 4
+	},
+/turf/space,
 /area/diner/solar)
 "zN" = (
 /obj/machinery/conveyor/EW{
@@ -2913,8 +2917,10 @@
 /turf/simulated/floor,
 /area/station/engine/engineering)
 "Bo" = (
-/obj/grille/catwalk,
-/turf/unsimulated/floor/airless/plating/catwalk/auto,
+/obj/mesh/catwalk{
+	dir = 4
+	},
+/turf/space,
 /area/station/catwalk)
 "Bp" = (
 /obj/rack,
@@ -3131,7 +3137,6 @@
 	name = "Tool Storage"
 	})
 "CX" = (
-/obj/grille/catwalk,
 /obj/landmark/magnet_shield,
 /obj/securearea{
 	desc = "A warning that demarcates where the magnetic area begins.";
@@ -3241,7 +3246,6 @@
 /turf/simulated/floor/yellow,
 /area/station/quartermaster/cargobay)
 "DB" = (
-/obj/grille/catwalk,
 /obj/landmark/magnet_shield,
 /obj/securearea{
 	desc = "A warning that demarcates where the magnetic area begins.";
@@ -3290,12 +3294,14 @@
 /turf/simulated/floor,
 /area/station/security/brig/genpop)
 "DQ" = (
-/obj/grille/catwalk,
 /obj/machinery/communications_dish,
 /obj/cable{
 	icon_state = "0-4"
 	},
-/turf/unsimulated/floor/airless/plating/catwalk/auto,
+/obj/mesh/catwalk{
+	dir = 4
+	},
+/turf/space,
 /area/station/com_dish/auxdish)
 "DT" = (
 /obj/cable{
@@ -3307,11 +3313,13 @@
 /turf/simulated/floor,
 /area/station/security/secwing)
 "Ei" = (
-/obj/grille/catwalk,
 /obj/cable/yellow{
 	icon_state = "4-8"
 	},
-/turf/unsimulated/floor/airless/plating/catwalk/auto,
+/obj/mesh/catwalk{
+	dir = 4
+	},
+/turf/space,
 /area/station/catwalk)
 "Er" = (
 /obj/table/auto,
@@ -3439,7 +3447,6 @@
 /turf/simulated/wall/auto/supernorn,
 /area/station/engine/storage)
 "Fv" = (
-/obj/machinery/processor,
 /obj/decal/tile_edge/stripe/extra_big{
 	dir = 1
 	},
@@ -3550,7 +3557,6 @@
 /turf/simulated/floor/plating,
 /area/station/security/secwing)
 "GL" = (
-/obj/grille/catwalk,
 /obj/landmark/magnet_shield,
 /obj/securearea{
 	desc = "A warning that demarcates where the magnetic area begins.";
@@ -3648,7 +3654,6 @@
 	},
 /area/station/science/chemistry)
 "HP" = (
-/obj/grille/catwalk,
 /obj/cable/yellow,
 /obj/cable/yellow{
 	icon_state = "0-2"
@@ -3659,7 +3664,10 @@
 /obj/cable/yellow{
 	icon_state = "0-8"
 	},
-/turf/unsimulated/floor/airless/plating/catwalk/auto,
+/obj/mesh/catwalk{
+	dir = 4
+	},
+/turf/space,
 /area/diner/solar)
 "HV" = (
 /obj/machinery/light,
@@ -3710,14 +3718,6 @@
 	},
 /turf/simulated/floor/black,
 /area/station/turret_protected/ai_upload)
-"Ih" = (
-/obj/grille/catwalk,
-/obj/grille/catwalk,
-/obj/cable{
-	icon_state = "4-8"
-	},
-/turf/unsimulated/floor/airless/plating/catwalk/auto,
-/area/station/catwalk)
 "Ii" = (
 /turf/simulated/floor/shuttlebay{
 	name = "reinforced plating"
@@ -3934,13 +3934,6 @@
 /area/station/storage/auxillary{
 	name = "Tool Storage"
 	})
-"Kg" = (
-/obj/grille/catwalk,
-/obj/cable{
-	icon_state = "4-8"
-	},
-/turf/unsimulated/floor/airless/plating/catwalk/auto,
-/area/station/catwalk)
 "Kh" = (
 /obj/mapping_helper/wingrille_spawn/auto,
 /obj/cable{
@@ -4369,22 +4362,6 @@
 "Mw" = (
 /turf/simulated/floor,
 /area/station/crew_quarters/baroffice)
-"MD" = (
-/obj/grille/catwalk{
-	dir = 5
-	},
-/obj/landmark/magnet_shield,
-/obj/securearea{
-	desc = "A warning that demarcates where the magnetic area begins.";
-	dir = 1;
-	icon_state = "magwarning";
-	name = "Magnet Area Boundary"
-	},
-/turf/simulated/floor/airless/plating/catwalk{
-	dir = 4;
-	icon_state = "catwalk_cross"
-	},
-/area/space)
 "ME" = (
 /obj/decal/tile_edge/stripe/extra_big{
 	dir = 10
@@ -4619,13 +4596,6 @@
 	},
 /turf/simulated/floor/sanitary,
 /area/station/security/brig/cell1)
-"OR" = (
-/obj/grille/catwalk,
-/obj/cable{
-	icon_state = "4-8"
-	},
-/turf/unsimulated/floor/airless/plating/catwalk/auto,
-/area/station/com_dish/auxdish)
 "OU" = (
 /turf/simulated/wall/auto/supernorn,
 /area/station/maintenance/inner/sw)
@@ -4645,9 +4615,6 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/disposal)
 "Pe" = (
-/obj/grille/catwalk{
-	dir = 4
-	},
 /obj/landmark/magnet_shield,
 /obj/securearea{
 	desc = "A warning that demarcates where the magnetic area begins.";
@@ -4704,11 +4671,13 @@
 	},
 /area/station/security/brig)
 "Py" = (
-/obj/grille/catwalk,
 /obj/cable{
 	icon_state = "1-2"
 	},
-/turf/unsimulated/floor/airless/plating/catwalk/auto,
+/obj/mesh/catwalk{
+	dir = 4
+	},
+/turf/space,
 /area/station/quartermaster/refinery)
 "PA" = (
 /obj/rack,
@@ -5272,8 +5241,10 @@
 	},
 /area/station/hydroponics)
 "TL" = (
-/obj/grille/catwalk,
-/turf/unsimulated/floor/airless/plating/catwalk/auto,
+/obj/mesh/catwalk{
+	dir = 4
+	},
+/turf/space,
 /area/station/com_dish/auxdish)
 "TM" = (
 /obj/mapping_helper/wingrille_spawn/auto,
@@ -5330,12 +5301,14 @@
 /turf/space,
 /area/station/quartermaster/refinery)
 "Us" = (
-/obj/grille/catwalk,
 /obj/cable/yellow{
 	icon_state = "0-2"
 	},
 /obj/machinery/power/tracker/east,
-/turf/unsimulated/floor/airless/plating/catwalk/auto,
+/obj/mesh/catwalk{
+	dir = 4
+	},
+/turf/space,
 /area/diner/solar)
 "Uu" = (
 /obj/disposalpipe/segment,
@@ -5416,9 +5389,6 @@
 /obj/mapping_helper/firedoor_spawn,
 /turf/simulated/floor,
 /area/station/hallway/primary/southeast)
-"UT" = (
-/turf/space,
-/area/station/quartermaster/refinery)
 "UV" = (
 /obj/machinery/light,
 /turf/simulated/floor,
@@ -5551,12 +5521,14 @@
 /turf/simulated/floor/plating,
 /area/station/hydroponics)
 "Wh" = (
-/obj/grille/catwalk,
 /obj/cable/yellow,
 /obj/cable/yellow{
 	icon_state = "0-2"
 	},
-/turf/unsimulated/floor/airless/plating/catwalk/auto,
+/obj/mesh/catwalk{
+	dir = 4
+	},
+/turf/space,
 /area/diner/solar)
 "Wi" = (
 /obj/machinery/door/airlock/pyro/glass/security/alt{
@@ -5646,14 +5618,6 @@
 /obj/machinery/manufacturer/robotics,
 /turf/simulated/floor/specialroom/medbay,
 /area/station/medical/medbay)
-"WO" = (
-/obj/grille/catwalk,
-/obj/cable{
-	icon_state = "2-8"
-	},
-/obj/machinery/light/small/floor,
-/turf/unsimulated/floor/airless/plating/catwalk/auto,
-/area/station/catwalk)
 "WQ" = (
 /obj/machinery/computer/supplycomp,
 /obj/decal/stage_edge/alt,
@@ -5845,7 +5809,6 @@
 /turf/simulated/floor/plating,
 /area/station/maintenance/disposal)
 "YR" = (
-/obj/grille/steel,
 /turf/space,
 /area/station/com_dish/auxdish)
 "YU" = (
@@ -11185,7 +11148,7 @@ At
 Sf
 Bo
 Ei
-Kg
+Bo
 Bo
 Bo
 Sf
@@ -11307,7 +11270,7 @@ At
 Sf
 Sf
 Ei
-Ih
+Bo
 Bo
 Sf
 Sf
@@ -11429,7 +11392,7 @@ At
 At
 Sf
 xu
-sp
+Bo
 Sf
 Sf
 Sf
@@ -11551,7 +11514,7 @@ nM
 nM
 Sf
 ch
-Kg
+Bo
 Bo
 Qd
 Bo
@@ -11586,7 +11549,7 @@ Fv
 yh
 AC
 cr
-pA
+wF
 cr
 cr
 cr
@@ -11673,7 +11636,7 @@ HP
 HP
 Wh
 kz
-Kg
+Bo
 Bo
 Bo
 Lp
@@ -11708,7 +11671,7 @@ ax
 oB
 oB
 Sh
-pA
+wF
 hk
 Uh
 eM
@@ -11795,7 +11758,7 @@ Yz
 Yz
 Sf
 ch
-Kg
+Bo
 Lp
 fE
 Lp
@@ -11804,7 +11767,7 @@ sq
 xZ
 ME
 Lp
-OR
+TL
 TL
 YR
 At
@@ -11830,7 +11793,7 @@ wG
 Qp
 pR
 cr
-pA
+wF
 hk
 wH
 rE
@@ -11917,7 +11880,7 @@ At
 Sf
 Sf
 ch
-WO
+Bo
 bF
 gS
 bF
@@ -11952,7 +11915,7 @@ wG
 LU
 kT
 cr
-pA
+wF
 hk
 gr
 Wc
@@ -12074,7 +12037,7 @@ wG
 qS
 jE
 Sh
-pA
+wF
 hk
 hk
 hk
@@ -12196,7 +12159,7 @@ gU
 zw
 qi
 cr
-pA
+wF
 hk
 mC
 Ty
@@ -12311,8 +12274,8 @@ At
 At
 At
 pj
-UT
-UT
+wF
+wF
 cr
 cr
 Ne
@@ -12431,22 +12394,22 @@ Nx
 ii
 At
 At
-pA
-pA
-pA
-pA
-pA
+wF
+wF
+wF
+wF
+wF
 Uo
-pA
+wF
 dk
-pA
-pA
-pA
-pA
-pA
-pA
-pA
-pA
+wF
+wF
+wF
+wF
+wF
+wF
+wF
+wF
 At
 At
 At
@@ -12553,7 +12516,7 @@ Nx
 ii
 At
 At
-pA
+wF
 mV
 Py
 Py
@@ -12561,14 +12524,14 @@ Py
 Py
 Py
 dM
-pA
-pA
-pA
-pA
-pA
-pA
-pA
-pA
+wF
+wF
+wF
+wF
+wF
+wF
+wF
+wF
 At
 At
 At
@@ -12678,19 +12641,19 @@ At
 pv
 uu
 pv
-pA
-pA
-pA
-pA
-pA
-pA
-pA
-pA
-pA
-pA
-pA
-pA
-pA
+wF
+wF
+wF
+wF
+wF
+wF
+wF
+wF
+wF
+wF
+wF
+wF
+wF
 At
 At
 At
@@ -12800,7 +12763,7 @@ At
 oD
 PM
 oD
-pA
+wF
 At
 UD
 At
@@ -12808,11 +12771,11 @@ At
 UD
 At
 At
-pA
-pA
+wF
+wF
 cr
 cr
-pA
+wF
 At
 At
 At
@@ -12932,9 +12895,9 @@ At
 At
 At
 pA
-pA
+wF
 lk
-pA
+wF
 At
 At
 At
@@ -13053,8 +13016,8 @@ CX
 CX
 CX
 os
-MD
-MD
+os
+os
 os
 CX
 CX
