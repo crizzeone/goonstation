@@ -88,7 +88,7 @@ TYPEINFO(/obj/machinery/recharge_station)
 /obj/machinery/recharge_station/attackby(obj/item/W, mob/user)
 	if (istype(W, /obj/item/clothing))
 		if (!istype(W, /obj/item/clothing/mask) && !istype(W, /obj/item/clothing/head) && !istype(W, /obj/item/clothing/under) && !istype(W, /obj/item/clothing/suit))
-			boutput(user, SPAN_ALERT("This type of is not compatible."))
+			boutput(user, SPAN_ALERT("This type of clothing is not compatible."))
 			return
 		if (user.contents.Find(W))
 			user.drop_item()
@@ -182,14 +182,19 @@ TYPEINFO(/obj/machinery/recharge_station)
 	src.build_icon()
 	return TRUE
 
+/obj/machinery/recharge_station/Click(location, control, params)
+	if(!src.ghost_observe_occupant(usr, src.occupant))
+		. = ..()
+
 /obj/machinery/recharge_station/MouseDrop_T(atom/movable/AM as mob|obj, mob/user as mob)
-	if (BOUNDS_DIST(AM, user) > 0 || BOUNDS_DIST(src, user) > 0)
+	if (BOUNDS_DIST(AM, user) > 0 || BOUNDS_DIST(src, user) > 0 || (ismob(AM) && BOUNDS_DIST(AM, src) > 0))
 		return
 	if (!isturf(AM.loc) && !(AM in user))
 		return
 	if (!isliving(user) || isAI(user))
 		return
-
+	if (isintangible(user))
+		return
 	if (isitem(AM) && can_act(user))
 		src.Attackby(AM, user)
 		return
@@ -236,6 +241,23 @@ TYPEINFO(/obj/machinery/recharge_station)
 
 	if (ishuman(AM))
 		src.move_human_inside(user, AM)
+
+/obj/machinery/recharge_station/receive_silicon_hotkey(mob/user)
+	. = ..()
+
+	if (!isAI(user))
+		return
+
+	var/mob/living/silicon/ai/mainframe = null
+	if (isAIeye(user))
+		var/mob/living/intangible/aieye/eye = user
+		mainframe = eye.mainframe
+	else
+		mainframe = user
+
+	if(user.client.check_key(KEY_OPEN))
+		if (src.occupant)
+			mainframe.deploy_to_shell(src.occupant)
 
 /obj/machinery/recharge_station/proc/build_icon()
 	if (src.occupant)
@@ -309,14 +331,22 @@ TYPEINFO(/obj/machinery/recharge_station)
 						bdna = H.bioHolder.Uid
 						btype = H.bioHolder.bloodType
 					gibs(src.loc, null, bdna, btype)
-
-					H.Robotize_MK2(TRUE, syndicate=TRUE)
+					if (isnpcmonkey(H))
+						H.ghostize()
+						var/robopath = pick(/obj/machinery/bot/guardbot,/obj/machinery/bot/secbot,
+						/obj/machinery/bot/medbot,/obj/machinery/bot/firebot,/obj/machinery/bot/cleanbot,
+						/obj/machinery/bot/floorbot)
+						var/obj/machinery/bot/bot = new robopath (src.loc)
+						bot.emag_act()
+						qdel(H)
+					else
+						H.Robotize_MK2(TRUE, syndicate=TRUE)
 					src.build_icon()
 					playsound(src.loc, 'sound/machines/ding.ogg', 100, 1)
 			else
 				H.bioHolder.AddEffect("eaten")
 				random_brute_damage(H, 10)
-				H.changeStatus("weakened", 5 SECONDS)
+				H.changeStatus("knockdown", 5 SECONDS)
 				if (prob(15))
 					boutput(H, SPAN_ALERT("[pick("You feel chunks of your flesh being ripped off!"," Something cold and sharp skewers you!", "You feel your organs being pulped and mashed!", "Machines shred you from every direction!")]"))
 			src.updateUsrDialog()
@@ -612,6 +642,7 @@ TYPEINFO(/obj/machinery/recharge_station)
 			if (R.shell || R.dependent) //no renaming AI shells
 				return
 			var/newname = copytext(strip_html(sanitize(tgui_input_text(user, "What do you want to rename [R]?", "Cyborg Maintenance", R.name))), 1, 64)
+			newname = remove_bad_name_characters(newname)
 			if ((!issilicon(user) && (BOUNDS_DIST(user, src) > 0)) || user.stat || !newname)
 				return
 			if (url_regex?.Find(newname))

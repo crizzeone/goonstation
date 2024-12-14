@@ -67,7 +67,7 @@
 			. += "<br>[SPAN_NOTICE("Someone has uploaded a blueprint named '[current_bp.room_name]'.")]"
 
 	attackby(obj/item/W, mob/user)
-		if (istype(W, /obj/item/sheet) || istype(W, /obj/item/material_piece))
+		if (!W.cant_drop && (istype(W, /obj/item/sheet) || istype(W, /obj/item/material_piece)))
 			boutput(user, SPAN_NOTICE("You insert the material into the machine."))
 			user.drop_item()
 			W.set_loc(src)
@@ -77,8 +77,8 @@
 	MouseDrop_T(obj/item/W, mob/user)
 		if (!in_interact_range(src, user)  || BOUNDS_DIST(W, user) > 0 || !can_act(user))
 			return
-		else
-			if (istype(W, /obj/item/sheet) || istype(W, /obj/item/material_piece))
+		else if(isitem(W))
+			if (!W.cant_drop && (istype(W, /obj/item/sheet) || istype(W, /obj/item/material_piece)))
 				boutput(user, SPAN_NOTICE("You insert [W] into the machine."))
 				W.set_loc(src)
 				return
@@ -263,6 +263,7 @@
 				if (!isnull(O.icon_state)) properties["icon_state"] = O.icon_state // required for old blueprint support
 				new/dmm_suite/preloader(pos, properties) // this doesn't spawn the objects, only presets their properties
 				var/obj/spawned_object = new O.objecttype(pos)
+				spawned_object.after_abcu_spawn()
 				if(!is_valid_abcu_object(spawned_object))
 					qdel(spawned_object)
 
@@ -357,6 +358,8 @@
 
 			if(istype(pos, /turf/space))
 				O = new/obj/effects/abcuMarker(pos)
+			else if(pos.can_build && pos.z == Z_LEVEL_STATION)
+				O = new/obj/effects/abcuMarker(pos)
 			else
 				O = new/obj/effects/abcuMarker/red(pos)
 				src.invalid_count++
@@ -395,22 +398,24 @@
 	var/posy = 0
 	var/icon = ""
 
-/verb/adminCreateBlueprint()
+/client/proc/adminCreateBlueprint()
 	set name = "Blueprint Create"
 	set desc = "Allows creation of blueprints of any user."
 	SET_ADMIN_CAT(ADMIN_CAT_FUN)
-
+	USR_ADMIN_ONLY
+	SHOW_VERB_DESC
 	var/picked = browse_abcu_blueprints(usr, "Admin Share Blueprint", "Choose a blueprint to print and share!", TRUE)
 	if (!picked) return
 	var/obj/printed = new /obj/item/abcu_blueprint_reference(usr, picked, usr)
 	usr.put_in_hand_or_drop(printed)
 	boutput(usr, SPAN_NOTICE("Spawned the blueprint '[picked["file"]]'."))
 
-/verb/adminDeleteBlueprint()
+/client/proc/adminDeleteBlueprint()
 	set name = "Blueprint Delete"
 	set desc = "Allows deletion of blueprints of any user."
 	SET_ADMIN_CAT(ADMIN_CAT_FUN)
-
+	USR_ADMIN_ONLY
+	SHOW_VERB_DESC
 	var/deleted = delete_abcu_blueprint(usr, TRUE)
 	if (!deleted) return
 	logTheThing(LOG_ADMIN, usr, "[usr] deleted blueprint [deleted["file"]], owned by [deleted["ckey"]].")
@@ -419,7 +424,8 @@
 	set name = "Blueprint Dump"
 	set desc = "Dumps readable HTML blueprint, of any user, to your client folder."
 	SET_ADMIN_CAT(ADMIN_CAT_DEBUG)
-
+	USR_ADMIN_ONLY
+	SHOW_VERB_DESC
 	var/picked = browse_abcu_blueprints(usr, "Admin Dump Blueprint", "Choose a blueprint to export.", TRUE)
 	if (!picked) return
 
@@ -485,7 +491,8 @@
 // whitelists/blacklists applied during both saving and loading, so it's functionally retroactive
 #define WHITELIST_OBJECTS list( \
 	/obj/stool, \
-	/obj/grille, \
+	/obj/mesh/catwalk, \
+	/obj/mesh/grille, \
 	/obj/lattice, \
 	/obj/window, \
 	/obj/machinery/door, \
@@ -541,7 +548,7 @@
 	/obj/machinery/portable_atmospherics, \
 	/obj/machinery/ai_status_display, \
 	/obj/securearea, \
-	/obj/submachine/mixer, \
+	/obj/machinery/mixer, \
 	/obj/submachine/foodprocessor, \
 	\
 )
@@ -555,7 +562,7 @@
 )
 
 #define WHITELIST_TURFS list(/turf/simulated)
-#define BLACKLIST_TURFS list(/turf/simulated/floor/specialroom/sea_elevator_shaft, /turf/simulated/shuttle, /turf/simulated/floor/shuttle, /turf/simulated/wall/auto/shuttle)
+#define BLACKLIST_TURFS list(/turf/simulated/floor/auto/elevator_shaft, /turf/simulated/shuttle, /turf/simulated/floor/shuttle, /turf/simulated/wall/auto/shuttle)
 
 /datum/abcu_blueprint
 	var/cost_metal = 0
@@ -779,7 +786,7 @@ proc/delete_abcu_blueprint(mob/user, var/browse_all_users = FALSE)
 	icon_state = "blueprintmarker"
 	item_state = "gun"
 
-	flags = FPRINT | EXTRADELAY | TABLEPASS | CONDUCT
+	flags = EXTRADELAY | TABLEPASS | CONDUCT
 	w_class = W_CLASS_SMALL
 
 	var/prints_left = 5
@@ -992,6 +999,7 @@ proc/delete_abcu_blueprint(mob/user, var/browse_all_users = FALSE)
 		return
 
 	dropped(mob/user as mob)
+		. = ..()
 		removeOverlays()
 		selecting = 0
 		qdel(corner1img)

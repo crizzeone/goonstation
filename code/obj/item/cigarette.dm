@@ -148,13 +148,13 @@
 	temperature_expose(datum/gas_mixture/air, temperature, volume)
 		if (src.on == 0)
 			if (temperature > T0C+200)
-				src.visible_message(SPAN_ALERT("The [src] ignites!"), group = "cig_ignite")
+				src.visible_message(SPAN_ALERT("[src] ignites!"), group = "cig_ignite")
 				src.light()
 
 	ex_act(severity)
 		. = ..()
 		if (src.on == 0)
-			src.visible_message(SPAN_ALERT("The [src] ignites!"), group = "cig_ignite")
+			src.visible_message(SPAN_ALERT("[src] ignites!"), group = "cig_ignite")
 			src.light()
 
 	attackby(obj/item/W, mob/user)
@@ -332,16 +332,14 @@
 
 	dropped(mob/user as mob)
 		if (!isturf(src.loc))
-			return
+			return ..()
 		if (src.on == 1 && !src.exploding && src.reagents.total_volume <= 20)
 			src.put_out(user, SPAN_ALERT("<b>[user]</b> calmly drops and treads on the lit [src.name], putting it out instantly."))
-			return ..()
 		else if (user.client)
 			if (!user.client.check_key(KEY_THROW)) //checks if player is in throw mode to avoid double messages
 				user.visible_message(SPAN_ALERT("<b>[user]</b> drops [src]. Guess [he_or_she(user)][ve_or_s(user)] had enough for the day."), group = "cig_drop")
-				return ..()
-		else
-			return ..()
+
+		return ..()
 
 
 	proc/trick_explode()
@@ -515,7 +513,7 @@
 // WHY
 /obj/item/clothing/mask/cigarette/custom
 	desc = "There could be anything in this."
-	flags = FPRINT|TABLEPASS|OPENCONTAINER
+	flags = TABLEPASS | OPENCONTAINER
 
 	New()
 		..()
@@ -540,7 +538,7 @@
 	var/max_cigs = 6
 	var/cigtype = /obj/item/clothing/mask/cigarette
 	var/package_style = "cigpacket"
-	flags = TABLEPASS | FPRINT
+	var/list/allowed = list(/obj/item/clothing/mask/cigarette)
 	c_flags = ONBELT
 	stamina_damage = 3
 	stamina_cost = 3
@@ -548,11 +546,45 @@
 
 	New()
 		..()
+		AddComponent(/datum/component/transfer_input/quickloading, allowed, "onLoading", "filterLoading")
 		if (!cigtype)
 			return
 		for(var/i in 1 to src.max_cigs)
 			new src.cigtype(src)
 
+	mouse_drop(atom/over_object, src_location, over_location, src_control, over_control, params)
+		if ((istype(over_object, /obj/table) || \
+					(isturf(over_object) && total_density(over_location) < 1)) && \
+					in_interact_range(over_object,src) && \
+					src.contents.len > 0)
+			usr.visible_message(SPAN_NOTICE("[usr] dumps out [src]'s contents onto [over_object]!"))
+			for (var/obj/item/thing in src.contents)
+				thing.set_loc(over_location)
+			src.UpdateIcon()
+			if (!islist(params)) params = params2list(params)
+			if (params) params["dumped"] = 1
+		else ..()
+
+	should_place_on(obj/target, params)
+		if (istype(target, /obj/table) && params && params["dumped"])
+			return FALSE
+		return ..()
+
+	get_help_message(dist, mob/user)
+		. = ..()
+		. += "Hold this and drag a nearby cigarette onto it to auto-fill.\n \
+			Drag this onto a nearby table or floor while holding it to dump its contents."
+
+/obj/item/cigpacket/proc/onLoading(atom/movable/incoming)
+	src.UpdateIcon()
+	// No idea is usr works via components like this, but there seems to be no recourse without altering the component itself.
+	incoming.add_fingerprint(usr)
+	return TRUE
+
+/obj/item/cigpacket/proc/filterLoading(obj/item/clothing/mask/cigarette/cig)
+	if (length(src.contents) >= max_cigs) return FALSE
+	if (cig.on) return FALSE
+	return TRUE
 
 /obj/item/cigpacket/nicofree
 	name = "nicotine-free cigarette packet"
@@ -673,7 +705,6 @@
 	var/cigcount = 5
 	var/cigtype = /obj/item/clothing/mask/cigarette/cigar
 	var/package_style = "cigarbox"
-	flags = TABLEPASS | FPRINT
 	c_flags = ONBELT
 	stamina_damage = 3
 	stamina_cost = 3
@@ -737,7 +768,6 @@
 	cigcount = 5
 	cigtype = /obj/item/clothing/mask/cigarette/cigar/gold
 	package_style = "cigarbox"
-	flags = TABLEPASS | FPRINT
 	c_flags = ONBELT
 	stamina_damage = 3
 	stamina_cost = 3
@@ -819,7 +849,7 @@
 	icon_state = "matchbook"
 	w_class = W_CLASS_TINY
 	throwforce = 1
-	flags = FPRINT | TABLEPASS | SUPPRESSATTACK
+	flags = TABLEPASS | SUPPRESSATTACK
 	stamina_damage = 0
 	stamina_cost = 0
 	stamina_crit_chance = 1
@@ -897,7 +927,7 @@
 	icon_state = "match"
 	w_class = W_CLASS_TINY
 	throwforce = 1
-	flags = FPRINT | TABLEPASS | SUPPRESSATTACK
+	flags = TABLEPASS | SUPPRESSATTACK
 	stamina_damage = 0
 	stamina_cost = 0
 	stamina_crit_chance = 1
@@ -989,7 +1019,7 @@
 	temperature_expose(datum/gas_mixture/air, temperature, volume)
 		if (src.on == MATCH_UNLIT)
 			if (temperature > T0C+200)
-				src.visible_message(SPAN_ALERT("The [src] ignites!"))
+				src.visible_message(SPAN_ALERT("[src] ignites!"))
 				src.light()
 
 	ex_act(severity)
@@ -997,7 +1027,7 @@
 		if (QDELETED(src))
 			return
 		if (src.on == MATCH_UNLIT)
-			src.visible_message(SPAN_ALERT("The [src] ignites!"))
+			src.visible_message(SPAN_ALERT("[src] ignites!"))
 			src.light()
 
 	afterattack(atom/target, mob/user as mob)
@@ -1116,7 +1146,7 @@
 	inhand_image_icon = 'icons/mob/inhand/hand_general.dmi'
 	w_class = W_CLASS_TINY
 	throwforce = 4
-	flags = FPRINT | TABLEPASS | CONDUCT | ATTACK_SELF_DELAY
+	flags = TABLEPASS | CONDUCT | ATTACK_SELF_DELAY
 	c_flags = ONBELT
 	object_flags = NO_GHOSTCRITTER
 	click_delay = 0.7 SECONDS
@@ -1262,7 +1292,7 @@
 					src.deactivate(null)
 			//sleep(1 SECOND)
 
-	temperature_expose(datum/gas_mixture/air, exposed_temperature, exposed_volume)
+	temperature_expose(datum/gas_mixture/air, exposed_temperature, exposed_volume, cannot_be_cooled = FALSE)
 		if (exposed_temperature > enviromental_expose_temp)
 			return ..()
 		return

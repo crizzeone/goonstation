@@ -12,13 +12,14 @@ ABSTRACT_TYPE(/obj/item/clothing/suit)
 	var/fire_resist = T0C+100
 	/// If TRUE the suit will hide whoever is wearing it's hair
 	var/over_hair = FALSE
-	flags = FPRINT | TABLEPASS
 	w_class = W_CLASS_NORMAL
 	var/restrain_wearer = 0
 	var/bloodoverlayimage = 0
 	var/team_num
 	/// Used for the toggle_hood component, should be the same as the default icon_state so it can get updated with medal rewards.
 	var/coat_style = null
+	/// Used for hoodies (and anything that uses the toggle_hood component)
+	var/hooded = FALSE
 
 
 	setupProperties()
@@ -31,10 +32,28 @@ ABSTRACT_TYPE(/obj/item/clothing/suit)
 		. = ..()
 		if (slot == SLOT_BACK)
 			src.wear_layer = max(src.wear_layer, MOB_BACK_SUIT_LAYER) // set to a higher layer, unless they're on an even higher layer
+		var/mob/living/carbon/human/H = user
+		if (src.hooded && istype(H) && H.head)
+			var/obj/ability_button/hood_toggle/toggle = locate() in src.ability_buttons
+			toggle?.execute_ability()
+
 
 	unequipped(mob/user)
 		. = ..()
 		src.wear_layer = initial(src.wear_layer)
+
+	/// if this item has a hood, returns if the hood can be worn
+	proc/can_wear_hood()
+		. = FALSE
+		var/mob/living/carbon/human/H = src.loc
+		if (!istype(H))
+			return
+		if ((H.wear_suit == src && !H.head) || !H.wear_suit)
+			return TRUE
+
+	/// what happens after the hood is toggled. override as needed
+	proc/on_toggle_hood()
+		return
 
 /obj/item/clothing/suit/hoodie
 	name = "hoodie"
@@ -284,6 +303,8 @@ TYPEINFO(/obj/item/clothing/suit/hazard)
 
 		boutput(user, SPAN_NOTICE("You attach [W] to [src]."))
 		src.armor()
+		if(!src.fingerprints)
+			src.fingerprints = list()
 		src.fingerprints |= W.fingerprints
 		qdel(W)
 
@@ -484,6 +505,10 @@ TYPEINFO(/obj/item/clothing/suit/hazard/paramedic/armored)
 	setupProperties()
 		..()
 		setProperty("heatprot", 10)
+
+	april_fools
+		icon_state = "chef-alt"
+		item_state = "chef-alt"
 
 /obj/item/clothing/suit/apron
 	name = "apron"
@@ -1075,6 +1100,61 @@ TYPEINFO(/obj/item/clothing/suit/hazard/fire/armored)
 			..()
 			src.setMaterial(getMaterial("cotton"), appearance = 0, setname = 0)
 
+/obj/item/clothing/suit/knitsweater
+	name = "cozy knit sweater"
+	desc = "A pretty warm-looking knit sweater. Handmade with love, probably."
+	icon = 'icons/obj/clothing/overcoats/item_suit.dmi'
+	wear_image_icon = 'icons/mob/clothing/overcoats/worn_suit.dmi'
+	icon_state = "sweatercozy"
+	item_state = "sweatercozy"
+	body_parts_covered = TORSO|ARMS
+
+	setupProperties()
+		..()
+		setProperty("coldprot", 20)
+
+	cable
+		name = "cable-knit sweater"
+		desc = "A warm cable-knit sweater. Made of wool, not electrical cables."
+		icon_state = "sweatercable"
+		item_state = "sweatercable"
+
+	bubble
+		name = "bubble-knit sweater"
+		desc = "A warm bubble-knit sweater. Made of wool, not bubbles."
+		icon_state = "sweaterbubble"
+		item_state = "sweaterbubble"
+
+	cardigan
+		name = "cardigan sweater"
+		desc = "A warm cardigan sweater. Handmade with love, probably."
+		icon_state = "cardigan"
+		item_state = "cardigan"
+		coat_style = "cardigan"
+
+		New()
+			..()
+			src.AddComponent(/datum/component/toggle_coat, coat_style = "[src.coat_style]", buttoned = TRUE)
+
+		dyeable
+			name = "dyeable cardigan sweater"
+			desc = "A warm cardigan sweater that can be dyed with hair dye. Obviously."
+
+			New()
+				..()
+				src.color = "#FFFFFF"
+
+			attackby(obj/item/dye_bottle/W, mob/user)
+				if (istype(W, /obj/item/dye_bottle))
+					src.color = W.customization_first_color
+					src.UpdateIcon()
+					var/mob/wearer = src.loc
+					if (ismob(wearer))
+						wearer.update_clothing()
+					user.visible_message(SPAN_ALERT("<b>[user]</b> splashes dye on [user != wearer && ismob(wearer) ? "[wearer]'s" : his_or_her(user)] cardigan."))
+					return
+				. = ..()
+
 // LONG SHIRTS
 // No they're not sweaters
 
@@ -1152,6 +1232,24 @@ TYPEINFO(/obj/item/clothing/suit/hazard/fire/armored)
 		..()
 		setProperty("space_movespeed", 1.5)
 
+/obj/item/emergencysuitfolded
+	name = "folded emergency suit"
+	desc = "A suit that protects against low pressure environments for a short time. At least, it would be if it hadn't been vacuum-compressed into a small rectangle. You'll have to unfold it before putting it on."
+	icon = 'icons/obj/clothing/overcoats/item_suit_hazard.dmi'
+	icon_state = "emerg_folded"
+	item_state = "emerg"
+	w_class = W_CLASS_TINY
+
+	attack_self(mob/user as mob)
+
+		user.drop_item(src) //clear hands
+		boutput(user, SPAN_NOTICE("You deploy the [src]!"))
+		//maybe play a sound?
+
+		var/obj/item/newsuit = new /obj/item/clothing/suit/space/emerg
+		user.put_in_hand_or_drop(newsuit)
+		qdel(src)
+
 /obj/item/clothing/suit/space/emerg/science
 	name = "bomb retreival suit"
 	desc = "A suit that protects against low pressure environments for a short time. Given to science since they blew up the more expensive ones."
@@ -1192,8 +1290,8 @@ TYPEINFO(/obj/item/clothing/suit/hazard/fire/armored)
 	item_function_flags = IMMUNE_TO_ACID
 
 	New()
-		..()
 		START_TRACKING_CAT(TR_CAT_NUKE_OP_STYLE)
+		..()
 
 	setupProperties()
 		..()
@@ -1558,8 +1656,8 @@ TYPEINFO(/obj/item/clothing/suit/space/industrial/syndicate)
 		setProperty("space_movespeed", 0)
 
 	New()
-		..()
 		START_TRACKING_CAT(TR_CAT_NUKE_OP_STYLE)
+		..()
 
 	disposing()
 		STOP_TRACKING_CAT(TR_CAT_NUKE_OP_STYLE)
@@ -1572,8 +1670,10 @@ TYPEINFO(/obj/item/clothing/suit/space/industrial/syndicate)
 		item_state = "syndie_specialist-heavy"
 
 TYPEINFO(/obj/item/clothing/suit/space/industrial/salvager)
-	mats = list("MET-3"=20, "uqil"=10, "CON-2" = 10, "POW-2" = 10)
-
+	mats = list("metal_superdense" = 20,
+				"uqill" = 10,
+				"conductive_high" = 10,
+				"energy_high" = 10)
 /obj/item/clothing/suit/space/industrial/salvager
 	name = "\improper Salvager juggernaut combat armor"
 	desc = "A heavily modified industrial mining suit, it's been retrofitted for greater protection in firefights."
@@ -1861,12 +1961,6 @@ TYPEINFO(/obj/item/clothing/suit/space/industrial/salvager)
 	icon_state = "puffer-medsci"
 	item_state = "puffer-medsci"
 
-/obj/item/clothing/suit/puffer/hi_vis
-	name = "hi-vis puffer jacket"
-	desc = "A coat that makes you even more visible!"
-	icon_state = "puffer-hivis"
-	item_state = "puffer-hivis"
-
 /obj/item/clothing/suit/puffer/engi
 	name = "engineering puffer jacket"
 	desc = "A big comfy puffer jacket, perfect for the engine!"
@@ -1897,6 +1991,43 @@ TYPEINFO(/obj/item/clothing/suit/space/industrial/salvager)
 	icon_state = "puffer-rancher"
 	item_state = "puffer-rancher"
 
+
+ABSTRACT_TYPE(/obj/item/clothing/suit/sweater_vest)
+/obj/item/clothing/suit/sweater_vest
+	name = "sweater vest"
+	desc = "A knit sweater vest. Surprisingly not very itchy at all."
+	icon_state = "sweater_vest-tan"
+	item_state = "sweater_vest-tan"
+	body_parts_covered = TORSO
+
+	setupProperties()
+		..()
+		setProperty("coldprot", 15)
+
+/obj/item/clothing/suit/sweater_vest/tan
+	icon_state = "sweater_vest-tan"
+	item_state = "sweater_vest-tan"
+
+/obj/item/clothing/suit/sweater_vest/red
+	icon_state = "sweater_vest-red"
+	item_state = "sweater_vest-red"
+
+/obj/item/clothing/suit/sweater_vest/navy
+	icon_state = "sweater_vest-navy"
+	item_state = "sweater_vest-navy"
+
+/obj/item/clothing/suit/sweater_vest/green
+	icon_state = "sweater_vest-green"
+	item_state = "sweater_vest-green"
+
+/obj/item/clothing/suit/sweater_vest/grey
+	icon_state = "sweater_vest-grey"
+	item_state = "sweater_vest-grey"
+
+/obj/item/clothing/suit/sweater_vest/black
+	icon_state = "sweater_vest-black"
+	item_state = "sweater_vest-black"
+
 /obj/item/clothing/suit/hi_vis
 	name = "hi-vis vest"
 	desc = "For when you just have to be seen!"
@@ -1906,10 +2037,49 @@ TYPEINFO(/obj/item/clothing/suit/space/industrial/salvager)
 	icon_state = "hi-vis"
 	item_state = "hi-vis"
 	body_parts_covered = TORSO
+	/// Hi-vis vests can reflect light, sorta
+	var/image/reflection
+
+	New()
+		..()
+
+	equipped(mob/user, slot)
+		..()
+		src.update_reflection(user)
+		user.UpdateOverlays(src.reflection, "reflection")
+
+	unequipped(mob/user)
+		. = ..()
+		user.ClearSpecificOverlays("reflection")
+
+	proc/update_reflection(var/mob/user)
+		if (!ishuman(user))
+			return
+		var/mob/living/carbon/human/H = user
+		var/typeinfo/datum/mutantrace/typeinfo = H.mutantrace?.get_typeinfo()
+		var/overlay_icon = typeinfo.clothing_icons["overcoats"] ? typeinfo.clothing_icons["overcoats"] : src.wear_image_icon
+		src.reflection = image(overlay_icon, "[src.icon_state]-overlay")
+		src.reflection.plane = PLANE_SELFILLUM
+		src.reflection.color = rgb(255, 255, 255)
+		src.reflection.alpha = 200
 
 	setupProperties()
 		..()
 		setProperty("coldprot", 5)
+
+/obj/item/clothing/suit/hi_vis/puffer
+	name = "hi-vis puffer jacket"
+	desc = "A coat that makes you even more visible!"
+	icon = 'icons/obj/clothing/overcoats/item_suit.dmi'
+	inhand_image_icon = 'icons/mob/inhand/overcoat/hand_suit.dmi'
+	wear_image_icon = 'icons/mob/clothing/overcoats/worn_suit.dmi'
+	icon_state = "puffer-hivis"
+	item_state = "puffer-hivis"
+	body_parts_covered = TORSO|LEGS|ARMS
+
+	setupProperties()
+		..()
+		setProperty("coldprot", 30)
 
 /obj/item/clothing/suit/hitman
 	name = "black jacket"
@@ -1971,6 +2141,8 @@ TYPEINFO(/obj/item/clothing/suit/space/industrial/salvager)
 		..()
 		setProperty("chemprot", 70)
 
+#define BADGE_SHOWOFF_COOLDOWN 2 SECONDS
+
 /obj/item/clothing/suit/security_badge
 	name = "Security Badge"
 	desc = "An official badge for a Nanotrasen Security Worker."
@@ -1993,10 +2165,37 @@ TYPEINFO(/obj/item/clothing/suit/space/industrial/salvager)
 		. += "This one belongs to [badge_owner_name], the [badge_owner_job]."
 
 	attack_self(mob/user as mob)
+		if(ON_COOLDOWN(user, "showoff_item", SHOWOFF_COOLDOWN))
+			return
 		user.visible_message("[user] flashes the badge: <br>[SPAN_BOLD("[bicon(src)] Nanotrasen's Finest [badge_owner_job]: [badge_owner_name].")]", "You show off the badge: <br>[SPAN_BOLD("[bicon(src)] Nanotrasen's Finest [badge_owner_job] [badge_owner_name].")]")
+		actions.start(new /datum/action/show_item(user, src, "badge"), user)
 
 	attack(mob/target, mob/user, def_zone, is_special = FALSE, params = null)
+		if(ON_COOLDOWN(user, "showoff_item", SHOWOFF_COOLDOWN))
+			return
 		user.visible_message("[user] flashes the badge at [target.name]: <br>[SPAN_BOLD("[bicon(src)] Nanotrasen's Finest [badge_owner_job]: [badge_owner_name].")]", "You show off the badge to [target.name]: <br>[SPAN_BOLD("[bicon(src)] Nanotrasen's Finest [badge_owner_job] [badge_owner_name].")]")
+		actions.start(new /datum/action/show_item(user, src, "badge"), user)
+
+/obj/item/clothing/suit/security_badge/shielded
+	name = "NTSO Tactical Badge"
+	desc = "An official badge for an NTSO operator, with a miniaturized shield projector. Small enough to be used as a backup power cell in a pinch."
+	tooltip_flags = REBUILD_ALWAYS
+
+	get_desc()
+		. = ..()
+		var/ret = list()
+		if ((SEND_SIGNAL(src, COMSIG_CELL_CHECK_CHARGE, ret) & CELL_RETURNED_LIST))
+			. += " It has [ret["charge"]]/[ret["max_charge"]] PUs left!"
+
+	New()
+		. = ..()
+		src.AddComponent(/datum/component/wearertargeting/energy_shield, list(SLOT_WEAR_SUIT), 0.8, 1, FALSE, 2)
+		src.AddComponent(/datum/component/power_cell, 100, 100, 5, 30 SECONDS, TRUE)
+
+/obj/item/clothing/suit/security_badge/paper
+	name = "Hall Monitor Badge"
+	desc = "A piece of soggy notebook paper with a red S doodled on it, presumably to represent security."
+	icon_state = "security_badge_paper"
 
 /obj/item/clothing/suit/hosmedal
 	name = "war medal"
@@ -2023,6 +2222,11 @@ TYPEINFO(/obj/item/clothing/suit/space/industrial/salvager)
 	item_state = "snowcoat"
 	body_parts_covered = TORSO|LEGS|ARMS
 	hides_from_examine = C_UNIFORM|C_SHOES
+	var/style = "snowcoat"
+
+	New()
+		..()
+		src.AddComponent(/datum/component/toggle_hood, hood_style = src.style)
 
 	setupProperties()
 		..()
@@ -2032,6 +2236,17 @@ TYPEINFO(/obj/item/clothing/suit/space/industrial/salvager)
 		setProperty("rangedprot", 0.5)
 		setProperty("movespeed", 0.5)
 		setProperty("disorient_resist", 15)
+
+	on_toggle_hood()
+		..()
+		if (src.hooded)
+			setProperty("coldprot", 70)
+		else
+			setProperty("coldprot", 50)
+
+/obj/item/clothing/suit/snow/grey
+	icon_state = "snowcoat-grey"
+	style = "snowcoat-grey"
 
 /obj/item/clothing/suit/jean_jacket
 	name = "jean jacket"
@@ -2285,3 +2500,49 @@ TYPEINFO(/obj/item/clothing/suit/space/industrial/salvager)
 	wear_image_icon = 'icons/mob/clothing/overcoats/worn_suit_gimmick.dmi'
 	icon_state = "autumn_jacket"
 	item_state = "autumn_jacket"
+
+// New chaplain stuff
+
+/obj/item/clothing/suit/light_robes
+	name = "light regalia"
+	desc = "A golden-white regalia with golden and blue trims. It exudes the energy of life and light."
+	icon = 'icons/obj/clothing/overcoats/item_suit_gimmick.dmi'
+	wear_image_icon = 'icons/mob/clothing/overcoats/worn_suit_gimmick.dmi'
+	icon_state = "lightrobe"
+	item_state = "lightrobe"
+	body_parts_covered = TORSO|LEGS|ARMS
+	hides_from_examine = C_UNIFORM
+
+/obj/item/clothing/suit/burned_robes
+	name = "incendiary robes"
+	desc = "A set of ash-colored robes with flared, charred edges on the bottom and sleeves. You feel a subtle burning sensation just looking at it."
+	icon = 'icons/obj/clothing/overcoats/item_suit_gimmick.dmi'
+	wear_image_icon = 'icons/mob/clothing/overcoats/worn_suit_gimmick.dmi'
+	icon_state = "burnedrobe"
+	item_state = "burnedrobe"
+	over_hair = TRUE
+	wear_layer = MOB_FULL_SUIT_LAYER
+	body_parts_covered = TORSO|LEGS|ARMS
+	hides_from_examine = C_UNIFORM
+
+/obj/item/clothing/suit/green_robes
+	name = "lost horror robes"
+	desc = "A dull chartreuse robe with faded mysterious imagery of gods around the legs. It exudes an aura of mystery you cannot begin to comprehend."
+	icon = 'icons/obj/clothing/overcoats/item_suit_gimmick.dmi'
+	wear_image_icon = 'icons/mob/clothing/overcoats/worn_suit_gimmick.dmi'
+	icon_state = "greenrobe"
+	item_state = "greenrobe"
+	over_hair = TRUE
+	wear_layer = MOB_FULL_SUIT_LAYER
+	body_parts_covered = TORSO|LEGS|ARMS
+	hides_from_examine = C_UNIFORM
+
+/obj/item/clothing/suit/nature_robes
+	name = "druid robes"
+	desc = "An oak-colored robe wrapped in imagery of leaves and branches. It feels like bark to the touch."
+	icon = 'icons/obj/clothing/overcoats/item_suit_gimmick.dmi'
+	wear_image_icon = 'icons/mob/clothing/overcoats/worn_suit_gimmick.dmi'
+	icon_state = "naturerobe"
+	item_state = "naturerobe"
+	body_parts_covered = TORSO|LEGS|ARMS
+	hides_from_examine = C_UNIFORM

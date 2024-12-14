@@ -801,7 +801,7 @@
 /area/ship/artemis)
 "uZ" = (
 /obj/table/auto,
-/obj/submachine/mixer,
+/obj/machinery/mixer,
 /turf/simulated/floor/blue/checker,
 /area/ship/artemis)
 "vc" = (
@@ -908,7 +908,7 @@
 /turf/unsimulated/wall/setpieces/leadwindow,
 /area/ship/artemis)
 "yw" = (
-/obj/decal/fakeobjects/shuttlethruster,
+/obj/fakeobject/shuttlethruster,
 /turf/space,
 /area/ship/arjuna)
 "za" = (
@@ -941,7 +941,7 @@
 /area/space)
 "Ae" = (
 /obj/table/auto,
-/obj/submachine/mixer,
+/obj/machinery/mixer,
 /turf/simulated/floor/blue/checker,
 /area/ship/arjuna)
 "Ai" = (
@@ -1267,8 +1267,8 @@
 /turf/background_canvas,
 /area/ship/artemis)
 "GP" = (
-/obj/decal/fakeobjects/shuttlethruster,
-/obj/decal/fakeobjects/shuttlethruster,
+/obj/fakeobject/shuttlethruster,
+/obj/fakeobject/shuttlethruster,
 /turf/space,
 /area/ship/arjuna)
 "GV" = (

@@ -8,6 +8,7 @@
 	icon_state = "mousetrap"
 	item_state = "mousetrap"
 	w_class = W_CLASS_TINY
+	item_function_flags = OBVIOUS_INTERACTION_BAR //no hidden placement of armed mousetraps in other peoples backpacks
 	force = null
 	throwforce = null
 	var/armed = FALSE
@@ -37,6 +38,10 @@
 				src.UpdateOverlays(image('icons/obj/items/weapons.dmi', "trap-grenade"), "triggerable")
 				src.grenade = new /obj/item/chem_grenade/cleaner(src)
 				return
+
+	New()
+		..()
+		RegisterSignal(src, COMSIG_MOVABLE_FLOOR_REVEALED, PROC_REF(triggered))
 
 	examine()
 		. = ..()
@@ -76,6 +81,7 @@
 
 	disposing()
 		clear_armer()
+		UnregisterSignal(src, COMSIG_MOVABLE_FLOOR_REVEALED)
 		. = ..()
 
 	attack_hand(mob/user)
@@ -352,7 +358,7 @@
 				if ("feet")
 					if (!H.shoes && !H.mutantrace?.can_walk_on_shards)
 						zone = pick("l_leg", "r_leg")
-						H.changeStatus("weakened", 3 SECONDS)
+						H.changeStatus("knockdown", 3 SECONDS)
 				if ("l_arm", "r_arm")
 					if (!H.gloves)
 						zone = type
