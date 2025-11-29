@@ -148,6 +148,9 @@
 		#define COMSIG_DOCK_MEDICAL_MEDBAY "medical_medbay"
 		#define COMSIG_DOCK_MEDICAL_PATHOLOGY "medical_pathology"
 
+	// ---- Earth Shuttle Docks (earth) ----
+		#define COMSIG_DOCK_EARTH_PLANETSIDE "earth_planetside"
+		#define COMSIG_DOCK_EARTH_SPACESIDE "earth_spaceside"
 
 // ---- Light stuff, used by /datum/component/loctargeting/simple_light, .../sm_light, and .../medium_light ----
 /// Send to a thing to enable component lights on it

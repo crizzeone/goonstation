@@ -762,6 +762,14 @@ ABSTRACT_TYPE(/area/shuttle)
 	name = "Research Shuttle Outpost Dock"
 	icon_state = "shuttle2"
 
+/area/shuttle/earth/spaceside
+	name = "Earth Shuttle Station Dock"
+	icon_state = "shuttle"
+
+/area/shuttle/earth/planetside
+	name = "Earth Shuttle Outpost Dock"
+	icon_state = "shuttle2"
+
 /area/shuttle/mining/station
 	name = "Mining Shuttle Station Dock"
 	icon_state = "shuttle"

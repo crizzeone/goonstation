@@ -49,6 +49,9 @@
 	},
 /turf/simulated/floor/black,
 /area/station/ai_monitored/armory)
+"aQ" = (
+/turf/simulated/floor,
+/area/station/hallway/secondary/researchshuttle)
 "bc" = (
 /obj/table/reinforced/bar/auto,
 /obj/item/storage/box/glassbox,
@@ -176,6 +179,13 @@
 	},
 /turf/simulated/floor,
 /area/station/hallway/primary/southeast)
+"cc" = (
+/obj/machinery/light/small{
+	dir = 8;
+	tag = "icon-bulb1 (WEST)"
+	},
+/turf/simulated/floor,
+/area/station/hallway/secondary/researchshuttle)
 "ch" = (
 /obj/cable/yellow{
 	icon_state = "4-8"
@@ -222,6 +232,11 @@
 /obj/machinery/vending/coffee,
 /turf/simulated/floor/specialroom/bar,
 /area/station/crew_quarters/bar)
+"cD" = (
+/turf/simulated/floor/bluewhite{
+	dir = 8
+	},
+/area/space)
 "cF" = (
 /obj/machinery/door_control{
 	pixel_y = -22;
@@ -252,6 +267,14 @@
 	},
 /turf/simulated/floor/specialroom/medbay,
 /area/station/medical/medbay)
+"cP" = (
+/obj/machinery/door/airlock{
+	dir = 4
+	},
+/obj/mapping_helper/firedoor_spawn,
+/obj/mapping_helper/firedoor_spawn,
+/turf/simulated/floor,
+/area/station/hallway/primary/southeast)
 "cS" = (
 /turf/simulated/floor/grime,
 /area/station/security/brig/cell1)
@@ -289,6 +312,7 @@
 	icon_state = "0-8"
 	},
 /obj/disposalpipe/segment,
+/obj/cable,
 /turf/simulated/floor,
 /area/station/crew_quarters/bar)
 "dq" = (
@@ -311,6 +335,9 @@
 /obj/mapping_helper/firedoor_spawn,
 /turf/simulated/floor,
 /area/station/security/brig)
+"du" = (
+/turf/simulated/floor/bluewhite/corner,
+/area/space)
 "dB" = (
 /obj/machinery/light{
 	dir = 1
@@ -394,6 +421,11 @@
 	},
 /turf/simulated/floor,
 /area/station/engine/engineering)
+"er" = (
+/turf/simulated/floor/bluewhite{
+	dir = 1
+	},
+/area/space)
 "et" = (
 /obj/surgery_tray,
 /obj/item/circular_saw{
@@ -438,6 +470,7 @@
 	dir = 4
 	},
 /obj/mapping_helper/firedoor_spawn,
+/obj/mapping_helper/firedoor_spawn,
 /turf/simulated/floor,
 /area/station/maintenance/disposal)
 "eW" = (
@@ -463,6 +496,13 @@
 /area/station/crew_quarters/bar)
 "fc" = (
 /obj/disposalpipe/junction/middle,
+/obj/cable{
+	icon_state = "0-2"
+	},
+/obj/cable{
+	icon_state = "0-4";
+	pixel_y = 0
+	},
 /turf/simulated/floor,
 /area/station/hallway/primary/southeast)
 "fi" = (
@@ -602,6 +642,12 @@
 	},
 /turf/simulated/floor/black,
 /area/station/turret_protected/ai_upload)
+"gg" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor,
+/area/station/hallway/secondary/researchshuttle)
 "gh" = (
 /obj/decal/tile_edge/stripe/corner/extra_big2{
 	dir = 9
@@ -757,6 +803,9 @@
 /area/station/quartermaster/cargobay)
 "ip" = (
 /obj/disposalpipe/segment,
+/obj/cable{
+	icon_state = "1-2"
+	},
 /turf/simulated/floor,
 /area/station/crew_quarters/bar)
 "ir" = (
@@ -845,6 +894,15 @@
 	},
 /turf/simulated/floor/grime,
 /area/station/quartermaster/refinery)
+"jJ" = (
+/obj/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/station/hallway/secondary/researchshuttle)
 "kb" = (
 /turf/simulated/floor,
 /area/station/ai_monitored/armory)
@@ -1278,6 +1336,13 @@
 "ne" = (
 /turf/simulated/floor/plating,
 /area/station/quartermaster/cargobay)
+"ng" = (
+/obj/machinery/door/airlock{
+	dir = 1
+	},
+/obj/mapping_helper/firedoor_spawn,
+/turf/simulated/floor/plating,
+/area/station/hallway/primary/southeast)
 "nj" = (
 /obj/cable{
 	icon_state = "1-8"
@@ -1293,6 +1358,9 @@
 	},
 /turf/simulated/floor,
 /area/station/hallway/primary)
+"nq" = (
+/turf/simulated/floor/bluewhite,
+/area/space)
 "nt" = (
 /obj/cable{
 	icon_state = "4-8"
@@ -1503,6 +1571,9 @@
 	},
 /turf/space,
 /area/station/quartermaster/refinery)
+"pp" = (
+/turf/simulated/floor/blue,
+/area/space)
 "pr" = (
 /obj/cable/yellow{
 	icon_state = "0-2"
@@ -1533,9 +1604,6 @@
 /turf/simulated/floor/yellow,
 /area/station/quartermaster/cargobay)
 "pA" = (
-/obj/mesh/catwalk{
-	dir = 4
-	},
 /obj/mesh/catwalk{
 	dir = 4
 	},
@@ -1632,6 +1700,20 @@
 /obj/item/clothing/glasses/spectro,
 /turf/simulated/floor/specialroom/bar,
 /area/station/crew_quarters/bar)
+"ql" = (
+/obj/securearea{
+	desc = "A warning sign which reads 'EXTERNAL AIRLOCK'";
+	icon_state = "space";
+	name = "VACUUM AREA"
+	},
+/obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/turf/simulated/floor/plating,
+/area/station/hallway/secondary/researchshuttle)
+"qn" = (
+/turf/simulated/floor/bluewhite/corner{
+	dir = 1
+	},
+/area/space)
 "qo" = (
 /obj/stool/bed,
 /obj/item/clothing/glasses/vr{
@@ -1879,6 +1961,15 @@
 	},
 /turf/simulated/floor,
 /area/station/ai_monitored/armory)
+"sp" = (
+/obj/mesh/catwalk{
+	dir = 4
+	},
+/obj/cable{
+	icon_state = "4-8"
+	},
+/turf/space,
+/area/station/catwalk)
 "sq" = (
 /obj/machinery/power/data_terminal,
 /obj/cable{
@@ -1900,6 +1991,11 @@
 /obj/machinery/light/small/floor,
 /turf/simulated/floor/yellow,
 /area/station/quartermaster/cargobay)
+"sD" = (
+/turf/simulated/floor/bluewhite{
+	dir = 4
+	},
+/area/space)
 "sH" = (
 /obj/machinery/vending/kitchen,
 /turf/simulated/floor/specialroom/cafeteria,
@@ -2332,6 +2428,15 @@
 /obj/mapping_helper/wingrille_spawn/auto,
 /turf/simulated/floor/plating,
 /area/station/engine/engineering)
+"wd" = (
+/obj/mesh/catwalk{
+	dir = 4
+	},
+/obj/mesh/catwalk{
+	dir = 4
+	},
+/turf/space,
+/area/station/quartermaster/refinery)
 "we" = (
 /obj/landmark/magnet_shield,
 /obj/securearea{
@@ -2402,11 +2507,8 @@
 	},
 /area/station/science/chemistry)
 "wF" = (
-/obj/mesh/catwalk{
-	dir = 4
-	},
 /turf/space,
-/area/station/quartermaster/refinery)
+/area/shuttle/earth/spaceside)
 "wG" = (
 /obj/decal/tile_edge/stripe/extra_big{
 	dir = 1
@@ -2570,6 +2672,11 @@
 	},
 /turf/simulated/floor,
 /area/station/hallway/primary/southeast)
+"yd" = (
+/turf/simulated/floor/bluewhite/corner{
+	dir = 4
+	},
+/area/space)
 "yh" = (
 /obj/machinery/manufacturer/mining,
 /turf/simulated/floor/grime,
@@ -2686,6 +2793,16 @@
 	},
 /turf/simulated/floor,
 /area/station/engine/engineering)
+"zl" = (
+/obj/disposalpipe/segment{
+	dir = 4
+	},
+/obj/cable,
+/obj/cable{
+	icon_state = "0-8"
+	},
+/turf/simulated/floor,
+/area/station/hallway/primary/southeast)
 "zu" = (
 /obj/railing/orange,
 /obj/decal/tile_edge/stripe/extra_big{
@@ -3136,6 +3253,13 @@
 /area/station/storage/auxillary{
 	name = "Tool Storage"
 	})
+"CU" = (
+/obj/mapping_helper/wingrille_spawn/auto,
+/obj/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/simulated/wall/auto/supernorn,
+/area/station/mining/staff_room)
 "CX" = (
 /obj/landmark/magnet_shield,
 /obj/securearea{
@@ -3301,6 +3425,7 @@
 /obj/mesh/catwalk{
 	dir = 4
 	},
+/obj/machinery/power/data_terminal,
 /turf/space,
 /area/station/com_dish/auxdish)
 "DT" = (
@@ -3373,6 +3498,9 @@
 "EM" = (
 /obj/disposalpipe/junction{
 	name = "transport pipe"
+	},
+/obj/cable{
+	icon_state = "1-2"
 	},
 /turf/simulated/floor,
 /area/station/crew_quarters/bar)
@@ -3669,6 +3797,18 @@
 	},
 /turf/space,
 /area/diner/solar)
+"HR" = (
+/obj/machinery/door/airlock/pyro/reinforced{
+	dir = 4
+	},
+/obj/cable{
+	icon_state = "4-8"
+	},
+/obj/cable{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/plating,
+/area/space)
 "HV" = (
 /obj/machinery/light,
 /turf/simulated/floor/red/side,
@@ -3718,6 +3858,9 @@
 	},
 /turf/simulated/floor/black,
 /area/station/turret_protected/ai_upload)
+"Ih" = (
+/turf/simulated/wall/auto/supernorn,
+/area/station/hallway/secondary/researchshuttle)
 "Ii" = (
 /turf/simulated/floor/shuttlebay{
 	name = "reinforced plating"
@@ -3835,6 +3978,15 @@
 	},
 /turf/simulated/floor,
 /area/station/hallway/primary)
+"Jf" = (
+/obj/disposalpipe/segment{
+	dir = 4
+	},
+/obj/cable{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor,
+/area/station/hallway/primary/southeast)
 "Jh" = (
 /obj/machinery/power/data_terminal,
 /obj/table/auto,
@@ -3863,6 +4015,11 @@
 	},
 /turf/simulated/floor/black,
 /area/station/turret_protected/ai_upload)
+"Jy" = (
+/obj/disposalpipe/segment,
+/obj/item/card/id/captains_spare,
+/turf/simulated/floor,
+/area/station/engine/engineering)
 "JC" = (
 /obj/stool/chair{
 	dir = 4
@@ -3934,6 +4091,9 @@
 /area/station/storage/auxillary{
 	name = "Tool Storage"
 	})
+"Kg" = (
+/turf/simulated/wall/auto/supernorn,
+/area/space)
 "Kh" = (
 /obj/mapping_helper/wingrille_spawn/auto,
 /obj/cable{
@@ -4057,6 +4217,18 @@
 	},
 /turf/simulated/floor/white,
 /area/station/science/teleporter)
+"La" = (
+/obj/machinery/door/airlock/pyro/reinforced{
+	dir = 4
+	},
+/obj/cable{
+	icon_state = "4-8"
+	},
+/obj/cable{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/plating,
+/area/station/engine/engineering)
 "Ld" = (
 /obj/storage/secure/crate/weapon/armory/phaser,
 /obj/machinery/light/small,
@@ -4164,6 +4336,16 @@
 	},
 /turf/simulated/floor/plating,
 /area/station/engine/storage)
+"LQ" = (
+/obj/disposalpipe/segment{
+	dir = 4
+	},
+/obj/mapping_helper/firedoor_spawn,
+/obj/cable{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor,
+/area/station/hallway/primary/southeast)
 "LU" = (
 /obj/storage/crate,
 /obj/item/raw_material/erebite,
@@ -4340,6 +4522,16 @@
 	allows_vehicles = 0
 	},
 /area/station/science/teleporter)
+"Mn" = (
+/obj/machinery/power/data_terminal,
+/obj/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/computer3/generic/communications{
+	dir = 8
+	},
+/turf/simulated/floor,
+/area/station/hallway/secondary/researchshuttle)
 "Mo" = (
 /obj/submachine/chem_extractor{
 	dir = 4
@@ -4362,6 +4554,9 @@
 "Mw" = (
 /turf/simulated/floor,
 /area/station/crew_quarters/baroffice)
+"MD" = (
+/turf/space,
+/area/shuttle/escape/station)
 "ME" = (
 /obj/decal/tile_edge/stripe/extra_big{
 	dir = 10
@@ -4397,6 +4592,9 @@
 "MP" = (
 /obj/disposalpipe/segment,
 /obj/mapping_helper/firedoor_spawn,
+/obj/cable{
+	icon_state = "1-2"
+	},
 /turf/simulated/floor,
 /area/station/crew_quarters/bar)
 "MU" = (
@@ -4596,6 +4794,39 @@
 	},
 /turf/simulated/floor/sanitary,
 /area/station/security/brig/cell1)
+"OJ" = (
+/obj/machinery/computer/transit_shuttle/earth{
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/station/hallway/secondary/researchshuttle)
+"OO" = (
+/obj/machinery/door/airlock/pyro/external{
+	dir = 4
+	},
+/obj/decal/stripe_delivery,
+/obj/forcefield/energyshield/perma/doorlink{
+	desc = "A door-linked force field that prevents gasses from passing through it.";
+	dir = 4;
+	name = "Door-linked Atmospheric Forcefield";
+	powerlevel = 1
+	},
+/obj/mapping_helper/airlock/cycler{
+	cycle_id = "escape2";
+	enter_id = "main";
+	name = "Escape"
+	},
+/turf/simulated/floor,
+/area/station/hallway/secondary/researchshuttle)
+"OR" = (
+/obj/mesh/catwalk{
+	dir = 4
+	},
+/obj/cable{
+	icon_state = "4-8"
+	},
+/turf/space,
+/area/station/com_dish/auxdish)
 "OU" = (
 /turf/simulated/wall/auto/supernorn,
 /area/station/maintenance/inner/sw)
@@ -5389,6 +5620,10 @@
 /obj/mapping_helper/firedoor_spawn,
 /turf/simulated/floor,
 /area/station/hallway/primary/southeast)
+"UT" = (
+/obj/mapping_helper/wingrille_spawn/auto/reinforced,
+/turf/simulated/floor/plating,
+/area/station/hallway/secondary/researchshuttle)
 "UV" = (
 /obj/machinery/light,
 /turf/simulated/floor,
@@ -5568,6 +5803,10 @@
 	dir = 5
 	},
 /area/station/security/secwing)
+"Wr" = (
+/obj/machinery/light/incandescent,
+/turf/simulated/floor,
+/area/station/hallway/secondary/researchshuttle)
 "Wt" = (
 /obj/cable{
 	icon_state = "0-2"
@@ -5618,6 +5857,18 @@
 /obj/machinery/manufacturer/robotics,
 /turf/simulated/floor/specialroom/medbay,
 /area/station/medical/medbay)
+"WO" = (
+/obj/mesh/catwalk{
+	dir = 4
+	},
+/obj/cable{
+	icon_state = "0-2"
+	},
+/obj/cable{
+	icon_state = "0-8"
+	},
+/turf/space,
+/area/station/catwalk)
 "WQ" = (
 /obj/machinery/computer/supplycomp,
 /obj/decal/stage_edge/alt,
@@ -5776,6 +6027,9 @@
 /obj/storage/crate,
 /turf/simulated/floor/plating/airless,
 /area/station/quartermaster/refinery)
+"Yw" = (
+/turf/simulated/floor/plating,
+/area/space)
 "Yy" = (
 /obj/mapping_helper/wingrille_spawn/auto,
 /turf/simulated/floor/plating,
@@ -5884,6 +6138,11 @@
 	dir = 8
 	},
 /area/station/mining/staff_room)
+"Zj" = (
+/turf/simulated/floor/bluewhite/corner{
+	dir = 8
+	},
+/area/space)
 "Zn" = (
 /obj/machinery/vending/security,
 /turf/simulated/floor/red/side{
@@ -10272,7 +10531,7 @@ ZP
 mg
 Nx
 fc
-MF
+Xc
 MP
 EM
 ip
@@ -10298,7 +10557,7 @@ Vd
 rY
 rl
 SR
-SR
+Jy
 SR
 SR
 oS
@@ -10393,7 +10652,7 @@ At
 ZP
 bW
 Nx
-Cc
+Jf
 Nx
 Iq
 iW
@@ -10515,7 +10774,7 @@ At
 ZP
 Nx
 Nx
-Cc
+Jf
 Nx
 Iq
 AL
@@ -10637,7 +10896,7 @@ At
 ii
 US
 US
-qc
+LQ
 US
 RC
 JF
@@ -10759,7 +11018,7 @@ At
 ii
 SA
 Nx
-Cc
+Jf
 Nx
 RC
 cC
@@ -10873,15 +11132,15 @@ At
 At
 At
 At
-At
-At
-At
+wF
+wF
+wF
 At
 At
 ii
 Nx
 Nx
-Cc
+Jf
 Nx
 RC
 Pq
@@ -10990,20 +11249,20 @@ At
 At
 At
 At
-At
-At
-At
-At
-At
-At
-At
-At
-At
+wF
+wF
+wF
+wF
+wF
+wF
+wF
+wF
+wF
 At
 ii
 Nx
 Nx
-Cc
+Jf
 Nx
 RC
 gY
@@ -11026,7 +11285,7 @@ At
 Sf
 Bo
 XQ
-Pk
+La
 fi
 Bo
 Sf
@@ -11112,20 +11371,20 @@ At
 At
 At
 At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
+wF
+wF
+wF
+wF
+wF
+wF
+wF
+wF
+wF
+wF
 ii
 Nx
 Nx
-Cc
+Jf
 Nx
 ii
 At
@@ -11148,7 +11407,7 @@ At
 Sf
 Bo
 Ei
-Bo
+sp
 Bo
 Bo
 Sf
@@ -11233,21 +11492,21 @@ At
 At
 At
 At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
+wF
+wF
+wF
+wF
+wF
+wF
+wF
+wF
+wF
+wF
+wF
 ii
 Nx
 Nx
-Cc
+Jf
 UV
 ii
 At
@@ -11270,7 +11529,7 @@ At
 Sf
 Sf
 Ei
-Bo
+sp
 Bo
 Sf
 Sf
@@ -11356,20 +11615,20 @@ At
 At
 At
 At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
+wF
+wF
+wF
+wF
+wF
+wF
+wF
+wF
+wF
+wF
 ii
 Nx
 Nx
-Cc
+Jf
 Nx
 ii
 At
@@ -11392,7 +11651,7 @@ At
 At
 Sf
 xu
-Bo
+sp
 Sf
 Sf
 Sf
@@ -11478,33 +11737,33 @@ At
 At
 At
 At
-At
-At
-At
-At
-At
-At
-At
-At
-At
+wF
+wF
+wF
+wF
+wF
+wF
+wF
+wF
+wF
 At
 ii
 SA
 Nx
-Cc
+Jf
 Nx
 ii
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
+Kg
+Kg
+Kg
+Kg
+Kg
+Kg
+Kg
+Kg
+Kg
+Kg
+Kg
 At
 nM
 nM
@@ -11514,7 +11773,7 @@ nM
 nM
 Sf
 ch
-Bo
+sp
 Bo
 Qd
 Bo
@@ -11549,7 +11808,7 @@ Fv
 yh
 AC
 cr
-wF
+pA
 cr
 cr
 cr
@@ -11599,34 +11858,34 @@ At
 At
 At
 At
-At
-At
-At
-At
-At
-At
-At
-At
-At
+Kg
+Kg
+Kg
+ql
+OO
+ql
+wF
+wF
+wF
 At
 At
 ii
 xb
 Nx
-Cc
+Jf
 Nx
 ii
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
+Yw
+Yw
+Yw
+Yw
+Yw
+Yw
+Yw
+Yw
+Yw
+Yw
+Kg
 Us
 HP
 HP
@@ -11636,7 +11895,7 @@ HP
 HP
 Wh
 kz
-Bo
+sp
 Bo
 Bo
 Lp
@@ -11671,7 +11930,7 @@ ax
 oB
 oB
 Sh
-wF
+pA
 hk
 Uh
 eM
@@ -11721,35 +11980,35 @@ At
 At
 At
 At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
+Ih
+cc
+aQ
+OJ
+Wr
+UT
+Ih
+Ih
+Ih
+Ih
+Ih
 ii
 Nx
 Nx
-Cc
-ur
-ii
-Sf
-At
-At
-Sf
-Sf
-Sf
-Sf
-Sf
-Sf
-Sf
-At
-At
+Jf
+Nx
+ng
+Yw
+Yw
+Yw
+Yw
+Yw
+Yw
+Yw
+Yw
+Yw
+Yw
+Kg
+Kg
 Yz
 Yz
 Yz
@@ -11758,7 +12017,7 @@ Yz
 Yz
 Sf
 ch
-Bo
+sp
 Lp
 fE
 Lp
@@ -11767,7 +12026,7 @@ sq
 xZ
 ME
 Lp
-TL
+OR
 TL
 YR
 At
@@ -11793,7 +12052,7 @@ wG
 Qp
 pR
 cr
-wF
+pA
 hk
 wH
 rE
@@ -11843,35 +12102,35 @@ At
 At
 At
 At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
+Ih
+aQ
+aQ
+aQ
+aQ
+aQ
+aQ
+aQ
+aQ
+aQ
+cc
+Nx
+Nx
+Nx
+Jf
+Nx
 ii
-Nx
-Nx
-Cc
-Nx
-ii
-Sf
-Sf
-Sf
-Sf
+Yw
+Yw
+Yw
+Yw
 zC
 zC
 zC
 zC
 zC
-Sf
-At
-At
+Yw
+Yw
+Kg
 At
 At
 At
@@ -11880,7 +12139,7 @@ At
 Sf
 Sf
 ch
-Bo
+WO
 bF
 gS
 bF
@@ -11915,7 +12174,7 @@ wG
 LU
 kT
 cr
-wF
+pA
 hk
 gr
 Wc
@@ -11965,21 +12224,21 @@ At
 At
 At
 At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-ii
-Nx
-Nx
-Cc
+Ih
+aQ
+aQ
+aQ
+Mn
+gg
+jJ
+gg
+gg
+gg
+gg
+yb
+yb
+yb
+zl
 Nx
 st
 st
@@ -11991,9 +12250,9 @@ xV
 sn
 CZ
 zC
-Sf
-At
-At
+Yw
+Yw
+Kg
 nM
 nM
 nM
@@ -12037,7 +12296,7 @@ wG
 qS
 jE
 Sh
-wF
+pA
 hk
 hk
 hk
@@ -12087,17 +12346,17 @@ At
 At
 At
 At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
+Ih
+OO
+Ih
+OO
+Ih
+Ih
+Ih
+Ih
+Ih
+Ih
+Ih
 ii
 Nx
 Nx
@@ -12113,9 +12372,9 @@ HC
 aP
 BR
 zC
-Sf
-At
-At
+Yw
+Yw
+Kg
 pr
 HP
 HP
@@ -12159,7 +12418,7 @@ gU
 zw
 qi
 cr
-wF
+pA
 hk
 mC
 Ty
@@ -12201,20 +12460,20 @@ At
 At
 At
 At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
 At
 At
 At
@@ -12235,19 +12494,19 @@ QC
 Wk
 OZ
 zC
-Sf
+Yw
+Yw
+Kg
+Yz
+Yz
+Yz
+Yz
+Yz
+Yz
 At
-At
-Yz
-Yz
-Yz
-Yz
-Yz
-Yz
-Sf
-Sf
-Sf
-At
+Kg
+HR
+Kg
 Qd
 Qd
 Lp
@@ -12274,14 +12533,14 @@ At
 At
 At
 pj
-wF
-wF
+pA
+pA
 cr
 cr
 Ne
 PK
 cr
-wF
+pA
 hk
 cr
 Yy
@@ -12323,21 +12582,21 @@ At
 At
 At
 At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
 At
 At
 At
@@ -12357,19 +12616,19 @@ vd
 VD
 Ld
 zC
-Sf
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
+Yw
+Yw
+Kg
+Kg
+Kg
+Kg
+Kg
+Kg
+Kg
+Kg
+Kg
+Yw
+Kg
 At
 Qd
 Lp
@@ -12394,22 +12653,22 @@ Nx
 ii
 At
 At
-wF
-wF
-wF
-wF
-wF
+pA
+pA
+pA
+pA
+pA
 Uo
-wF
+pA
 dk
-wF
-wF
-wF
-wF
-wF
-wF
-wF
-wF
+pA
+pA
+pA
+pA
+pA
+pA
+pA
+pA
 At
 At
 At
@@ -12444,22 +12703,22 @@ At
 At
 At
 At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
 At
 At
 At
@@ -12479,20 +12738,20 @@ zW
 pW
 kb
 zC
-Sf
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
+Yw
+Yw
+Yw
+Yw
+Yw
+Yw
+Yw
+Yw
+Yw
+Yw
+Kg
+HR
+Kg
+Kg
 lZ
 Qd
 Qd
@@ -12516,7 +12775,7 @@ Nx
 ii
 At
 At
-wF
+pA
 mV
 Py
 Py
@@ -12524,14 +12783,14 @@ Py
 Py
 Py
 dM
-wF
-wF
-wF
-wF
-wF
-wF
-wF
-wF
+pA
+pA
+pA
+pA
+pA
+pA
+pA
+pA
 At
 At
 At
@@ -12566,25 +12825,25 @@ At
 At
 At
 At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
 At
 ii
 Nx
@@ -12601,20 +12860,20 @@ zC
 zC
 zC
 zC
-Sf
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
+Yw
+Yw
+Yw
+Yw
+Yw
+Yw
+Yw
+Yw
+Yw
+Yw
+Yw
+Yw
+Yw
+Kg
 At
 At
 At
@@ -12632,7 +12891,7 @@ CP
 Fy
 CP
 Cd
-Nx
+ii
 pQ
 Nx
 ii
@@ -12641,19 +12900,19 @@ At
 pv
 uu
 pv
-wF
-wF
-wF
-wF
-wF
-wF
-wF
-wF
-wF
-wF
-wF
-wF
-wF
+pA
+pA
+pA
+pA
+pA
+pA
+pA
+pA
+pA
+pA
+pA
+pA
+pA
 At
 At
 At
@@ -12688,26 +12947,26 @@ At
 At
 At
 At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
 ii
 Nx
 Nx
@@ -12723,20 +12982,20 @@ aj
 Nn
 Pt
 qP
-Sf
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
+Yw
+Yw
+Yw
+Kg
+Kg
+Kg
+Kg
+Kg
+Kg
+Kg
+Yw
+Yw
+Yw
+Kg
 At
 At
 At
@@ -12763,7 +13022,7 @@ At
 oD
 PM
 oD
-wF
+pA
 At
 UD
 At
@@ -12771,11 +13030,11 @@ At
 UD
 At
 At
-wF
-wF
+pA
+pA
 cr
 cr
-wF
+pA
 At
 At
 At
@@ -12811,25 +13070,25 @@ At
 At
 At
 At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
 ii
 Nx
 Nx
@@ -12845,20 +13104,20 @@ sR
 YZ
 un
 qP
-Sf
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
+Yw
+Yw
+Yw
+Kg
+du
+sD
+sD
+sD
+Zj
+Kg
+Yw
+Yw
+Yw
+Kg
 At
 At
 At
@@ -12894,10 +13153,10 @@ At
 At
 At
 At
+wd
 pA
-wF
 lk
-wF
+pA
 At
 At
 At
@@ -12934,24 +13193,24 @@ At
 At
 At
 At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
 ii
 Nx
 Nx
@@ -12967,20 +13226,20 @@ vB
 ZT
 IQ
 qP
-Sf
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
+Yw
+Yw
+Yw
+Kg
+nq
+pp
+pp
+pp
+er
+Kg
+Yw
+Yw
+Yw
+Kg
 At
 At
 At
@@ -13056,24 +13315,24 @@ At
 At
 At
 At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
 ii
 SA
 Nx
@@ -13089,20 +13348,20 @@ oJ
 Ac
 oJ
 oJ
-Sf
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
+Yw
+Yw
+Yw
+Kg
+nq
+pp
+pp
+pp
+er
+Kg
+Yw
+Yw
+Yw
+Kg
 At
 At
 At
@@ -13129,7 +13388,7 @@ Og
 Og
 KD
 PA
-oD
+CU
 At
 At
 Pe
@@ -13177,25 +13436,25 @@ At
 At
 At
 At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
 ii
 Nx
 Nx
@@ -13211,20 +13470,20 @@ qo
 LB
 OG
 oJ
-Sf
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
+Yw
+Yw
+Yw
+Kg
+nq
+pp
+pp
+pp
+er
+Kg
+Yw
+Yw
+Yw
+Kg
 At
 At
 At
@@ -13251,7 +13510,7 @@ Og
 lH
 KD
 Wl
-oD
+CU
 At
 At
 Pe
@@ -13298,26 +13557,26 @@ At
 At
 At
 At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
 ii
 Nx
 Nx
@@ -13333,20 +13592,20 @@ nR
 LB
 cG
 oJ
-Sf
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
+Yw
+Yw
+Yw
+Kg
+nq
+pp
+pp
+pp
+er
+Kg
+Yw
+Yw
+Yw
+Kg
 At
 At
 At
@@ -13420,25 +13679,25 @@ At
 At
 At
 At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
 At
 ii
 Nx
@@ -13455,20 +13714,20 @@ Rm
 LB
 TU
 oJ
-Sf
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
+Yw
+Yw
+Yw
+Kg
+nq
+pp
+pp
+pp
+er
+Kg
+Yw
+Yw
+Yw
+Kg
 At
 At
 At
@@ -13542,22 +13801,22 @@ At
 At
 At
 At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
 At
 At
 At
@@ -13577,20 +13836,20 @@ cS
 mi
 Mp
 oJ
-Sf
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
+Yw
+Yw
+Yw
+Kg
+nq
+pp
+pp
+pp
+er
+Kg
+Yw
+Yw
+Yw
+Kg
 At
 At
 At
@@ -13665,21 +13924,21 @@ At
 At
 At
 At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
 At
 At
 At
@@ -13699,20 +13958,20 @@ lD
 Fp
 vw
 oJ
-Sf
-Sf
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
+Yw
+Yw
+Yw
+Kg
+yd
+cD
+pp
+cD
+qn
+Kg
+Yw
+Yw
+Yw
+Kg
 At
 At
 At
@@ -13787,20 +14046,20 @@ At
 At
 At
 At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
-At
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
+MD
 At
 At
 At
@@ -13822,17 +14081,17 @@ iv
 ty
 oJ
 ii
+cP
 ii
 ii
 ii
 ii
+Nx
 ii
 ii
 ii
 ii
-ii
-ii
-ii
+cP
 ii
 ii
 ii

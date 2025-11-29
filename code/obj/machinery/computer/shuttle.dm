@@ -444,6 +444,36 @@ var/bombini_saved
 	icon = 'icons/obj/decoration.dmi'
 	icon_state = "syndiepc4"
 
+// earth shuttle
+// TODOs:
+// - replace turf with earth turf on transder to prevent vacuum
+/obj/machinery/computer/transit_shuttle/earth
+	shuttlename = "Earth Shuttle"
+/obj/machinery/computer/transit_shuttle/earth/New()
+	..()
+	destinations = list(/area/shuttle/earth/spaceside,
+	/area/shuttle/earth/planetside)
+	currentlocation = locate(/area/shuttle/earth/planetside)
+
+/obj/machinery/computer/transit_shuttle/earth/announce_move(area/end_location)
+	. = ..()
+	if(istype(end_location, /area/shuttle/earth/planetside))
+		SEND_GLOBAL_SIGNAL(COMSIG_DOCK_EARTH_PLANETSIDE, DOCK_EVENT_INCOMING)
+	else if (istype(end_location, /area/shuttle/earth/spaceside))
+		SEND_GLOBAL_SIGNAL(COMSIG_DOCK_EARTH_SPACESIDE, DOCK_EVENT_INCOMING)
+
+/obj/machinery/computer/transit_shuttle/earth/call_shuttle(area/end_location)
+	if(istype(src.currentlocation, /area/shuttle/asylum/medbay))
+		SEND_GLOBAL_SIGNAL(COMSIG_DOCK_EARTH_PLANETSIDE, DOCK_EVENT_DEPARTED)
+	else if (istype(end_location, /area/shuttle/earth/spaceside))
+		SEND_GLOBAL_SIGNAL(COMSIG_DOCK_EARTH_SPACESIDE, DOCK_EVENT_DEPARTED)
+
+	if(istype(end_location, /area/shuttle/asylum/medbay))
+		SEND_GLOBAL_SIGNAL(COMSIG_DOCK_EARTH_PLANETSIDE, DOCK_EVENT_ARRIVED)
+	else if (istype(end_location, /area/shuttle/earth/spaceside))
+		SEND_GLOBAL_SIGNAL(COMSIG_DOCK_EARTH_SPACESIDE, DOCK_EVENT_ARRIVED)
+	. = ..()
+
 /obj/machinery/computer/shuttle/attackby(var/obj/item/W, var/mob/user)
 	if(!(istype(W, /obj/item/disk/data/floppy/read_only/authentication) || istype(W, /obj/item/card/id)) || (status & (BROKEN|NOPOWER)))
 		return ..()
