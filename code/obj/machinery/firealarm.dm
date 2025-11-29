@@ -189,6 +189,7 @@ ADMIN_INTERACT_PROCS(/obj/machinery/firealarm, proc/alarm, proc/reset)
 
 	alarm_active = TRUE
 
+	src.AddComponent(/datum/component/minimap_marker/minimap, MAP_ALERTS, "alarm_fire", name="[get_area(src)] Fire Alarm")
 	A.firealert()	//Icon state is set to "fire1" in A.firealert()
 	post_alert(1)
 
@@ -258,18 +259,4 @@ ADMIN_INTERACT_PROCS(/obj/machinery/firealarm, proc/alarm, proc/reset)
 		SPAWN(0.5 SECONDS)
 			src.reply_status(sender, "ping_reply")
 
-// these seem kind of inverted but it's because an alarm on a wall to the north faces south and etc
-/obj/machinery/firealarm/north
-	pixel_y = 30
-
-/obj/machinery/firealarm/south
-	dir = NORTH
-	pixel_y = -22
-
-/obj/machinery/firealarm/east
-	dir = WEST
-	pixel_x = 24
-
-/obj/machinery/firealarm/west
-	dir = EAST
-	pixel_x = -24
+SET_UP_DIRECTIONALS(/obj/machinery/firealarm, OFFSETS_FIREALARM)

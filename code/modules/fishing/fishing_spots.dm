@@ -125,7 +125,7 @@ ABSTRACT_TYPE(/datum/fishing_spot)
 	/mob/living/critter/small_animal/slug = 10,\
 	/mob/living/critter/small_animal/snake = 10,\
 	/mob/living/critter/small_animal/frog = 10,\
-	/obj/item/clothing/head/rafflesia = 5)
+	/obj/item/clothing/head/flower/rafflesia = 5)
 /*
 /datum/fishing_spot/test
 	fishing_atom_type = /turf/simulated/floor/ancient
@@ -234,7 +234,7 @@ ABSTRACT_TYPE(/datum/fishing_spot)
 	/obj/item/reagent_containers/food/fish/sardine = 20)
 
 /datum/fishing_spot/nuclear_reactor
-	fishing_atom_type = /obj/machinery/atmospherics/binary/nuclear_reactor
+	fishing_atom_type = /obj/machinery/nuclear_reactor
 	rod_tier_required = 2
 	fish_available = list(/obj/item/reagent_containers/food/fish/goldfish = 30,\
 	/obj/item/reagent_containers/food/fish/bass = 20,\
@@ -468,7 +468,7 @@ ABSTRACT_TYPE(/datum/fishing_spot)
 	fish_available = list(/obj/item/reagent_containers/food/fish/goldfish = 20,\
 	/obj/item/reagent_containers/food/fish/dace = 5,\
 	/obj/item/reagent_containers/food/fish/minnow = 5,\
-	/obj/item/plant/flower/rose = 10,\
+	/obj/item/clothing/head/flower/rose = 10,\
 	/mob/living/critter/small_animal/slug = 5)
 
 /datum/fishing_spot/blob
