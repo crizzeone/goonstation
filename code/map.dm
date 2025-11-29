@@ -39,7 +39,8 @@ var/global/list/mapNames = list(
 	"Density2" = 			list("id" = "DENSITY2",		"settings" = "density2",		"playerPickable" = FALSE,	"MaxPlayersAllowed" = 20),
 	"blank" =				list("id" = "BLANK",		"settings" = "", 				"playerPickable" = FALSE),
 	"blank_underwater" =	list("id" = "BLANK_UNDERWATER", "settings" = "", 			"playerPickable" = FALSE),
-	"DevTest" =				list("id" = "DEVTEST",		"settings" = "devtest",			"playerPickable" = FALSE,	"MaxPlayersAllowed" = 69),
+	"DevTest" =	list("id" = "DEVTEST",		"settings" = "devtest",			"playerPickable" = FALSE,	"MaxPlayersAllowed" = 69),
+	"Spacebar" =				list("id" = "SPACEBAR",		"settings" = "spacebar", 				"playerPickable" = FALSE),
 )
 
 /obj/landmark/map
@@ -999,6 +1000,10 @@ var/global/list/mapNames = list(
 		"the mining staff room" = list(/area/station/mining/staff_room),
 		"the toxins lab" = list(/area/station/science/lab))
 
+
+/datum/map_settings/spacebar
+	name = "SPACEBAR"
+	display_name = "Spacelounge & Co"
 
 /area/shuttle/merchant_shuttle/left_centcom
 	icon_state = "shuttle_merch_l"

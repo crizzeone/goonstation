@@ -69,7 +69,7 @@
 // HIGHLY SCIENTIFIC NUMBERS PULLED OUT OF MY ASS
 // Loosely based on color temperatures during daylight hours
 // and random bullshit for night hours
-// would love to have this at runtime but
+// would love to have this at runtime but - TODO CRIZZEONE
 // i do not think that is possible in a way that isnt shit. maybe. idk
 
 // hi zam here, 2024 edition
