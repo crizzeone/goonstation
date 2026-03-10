@@ -1,5 +1,9 @@
 
 (t)tue mar 10 26
+(u)JORJ949
+(p)26093
+(e)🆕💪👮|C-Feature, A-Traits, A-Security
+(*)The Detective now receives special Forensics Training, allowing them to identify what weapon fired a bullet casing at a glance.
 (u)Spyritdragon
 (p)26136
 (e)|
