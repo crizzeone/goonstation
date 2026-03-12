@@ -1,5 +1,9 @@
 
 (t)thu mar 12 26
+(u)bamlord
+(p)26155
+(e)⚖🧛|C-Balance, A-Gamemodes
+(+)Wizards can now collect a new headset from the magivend after losing theirs to the clown/dying
 (u)Temthrush
 (p)26142
 (e)🎨|C-Sprites
