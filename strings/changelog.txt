@@ -1,5 +1,9 @@
 
 (t)thu mar 12 26
+(u)Lord_Earthfire
+(p)25946
+(e)🆕💊|C-Feature, A-Medical
+(*)Cryotubes operated with sufficient amounts of superheated gasses will severely burn their occupants
 (u)bamlord
 (p)26155
 (e)⚖🧛|C-Balance, A-Gamemodes
