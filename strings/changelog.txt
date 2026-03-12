@@ -1,5 +1,9 @@
 
 (t)thu mar 12 26
+(u)JORJ949
+(p)25951
+(e)🔎💅📄🧑‍✈️|C-Code-Quality, C-QoL, A-UI, A-Command
+(+)The ID Computer UI has been refactored to be less reliant on scrolling.
 (u)Kubius
 (p)25981
 (e)🆕⏰📦|C-Feature, A-Status-Effects, A-Game-Objects
