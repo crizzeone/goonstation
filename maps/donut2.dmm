@@ -45563,16 +45563,6 @@
 	icon_state = "floor3"
 	},
 /area/shuttle/research/outpost)
-"tVe" = (
-/obj/machinery/camera/directional/east{
-	c_tag = "North Electrical Substation";
-	pixel_y = 10
-	},
-/obj/cable/orange{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/grime,
-/area/station/engine/substation/north)
 "tVj" = (
 /obj/disposalpipe/segment/mail{
 	dir = 1;
@@ -49685,6 +49675,7 @@
 /obj/cable/orange{
 	icon_state = "0-2"
 	},
+/obj/machinery/camera/directional/west,
 /turf/simulated/floor/plating,
 /area/station/engine/substation/north)
 "wpC" = (
@@ -81801,7 +81792,7 @@ aDY
 woD
 mFz
 aEU
-tVe
+gum
 gum
 vKU
 aBP
