@@ -4993,3 +4993,18 @@ MAJOR_AST(30)
 /area/tutorial/depowered
 	requires_power = TRUE
 	icon_state = "red"
+
+// -------- Test Planet -----------
+/area/planet_test
+	name = "Planet Test Default Area"
+	icon_state = "green"
+	gforce_minimum = 100
+
+	forest
+		name = "Planet Test Forest"
+
+	station/hallway
+		name = "Planet Test Station Entrance Hall"
+
+	station/power_room
+		name = "Planet Test Station Power Room"

@@ -34216,6 +34216,17 @@
 /obj/effects/background_objects/mundus,
 /turf/space,
 /area/space)
+"dYD" = (
+/obj/machinery/conveyor/NS{
+	id = "cargo"
+	},
+/obj/cable{
+	icon_state = "1-2"
+	},
+/obj/disposalpipe/segment/mail,
+/obj/decal/stripe_delivery,
+/turf/simulated/floor,
+/area/station/quartermaster/office)
 "dYE" = (
 /obj/item/instrument/large/jukebox,
 /obj/decal/glow{
@@ -44527,7 +44538,9 @@
 	enter_id = "outer";
 	name = "Mining"
 	},
-/turf/simulated/floor,
+/turf/simulated/floor/yellow/side{
+	dir = 1
+	},
 /area/station/mining/staff_room)
 "kIG" = (
 /obj/machinery/door/airlock/pyro/glass{
@@ -54200,7 +54213,7 @@
 /obj/decal/tile_edge/stripe/extra_big{
 	dir = 8
 	},
-/turf/simulated/floor,
+/turf/simulated/floor/green,
 /area/station/turret_protected/Zeta)
 "rkh" = (
 /obj/mesh/grille/steel,
@@ -120799,7 +120812,7 @@ bII
 bJI
 bKU
 bMu
-sPu
+dYD
 tCI
 sPu
 bSa

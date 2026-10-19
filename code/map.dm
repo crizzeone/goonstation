@@ -32,7 +32,9 @@ var/global/list/mapNames = list(
 	"Nadir" =				list("id" = "NADIR",		"settings" = "nadir",			"playerPickable" = TRUE,	"MaxPlayersAllowed" = 70),
 	"Neon" = 				list("id" = "NEON", 		"settings" = "neon", 			"playerPickable" = TRUE,	"MaxPlayersAllowed" = 30),
 	"Menhir" =				list("id" = "MENHIR",		"settings" = "menhir",			"playerPickable" = TRUE,	"MaxPlayersAllowed" = 60),
-
+	"Adventure Station" = 	list("id" = "ADVENTURE_STATION", "settings"= "adventure", 	"playerPickable" = TRUE,	"MaxPlayersAllowed" = 60),
+"Test Station" = 			list("id" = "TEST", 		"settings"= "", 					"playerPickable" = TRUE,	"MaxPlayersAllowed" = 60),
+	"Test Planet" = 		list("id" = "TEST_PLANET", 		"settings"= "", 					"playerPickable" = TRUE,	"MaxPlayersAllowed" = 60),
 	"Crash" = 				list("id" = "CRASH",		"settings" = "crash",			"playerPickable" = FALSE),
 	"Atlas" =				list("id" = "ATLAS",		"settings" = "atlas",			"playerPickable" = FALSE,	"MaxPlayersAllowed" = 30),
 	"Mushroom" =			list("id" = "MUSHROOM",		"settings" = "mushroom",		"playerPickable" = FALSE),

@@ -3206,3 +3206,20 @@ DEFINE_FLOORS(bamboo,
 	icon_state = "floor$$bamboo";\
 	default_material = "bamboo";\
 	uses_default_material_appearance = TRUE)
+
+// --------------------------- Test Planet -------------------------------
+
+//TODO: how to add dynamic lighting here?
+DEFINE_FLOORS(test_planet/grass,
+	name = "Test Planet grass";\
+	desc = "This grass thrives only on Test Planet.";\
+	icon = 'icons/turf/outdoors.dmi';\
+	icon_state = "grass_lush";\
+	mat_changename = 0;\
+	mat_changedesc = 0;\
+	step_material = "step_outdoors";\
+	step_priority = STEP_PRIORITY_MED;\
+	can_dig = FALSE;\
+	RL_LumR = 1;\
+	RL_LumG = 1;\
+	RL_LumB = 1)
